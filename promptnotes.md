@@ -26,13 +26,61 @@ We will work on the scenario called [Title].Draft a short compelling pitch for t
 
 
 ***json formate
-Create a json representation format of the idea based on the table
+{
+  "project": {
+    "title": "The Privacy Guide",
+    "scenario": "Empowering everyday internet users to improve their digital privacy through guided, simple steps.",
+    "audience": "Non-tech-savvy individuals who are concerned about their online privacy but feel overwhelmed by technical jargon and complex guides.",
+    "vibeWords": [
+      "Approachable",
+      "Empowering",
+      "Clear"
+    ],
+    "format": "A gamified web app with a central dashboard.",
+    "concept": "A user-friendly, step-by-step roadmap that guides users through low-effort, high-impact 'Quick Wins' to improve their digital privacy, using gamification to make the process rewarding.",
+    "goal": "To make digital privacy accessible and achievable for everyone, replacing user anxiety with a sense of confidence and control over their digital footprint.",
+    "mvpFeatures": [
+      "Dashboard View: A single, clear 'Next Step' is presented.",
+      "Progress Tracker: A simple visual that updates when a task is marked complete.",
+      "Three 'Quick Win' Modules: Content for three initial, easy-to-complete tasks."
+    ],
+    "stretchGoals": [
+      "User Accounts: Allow users to save their progress across different devices.",
+      "Personalized Roadmaps: Create a short quiz to generate a customized list of 'Quick Wins.'",
+      "Native Mobile App: Develop a dedicated iOS and Android app."
+    ]
+  }
+}
 
 
 ***research
 
 You are my Product Research assistant. I’m working on:
-[INSERT PROJECT JSON]
+{
+  "project": {
+    "title": "The Privacy Guide",
+    "scenario": "Empowering everyday internet users to improve their digital privacy through guided, simple steps.",
+    "audience": "Non-tech-savvy individuals who are concerned about their online privacy but feel overwhelmed by technical jargon and complex guides.",
+    "vibeWords": [
+      "Approachable",
+      "Empowering",
+      "Clear"
+    ],
+    "format": "A gamified web app with a central dashboard.",
+    "concept": "A user-friendly, step-by-step roadmap that guides users through low-effort, high-impact 'Quick Wins' to improve their digital privacy, using gamification to make the process rewarding.",
+    "goal": "To make digital privacy accessible and achievable for everyone, replacing user anxiety with a sense of confidence and control over their digital footprint.",
+    "mvpFeatures": [
+      "Dashboard View: A single, clear 'Next Step' is presented.",
+      "Progress Tracker: A simple visual that updates when a task is marked complete.",
+      "Three 'Quick Win' Modules: Content for three initial, easy-to-complete tasks."
+    ],
+    "stretchGoals": [
+      "User Accounts: Allow users to save their progress across different devices.",
+      "Personalized Roadmaps: Create a short quiz to generate a customized list of 'Quick Wins.'",
+      "Native Mobile App: Develop a dedicated iOS and Android app."
+    ]
+  }
+}
 
 SCOPE RULES (BEGINNER, LOW-COMPLEXITY):
 - Keep ideas buildable as a single-page front-end (no auth, no external APIs, minimal state).
