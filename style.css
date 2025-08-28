@@ -190,6 +190,8 @@ body {
 /* Landing Page Specifics */
 .landing-main {
     flex: 1;
+    max-width: 900px; /* Increased max-width for wider cards */
+    margin: 2rem auto;
 }
 
 .hero {
@@ -255,6 +257,50 @@ body {
 
 .feature h2 {
     margin-top: 0;
+}
+
+/* Task Organization Card */
+.task-organization-card h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: none; /* Override card h2 border */
+    padding-bottom: 0;
+}
+
+.task-organization-card p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+.task-org-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.task-org-item {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid #eee;
+}
+
+.task-org-item h3 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    color: #4A90E2;
+}
+
+.task-org-item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #666;
 }
 
 /* About Page Specifics V3 */
