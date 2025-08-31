@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-calm-off-white text-charcoal-gray font-sans;
+  }
+  
+  /* Improve touch targets on mobile */
+  @media (max-width: 768px) {
+    button, a, input, textarea, select {
+      min-height: 44px;
+    }
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-friendly-blue hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-success-teal hover:bg-teal-400 text-charcoal-gray font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-dark-surface rounded-lg shadow-md dark:shadow-lg p-6 border border-gray-200 dark:border-dark-border;
+  }
+  
+  .modal-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 dark:bg-black dark:bg-opacity-70 flex items-center justify-center p-4 z-50;
+  }
+  
+  .modal-content {
+    @apply bg-white dark:bg-dark-surface rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto shadow-xl dark:shadow-2xl border dark:border-dark-border;
+  }
+}
