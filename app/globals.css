@@ -9,7 +9,7 @@
   }
   
   body {
-    @apply bg-calm-off-white text-charcoal-gray font-sans;
+    @apply bg-calm-off-white dark:bg-dark-bg text-charcoal-gray dark:text-dark-text font-sans;
   }
   
   /* Improve touch targets on mobile */
@@ -22,11 +22,11 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-friendly-blue hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+    @apply bg-friendly-blue hover:bg-blue-600 dark:bg-friendly-blue dark:hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 focus:ring-2 focus:ring-friendly-blue/50 dark:focus:ring-friendly-blue/60;
   }
   
   .btn-secondary {
-    @apply bg-success-teal hover:bg-teal-400 text-charcoal-gray font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+    @apply bg-success-teal hover:bg-teal-400 dark:bg-success-teal dark:hover:bg-teal-300 text-charcoal-gray dark:text-charcoal-gray font-semibold py-2 px-4 rounded-lg transition-colors duration-200 focus:ring-2 focus:ring-success-teal/50 dark:focus:ring-success-teal/60;
   }
   
   .card {
@@ -39,5 +39,50 @@
   
   .modal-content {
     @apply bg-white dark:bg-dark-surface rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto shadow-xl dark:shadow-2xl border dark:border-dark-border;
+  }
+  
+  /* Dark mode prose styles */
+  .prose {
+    @apply text-charcoal-gray dark:text-dark-text;
+  }
+  
+  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+    @apply text-charcoal-gray dark:text-dark-text;
+  }
+  
+  .prose p, .prose li, .prose td {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+  
+  .prose strong {
+    @apply text-charcoal-gray dark:text-dark-text font-semibold;
+  }
+  
+  .prose a {
+    @apply text-friendly-blue dark:text-friendly-blue;
+  }
+  
+  .prose code {
+    @apply bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-1 py-0.5 rounded text-sm;
+  }
+  
+  .prose pre {
+    @apply bg-gray-100 dark:bg-gray-800 border dark:border-gray-700;
+  }
+  
+  .prose blockquote {
+    @apply border-l-4 border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300;
+  }
+  
+  .prose hr {
+    @apply border-gray-300 dark:border-gray-600;
+  }
+  
+  .prose ul > li::marker {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+  
+  .prose ol > li::marker {
+    @apply text-gray-500 dark:text-gray-400;
   }
 }

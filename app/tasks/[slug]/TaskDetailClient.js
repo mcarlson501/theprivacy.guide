@@ -94,16 +94,16 @@ export default function TaskDetailClient({ task }) {
 
   const getCategoryColor = (category) => {
     const colors = {
-      'Quick Win': 'bg-success-teal/10 text-success-teal border-success-teal/20',
-      'Essential': 'bg-friendly-blue/10 text-friendly-blue border-friendly-blue/20',
-      'Advanced': 'bg-purple-100 text-purple-700 border-purple-200',
-      'Expert': 'bg-red-100 text-red-700 border-red-200',
+      'Quick Win': 'bg-success-teal/10 dark:bg-success-teal/20 text-success-teal border-success-teal/20 dark:border-success-teal/30',
+      'Essential': 'bg-friendly-blue/10 dark:bg-friendly-blue/20 text-friendly-blue border-friendly-blue/20 dark:border-friendly-blue/30',
+      'Advanced': 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 border-purple-200 dark:border-purple-700/30',
+      'Expert': 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 border-red-200 dark:border-red-700/30',
     };
-    return colors[category] || 'bg-gray-100 text-gray-700 border-gray-200';
+    return colors[category] || 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-gray-200 dark:border-gray-600';
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-calm-off-white dark:bg-dark-bg">
       {/* Skip to main content link for screen readers */}
       <a 
         href="#main-content" 
@@ -113,14 +113,15 @@ export default function TaskDetailClient({ task }) {
       </a>
       
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 shadow-sm">
+      <header className="bg-white dark:bg-dark-surface border-b border-gray-200 dark:border-dark-border shadow-sm"
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="py-4">
             {/* Breadcrumb Navigation */}
-            <nav aria-label="Breadcrumb" className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
+            <nav aria-label="Breadcrumb" className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400 mb-4">
               <Link 
                 href="/tasks" 
-                className="hover:text-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-friendly-blue focus:ring-offset-2 rounded"
+                className="hover:text-gray-700 dark:hover:text-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-friendly-blue focus:ring-offset-2 dark:focus:ring-offset-dark-surface rounded"
               >
                 ← Back to Tasks
               </Link>
@@ -143,17 +144,17 @@ export default function TaskDetailClient({ task }) {
                   )}
                 </div>
                 
-                <h1 className="text-3xl sm:text-4xl font-bold text-charcoal-gray mb-3">
+                <h1 className="text-3xl sm:text-4xl font-bold text-charcoal-gray dark:text-dark-text mb-3">
                   {task.title}
                 </h1>
                 
-                <p className="text-lg text-gray-600 mb-4">
+                <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
                   {task.description}
                 </p>
 
                 {/* Task Meta */}
                 <div className="flex flex-wrap items-center gap-6 text-sm">
-                  <div className="flex items-center text-gray-500">
+                  <div className="flex items-center text-gray-500 dark:text-gray-400">
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                     </svg>
@@ -166,7 +167,7 @@ export default function TaskDetailClient({ task }) {
                     <span aria-label="Points earned">{task.points} points</span>
                   </div>
                   {task.badgeId && task.badgeName && (
-                    <div className="flex items-center text-gray-600">
+                    <div className="flex items-center text-gray-600 dark:text-gray-300">
                       <svg className="w-5 h-5 mr-2 text-friendly-blue" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                         <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
@@ -214,14 +215,14 @@ export default function TaskDetailClient({ task }) {
       <main id="main-content" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {/* Tab Navigation */}
         <div className="mb-6">
-          <div className="border-b border-gray-200">
+          <div className="border-b border-gray-200 dark:border-dark-border">
             <nav className="-mb-px flex space-x-8" role="tablist" aria-label="Task information tabs">
               <button
                 onClick={() => setActiveTab('overview')}
-                className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-friendly-blue focus:ring-offset-2 ${
+                className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-friendly-blue focus:ring-offset-2 dark:focus:ring-offset-dark-bg ${
                   activeTab === 'overview'
                     ? 'border-friendly-blue text-friendly-blue'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                    : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-500'
                 }`}
                 role="tab"
                 aria-selected={activeTab === 'overview'}
@@ -232,10 +233,10 @@ export default function TaskDetailClient({ task }) {
               </button>
               <button
                 onClick={() => setActiveTab('steps')}
-                className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-friendly-blue focus:ring-offset-2 ${
+                className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-friendly-blue focus:ring-offset-2 dark:focus:ring-offset-dark-bg ${
                   activeTab === 'steps'
                     ? 'border-friendly-blue text-friendly-blue'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                    : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-500'
                 }`}
                 role="tab"
                 aria-selected={activeTab === 'steps'}
@@ -249,7 +250,7 @@ export default function TaskDetailClient({ task }) {
         </div>
 
         {/* Tab Content */}
-        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        <div className="bg-white dark:bg-dark-surface rounded-lg shadow-sm border border-gray-200 dark:border-dark-border p-6">
           {activeTab === 'overview' && (
             <div 
               className="space-y-12"
@@ -258,7 +259,7 @@ export default function TaskDetailClient({ task }) {
               aria-labelledby="overview-tab"
             >
               {content.overview.map((section, sectionIndex) => (
-                <section key={sectionIndex} className="border-b border-gray-100 last:border-b-0 pb-12">
+                <section key={sectionIndex} className="border-b border-gray-100 dark:border-gray-700 last:border-b-0 pb-12">
                   {section.title && (
                     <>
                       {/* Section Header */}
@@ -279,7 +280,7 @@ export default function TaskDetailClient({ task }) {
                           )}
                         </div>
                         <div className="flex-1">
-                          <h2 className="text-2xl font-semibold text-charcoal-gray leading-tight">
+                          <h2 className="text-2xl font-semibold text-charcoal-gray dark:text-dark-text leading-tight">
                             {section.title}
                           </h2>
                         </div>
@@ -313,14 +314,14 @@ export default function TaskDetailClient({ task }) {
               aria-labelledby="steps-tab"
             >
               {content.steps.map((stepData, stepIndex) => (
-                <section key={stepIndex} className="border-b border-gray-100 pb-6">
+                <section key={stepIndex} className="border-b border-gray-100 dark:border-gray-700 pb-6">
                   {/* Step Header */}
                   <div className="flex items-start space-x-4 mb-2">
                     <div className="w-12 h-12 bg-friendly-blue text-white rounded-full flex items-center justify-center text-lg font-semibold flex-shrink-0" aria-hidden="true">
                       {stepIndex + 1}
                     </div>
                     <div className="flex-1">
-                      <h2 className="text-2xl font-semibold text-charcoal-gray leading-tight">
+                      <h2 className="text-2xl font-semibold text-charcoal-gray dark:text-dark-text leading-tight">
                         {stepData.title || `Step ${stepIndex + 1}`}
                       </h2>
                     </div>
