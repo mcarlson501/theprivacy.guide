@@ -5,31 +5,31 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen py-8 bg-calm-off-white dark:bg-dark-bg">
+    <div className="min-h-screen py-6 sm:py-8 bg-calm-off-white dark:bg-dark-bg">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl lg:text-5xl font-bold text-charcoal-gray dark:text-dark-text mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal-gray dark:text-dark-text mb-4 sm:mb-6">
             About The Privacy Guide
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed px-2">
             We believe digital privacy shouldn't be complicated. Our mission is to make 
             online privacy accessible, actionable, and empowering for everyone.
           </p>
         </div>
 
         {/* Mission Section */}
-        <section className="mb-16">
-          <div className="bg-gradient-to-br from-friendly-blue/5 to-success-teal/5 dark:from-friendly-blue/10 dark:to-success-teal/10 rounded-2xl p-8 border border-friendly-blue/10 dark:border-friendly-blue/20">
-            <h2 className="text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-6">Our Mission</h2>
+        <section className="mb-12 sm:mb-16">
+          <div className="bg-gradient-to-br from-friendly-blue/5 to-success-teal/5 dark:from-friendly-blue/10 dark:to-success-teal/10 rounded-2xl p-6 sm:p-8 border border-friendly-blue/10 dark:border-friendly-blue/20">
+            <h2 className="text-2xl sm:text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-4 sm:mb-6">Our Mission</h2>
             <div className="prose prose-lg max-w-none">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3 sm:mb-4">
                 In an age where our personal data is constantly collected, stored, and sold, 
                 most people feel overwhelmed by the complexity of digital privacy. Technical 
                 guides are often too complicated, and many privacy tools require expertise 
                 that regular users simply don't have.
               </p>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3 sm:mb-4">
                 <strong>The Privacy Guide changes that.</strong> We break down complex privacy 
                 concepts into simple, actionable tasks that anyone can complete. No technical 
                 background required – just a desire to take control of your digital life.
@@ -44,9 +44,9 @@ export default function AboutPage() {
         </section>
 
         {/* Values Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-8 text-center">Our Core Values</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+        <section className="mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-6 sm:mb-8 text-center">Our Core Values</h2>
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
             <div className="card">
               <div className="flex items-center mb-4">
                 <div className="bg-friendly-blue/10 dark:bg-friendly-blue/20 w-12 h-12 rounded-full flex items-center justify-center mr-4">

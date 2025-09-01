@@ -48,53 +48,48 @@ export default function RootLayout({ children }) {
               <footer className="bg-white dark:bg-dark-surface border-t border-gray-200 dark:border-dark-border py-6 sm:py-8 transition-colors duration-200">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
-                  <p className="text-gray-600 dark:text-dark-text-secondary text-sm mb-3">
+                  <p className="text-gray-600 dark:text-dark-text-secondary text-sm mb-4">
                     © 2025 The Privacy Guide
                   </p>
                   
                   {/* Mobile: Simplified Footer */}
                   <div className="md:hidden">
-                    <div className="flex justify-center items-center text-sm">
-                      <a href="/about" className="text-friendly-blue hover:text-blue-600 transition-colors">
+                    <div className="flex items-center justify-center flex-wrap gap-x-2 gap-y-1 text-xs">
+                      <a href="/about" className="text-friendly-blue hover:text-blue-600 transition-colors px-1 py-1 focus:outline-none focus:ring-2 focus:ring-friendly-blue/50 rounded whitespace-nowrap">
                         About
                       </a>
-                      <span className="text-gray-300 dark:text-dark-text-secondary px-3">•</span>
-                      <a href="/tasks" className="text-friendly-blue hover:text-blue-600 transition-colors">
+                      <a href="/tasks" className="text-friendly-blue hover:text-blue-600 transition-colors px-1 py-1 focus:outline-none focus:ring-2 focus:ring-friendly-blue/50 rounded whitespace-nowrap">
                         Tasks
                       </a>
-                      <span className="text-gray-300 dark:text-dark-text-secondary px-3">•</span>
-                      <a href="/settings" className="text-friendly-blue hover:text-blue-600 transition-colors">
+                      <a href="/privacy" className="text-friendly-blue hover:text-blue-600 transition-colors px-1 py-1 focus:outline-none focus:ring-2 focus:ring-friendly-blue/50 rounded whitespace-nowrap">
+                        Privacy
+                      </a>
+                      <a href="/settings" className="text-friendly-blue hover:text-blue-600 transition-colors px-1 py-1 focus:outline-none focus:ring-2 focus:ring-friendly-blue/50 rounded whitespace-nowrap">
                         Settings
                       </a>
-                      <span className="text-gray-300 dark:text-dark-text-secondary px-3">•</span>
-                      <a href="https://github.com/mcarlson501/theprivacy.guide" target="_blank" rel="noopener noreferrer" className="text-friendly-blue hover:text-blue-600 transition-colors">
-                        GitHub
-                      </a>
-                      <span className="text-gray-300 dark:text-dark-text-secondary px-3">•</span>
-                      <ThemeToggle />
                     </div>
                   </div>
 
                   {/* Desktop: Full Footer */}
                   <div className="hidden md:block">
                     <div className="flex justify-center items-center text-sm">
-                      <a href="/about" className="text-friendly-blue hover:text-blue-600 transition-colors">
+                      <a href="/about" className="text-friendly-blue hover:text-blue-600 transition-colors px-2 py-1 rounded-md focus:outline-none focus:ring-2 focus:ring-friendly-blue/50">
                         About
                       </a>
                       <span className="text-gray-300 dark:text-dark-text-secondary px-2">•</span>
-                      <a href="/tasks" className="text-friendly-blue hover:text-blue-600 transition-colors">
+                      <a href="/tasks" className="text-friendly-blue hover:text-blue-600 transition-colors px-2 py-1 rounded-md focus:outline-none focus:ring-2 focus:ring-friendly-blue/50">
                         Privacy Tasks
                       </a>
                       <span className="text-gray-300 dark:text-dark-text-secondary px-2">•</span>
-                      <a href="/privacy" className="text-friendly-blue hover:text-blue-600 transition-colors">
+                      <a href="/privacy" className="text-friendly-blue hover:text-blue-600 transition-colors px-2 py-1 rounded-md focus:outline-none focus:ring-2 focus:ring-friendly-blue/50">
                         Privacy Policy
                       </a>
                       <span className="text-gray-300 dark:text-dark-text-secondary px-2">•</span>
-                      <a href="/settings" className="text-friendly-blue hover:text-blue-600 transition-colors">
+                      <a href="/settings" className="text-friendly-blue hover:text-blue-600 transition-colors px-2 py-1 rounded-md focus:outline-none focus:ring-2 focus:ring-friendly-blue/50">
                         Settings
                       </a>
                       <span className="text-gray-300 dark:text-dark-text-secondary px-2">•</span>
-                      <a href="https://github.com/mcarlson501/theprivacy.guide" target="_blank" rel="noopener noreferrer" className="text-friendly-blue hover:text-blue-600 transition-colors">
+                      <a href="https://github.com/mcarlson501/theprivacy.guide" target="_blank" rel="noopener noreferrer" className="text-friendly-blue hover:text-blue-600 transition-colors px-2 py-1 rounded-md focus:outline-none focus:ring-2 focus:ring-friendly-blue/50">
                         GitHub
                       </a>
                       <span className="text-gray-300 dark:text-dark-text-secondary px-2">•</span>
