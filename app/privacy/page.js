@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
           <div className="mt-6 flex justify-center items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
             <span>Effective Date: August 31, 2025</span>
             <span>•</span>
-            <span>Last Updated: August 31, 2025</span>
+            <span>Last Updated: September 1, 2025</span>
           </div>
         </div>
 
@@ -54,9 +54,9 @@ export default function PrivacyPolicyPage() {
         {/* Main Content */}
         <div className="prose prose-lg max-w-none">
           
-          <h2 className="text-charcoal-gray dark:text-dark-text">Information We Collect</h2>
+          <h2 className="text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-8 mt-12 pb-4 border-b-2 border-friendly-blue/20 dark:border-friendly-blue/40">Information We Collect</h2>
           
-          <h3 className="text-charcoal-gray dark:text-dark-text">What We Do Collect</h3>
+          <h3 className="text-2xl font-semibold text-charcoal-gray dark:text-dark-text mb-6 mt-10">What We Do Collect</h3>
           <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700/30 rounded-lg p-6 mb-6">
             <h4 className="text-green-800 dark:text-green-300 font-semibold mb-3">Local Progress Data (Stored on Your Device Only)</h4>
             <ul className="text-green-700 dark:text-green-300 space-y-1">
@@ -84,7 +84,17 @@ export default function PrivacyPolicyPage() {
             </p>
           </div>
 
-          <h3 className="text-charcoal-gray dark:text-dark-text">What We Don't Collect</h3>
+          <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-700/30 rounded-lg p-6 mb-6">
+            <h4 className="text-orange-800 dark:text-orange-300 font-semibold mb-3">Hosting Infrastructure (Cloudflare Pages)</h4>
+            <div className="space-y-3 text-orange-700 dark:text-orange-300 text-sm">
+              <p><strong>CDN and Hosting:</strong> This website is hosted on Cloudflare Pages, which provides content delivery and DDoS protection.</p>
+              <p><strong>Server Logs:</strong> Cloudflare may temporarily log basic request information (IP addresses, request time, URL requested) for security and performance purposes. These logs are automatically deleted per Cloudflare's data retention policies.</p>
+              <p><strong>No Analytics Tracking:</strong> We have disabled Cloudflare Web Analytics and other tracking features to protect your privacy.</p>
+              <p><strong>Data Location:</strong> Static website files are distributed globally through Cloudflare's network, but no personal data is stored on these servers.</p>
+            </div>
+          </div>
+
+          <h3 className="text-2xl font-semibold text-charcoal-gray dark:text-dark-text mb-6 mt-10">What We Don't Collect</h3>
           <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-700/30 rounded-lg p-6 mb-6">
             <p className="text-red-800 dark:text-red-300 font-semibold mb-3">We DO NOT collect, store, or have access to:</p>
             <div className="grid md:grid-cols-2 gap-4">
@@ -103,7 +113,7 @@ export default function PrivacyPolicyPage() {
             </div>
           </div>
 
-          <h2 className="text-charcoal-gray dark:text-dark-text">How We Store Your Data</h2>
+          <h2 className="text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-8 mt-12 pb-4 border-b-2 border-friendly-blue/20 dark:border-friendly-blue/40">How We Store Your Data</h2>
           
           <div className="bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/30 rounded-lg p-6 mb-6">
             <h3 className="text-purple-800 dark:text-purple-300 font-semibold mb-3">Local Storage Only</h3>
@@ -114,22 +124,29 @@ export default function PrivacyPolicyPage() {
             </div>
           </div>
 
-          <h2 className="text-charcoal-gray dark:text-dark-text">Data Sharing and Third Parties</h2>
+          <h2 className="text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-8 mt-12 pb-4 border-b-2 border-friendly-blue/20 dark:border-friendly-blue/40">Data Sharing and Third Parties</h2>
           
           <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-700/30 rounded-lg p-6 mb-6">
             <h3 className="text-yellow-800 dark:text-yellow-300 font-semibold mb-3">We Don't Share Your Data</h3>
             <p className="text-yellow-700 dark:text-yellow-300 mb-3"><strong>Period.</strong> We have no servers storing your personal data, so there's nothing to share.</p>
             
             <h4 className="text-yellow-800 dark:text-yellow-300 font-semibold mb-2">Third-Party Services</h4>
-            <p className="text-yellow-700 dark:text-yellow-300 text-sm mb-2">
-              <strong>Self-Hosted Fonts:</strong> We use self-hosted system fonts for typography. No external font requests are made to Google or other services.
-            </p>
-            <p className="text-yellow-700 dark:text-yellow-300 text-sm mb-0">
-              <strong>No Other Third Parties:</strong> We don't use analytics services, advertising networks, social media plugins, font delivery services, or any other third-party services that collect user data.
-            </p>
+            <div className="space-y-3 text-yellow-700 dark:text-yellow-300 text-sm">
+              <p>
+                <strong>Cloudflare Pages (Hosting Provider):</strong> Our website infrastructure is provided by Cloudflare. 
+                They may process basic technical data (IP addresses, request headers) as part of their CDN and security services. 
+                Cloudflare operates under their own privacy policy and GDPR compliance framework.
+              </p>
+              <p>
+                <strong>Self-Hosted Fonts:</strong> We use self-hosted system fonts for typography. No external font requests are made to Google or other services.
+              </p>
+              <p>
+                <strong>No Analytics or Tracking:</strong> We don't use Google Analytics, Cloudflare Analytics, advertising networks, social media plugins, or any other third-party services that collect user data.
+              </p>
+            </div>
           </div>
 
-          <h2 className="text-charcoal-gray dark:text-dark-text">Your Rights and Control</h2>
+          <h2 className="text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-8 mt-12 pb-4 border-b-2 border-friendly-blue/20 dark:border-friendly-blue/40">Your Rights and Control</h2>
           
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white dark:bg-dark-surface border border-gray-200 dark:border-dark-border rounded-lg p-6">
@@ -160,30 +177,40 @@ export default function PrivacyPolicyPage() {
             </div>
           </div>
 
-          <h2 className="text-charcoal-gray dark:text-dark-text">Data Security</h2>
+          <h2 className="text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-8 mt-12 pb-4 border-b-2 border-friendly-blue/20 dark:border-friendly-blue/40">Data Security</h2>
           
           <div className="bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 rounded-lg p-6 mb-6">
             <h3 className="font-semibold text-charcoal-gray dark:text-dark-text mb-3">🔒 Technical Safeguards</h3>
             <ul className="text-gray-700 dark:text-gray-300 space-y-2">
-              <li><strong>No central database</strong> – No data to breach since everything is local</li>
-              <li><strong>HTTPS encryption</strong> – All website traffic is encrypted in transit</li>
+              <li><strong>No central database</strong> – No personal data to breach since everything is stored locally</li>
+              <li><strong>HTTPS encryption</strong> – All website traffic is encrypted in transit via Cloudflare's SSL/TLS</li>
+              <li><strong>DDoS protection</strong> – Cloudflare provides enterprise-grade security to keep the site available</li>
               <li><strong>No login vulnerabilities</strong> – No accounts mean no password breaches</li>
-              <li><strong>Minimal attack surface</strong> – We can't lose what we don't have</li>
+              <li><strong>Minimal attack surface</strong> – We can't lose what we don't collect or store</li>
+              <li><strong>Static site architecture</strong> – No server-side processing reduces security vulnerabilities</li>
             </ul>
           </div>
 
-          <h2 className="text-charcoal-gray dark:text-dark-text">Contact Us</h2>
+          <h2 className="text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-8 mt-12 pb-4 border-b-2 border-friendly-blue/20 dark:border-friendly-blue/40">Contact Us</h2>
           
           <div className="bg-calm-off-white dark:bg-dark-surface border border-gray-200 dark:border-dark-border rounded-lg p-6 mb-8">
             <p className="text-gray-700 dark:text-gray-300 mb-3">
-              If you have questions about this privacy policy or privacy concerns, please contact us.
+              If you have questions about this privacy policy or privacy concerns, please contact us at:
+            </p>
+            <p className="text-lg font-semibold mb-3">
+              <a 
+                href="mailto:privacy@theprivacy.guide" 
+                className="text-friendly-blue hover:text-blue-600 hover:underline transition-colors"
+              >
+                privacy@theprivacy.guide
+              </a>
             </p>
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-0">
-              <strong>Note:</strong> Specific contact information will be established as the website develops.
+              We typically respond to privacy inquiries within 48 hours.
             </p>
           </div>
 
-          <h2 className="text-charcoal-gray dark:text-dark-text">Summary: Privacy by Design</h2>
+          <h2 className="text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-8 mt-12 pb-4 border-b-2 border-friendly-blue/20 dark:border-friendly-blue/40">Summary: Privacy by Design</h2>
           
           <div className="bg-gradient-to-r from-friendly-blue/10 to-success-teal/10 dark:from-friendly-blue/20 dark:to-success-teal/20 rounded-lg p-8 border border-friendly-blue/20 dark:border-friendly-blue/30">
             <p className="text-lg text-charcoal-gray dark:text-dark-text mb-4">

@@ -9,9 +9,9 @@ import MobileMenu from './MobileMenu';
 export default function Header() {
   const { score, badges, completedTasks } = useProgress();
 
-  // Use a fixed task count for now - this should match the actual number of tasks
-  // TODO: Make this dynamic by passing task count from server components
-  const totalTasks = 9; // Based on current task files in content/tasks/
+  // Use the current actual task count 
+  // Updated to match current number of tasks in content/tasks/ directory
+  const totalTasks = 12; // Current task files: password-manager, 2FA, search-engine, app-permissions, email tasks (5), social-media, do-not-call, qr-code-safety
   const progressPercentage = totalTasks > 0 ? Math.round((completedTasks.length / totalTasks) * 100) : 0;
   const currentLevel = getPrivacyLevel(progressPercentage);
 

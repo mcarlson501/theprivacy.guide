@@ -3,12 +3,10 @@
 import { useProgress } from '../context/ProgressContext';
 import { getPrivacyLevel } from '../lib/levels';
 
-export default function ProgressCard({ totalPossiblePoints = 1000 }) {
+export default function ProgressCard({ totalPossiblePoints = 1000, totalTasks = 12 }) {
   const { score, completedTasks, badges } = useProgress();
   
-  // Use a fixed task count for consistency across components
-  // TODO: Pass this as a prop from server components that can access getAllTasksData
-  const totalTasks = 9; // Based on current task files in content/tasks/
+  // Use the actual task count passed from server components
   const progressPercentage = totalTasks > 0 ? Math.round((completedTasks.length / totalTasks) * 100) : 0;
   
   // Get current privacy level based on task completion percentage

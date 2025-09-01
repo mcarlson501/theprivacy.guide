@@ -3,7 +3,11 @@ import ProgressCard from '../components/ProgressCard'
 import { getAllTasksData, getTotalPossiblePoints } from '../lib/tasks'
 
 export default async function Home() {
-  const totalPoints = await getTotalPossiblePoints();
+  const [totalPoints, allTasks] = await Promise.all([
+    getTotalPossiblePoints(),
+    getAllTasksData()
+  ]);
+  const totalTasks = allTasks.length;
 
   return (
     <div className="min-h-screen">
@@ -38,7 +42,7 @@ export default async function Home() {
             
             <div className="relative">
               <div className="bg-white/10 dark:bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/20 dark:border-white/10">
-                <ProgressCard totalPossiblePoints={totalPoints} />
+                <ProgressCard totalPossiblePoints={totalPoints} totalTasks={totalTasks} />
               </div>
             </div>
           </div>

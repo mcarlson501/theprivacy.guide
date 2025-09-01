@@ -149,6 +149,31 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Note for the Nerds */}
+        <section className="mb-16">
+          <div className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
+            <h2 className="text-2xl font-bold text-charcoal-gray dark:text-dark-text mb-4">
+              A Note for our Privacy Nerds
+            </h2>
+            <div className="prose prose-gray dark:prose-invert max-w-none">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                <strong>Yes, we know.</strong> There are more secure password managers than Bitwarden, 
+                better VPNs than what we recommend, and more hardened browsers than the mainstream options we suggest.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                Our recommendations prioritize <em>adoption over perfection</em>. A beginner who actually uses 
+                Bitwarden is infinitely more secure than one intimidated by KeePassXC. If a user abandons 
+                our suggestion because it's too complex, we've failed our mission.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                For comprehensive privacy resources that dive deeper into threat modeling, OPSEC, 
+                and advanced techniques, there are excellent resources available across the privacy community. 
+                We're here to get people started—you're here to take them further.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Call to Action */}
         <section className="text-center">
           <div className="bg-gradient-to-r from-friendly-blue to-success-teal dark:from-indigo-800 dark:to-teal-800 rounded-2xl p-8 text-white border border-transparent dark:border-gray-600/30">
