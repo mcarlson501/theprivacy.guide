@@ -6,10 +6,13 @@ import { getPrivacyLevel } from '../lib/levels';
 export default function ProgressCard({ totalPossiblePoints = 1000 }) {
   const { score, completedTasks, badges } = useProgress();
   
-  const progressPercentage = Math.min((score / totalPossiblePoints) * 100, 100);
+  // Use a fixed task count for consistency across components
+  // TODO: Pass this as a prop from server components that can access getAllTasksData
+  const totalTasks = 9; // Based on current task files in content/tasks/
+  const progressPercentage = totalTasks > 0 ? Math.round((completedTasks.length / totalTasks) * 100) : 0;
   
-  // Get current privacy level
-  const currentLevel = getPrivacyLevel(Math.round(progressPercentage));
+  // Get current privacy level based on task completion percentage
+  const currentLevel = getPrivacyLevel(progressPercentage);
   
   // Get most recent 3 badges
   const recentBadges = badges.slice(-3);
@@ -28,7 +31,7 @@ export default function ProgressCard({ totalPossiblePoints = 1000 }) {
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm font-medium text-charcoal-gray dark:text-dark-text">Progress</span>
           <span className="text-sm text-gray-600 dark:text-gray-300">
-            {score.toLocaleString()} / {totalPossiblePoints.toLocaleString()} points
+            {completedTasks.length} / {totalTasks} tasks
           </span>
         </div>
         <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
@@ -39,11 +42,11 @@ export default function ProgressCard({ totalPossiblePoints = 1000 }) {
         </div>
         <div className="flex justify-between items-center mt-2">
           <div className="text-xs text-gray-500 dark:text-gray-400">
-            {Math.round(progressPercentage)}% complete
+            {progressPercentage}% complete
           </div>
           <div className="flex items-center text-xs">
             <span className="text-lg mr-1">{currentLevel.emoji}</span>
-            <span className={`font-medium ${currentLevel.color} dark:text-purple-300`}>
+            <span className={`font-medium text-charcoal-gray dark:text-purple-300`}>
               {currentLevel.title}
             </span>
           </div>

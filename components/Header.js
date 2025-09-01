@@ -4,19 +4,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useProgress } from '../context/ProgressContext';
 import { getPrivacyLevel } from '../lib/levels';
-import ThemeToggle from './ThemeToggle';
 import MobileMenu from './MobileMenu';
 
 export default function Header() {
   const { score, badges, completedTasks } = useProgress();
 
-  // Calculate completion percentage for level based on task completion
-  // This should match the calculation used in ProgressDashboard
-  // For a more accurate calculation, we use a realistic task estimate
-  // TODO: This should ideally get the actual total task count from the tasks data
-  const estimatedTotalTasks = 4; // This should match your actual total task count
-  const completedCount = completedTasks.length;
-  const progressPercentage = estimatedTotalTasks > 0 ? Math.round((completedCount / estimatedTotalTasks) * 100) : 0;
+  // Use a fixed task count for now - this should match the actual number of tasks
+  // TODO: Make this dynamic by passing task count from server components
+  const totalTasks = 9; // Based on current task files in content/tasks/
+  const progressPercentage = totalTasks > 0 ? Math.round((completedTasks.length / totalTasks) * 100) : 0;
   const currentLevel = getPrivacyLevel(progressPercentage);
 
   return (
@@ -69,9 +65,6 @@ export default function Header() {
 
           {/* Progress Indicator - Desktop Only */}
           <div className="hidden md:flex items-center space-x-3">
-            {/* Theme Toggle */}
-            <ThemeToggle />
-            
             {/* Level Display */}
             <div className="flex items-center bg-purple-100 dark:bg-purple-900/30 px-3 py-1 rounded-full">
               <span className="text-lg mr-1">{currentLevel.emoji}</span>

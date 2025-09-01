@@ -4,6 +4,7 @@ import '../styles/fonts.css'
 import { ProgressProvider } from '../context/ProgressContext'
 import { ThemeProvider } from '../context/ThemeContext'
 import Header from '../components/Header'
+import ThemeToggle from '../components/ThemeToggle'
 import LoadingWrapper from '../components/LoadingWrapper'
 
 export const metadata = {
@@ -53,39 +54,43 @@ export default function RootLayout({ children }) {
                   
                   {/* Mobile: Simplified Footer */}
                   <div className="md:hidden">
-                    <div className="flex justify-center space-x-6 text-sm">
+                    <div className="flex justify-center items-center text-sm">
                       <a href="/about" className="text-friendly-blue hover:text-blue-600 transition-colors">
                         About
                       </a>
+                      <span className="text-gray-300 dark:text-dark-text-secondary px-3">•</span>
                       <a href="/tasks" className="text-friendly-blue hover:text-blue-600 transition-colors">
                         Tasks
                       </a>
+                      <span className="text-gray-300 dark:text-dark-text-secondary px-3">•</span>
                       <a href="/settings" className="text-friendly-blue hover:text-blue-600 transition-colors">
                         Settings
                       </a>
+                      <span className="text-gray-300 dark:text-dark-text-secondary px-3">•</span>
+                      <ThemeToggle />
                     </div>
                   </div>
 
                   {/* Desktop: Full Footer */}
                   <div className="hidden md:block">
-                    <div className="flex justify-center space-x-4 text-sm">
+                    <div className="flex justify-center items-center text-sm">
                       <a href="/about" className="text-friendly-blue hover:text-blue-600 transition-colors">
                         About
                       </a>
-                      <span className="text-gray-300 dark:text-dark-text-secondary">•</span>
+                      <span className="text-gray-300 dark:text-dark-text-secondary px-2">•</span>
                       <a href="/tasks" className="text-friendly-blue hover:text-blue-600 transition-colors">
                         Privacy Tasks
                       </a>
-                      <span className="text-gray-300 dark:text-dark-text-secondary">•</span>
+                      <span className="text-gray-300 dark:text-dark-text-secondary px-2">•</span>
                       <a href="/privacy" className="text-friendly-blue hover:text-blue-600 transition-colors">
                         Privacy Policy
                       </a>
-                      <span className="text-gray-300 dark:text-dark-text-secondary">•</span>
+                      <span className="text-gray-300 dark:text-dark-text-secondary px-2">•</span>
                       <a href="/settings" className="text-friendly-blue hover:text-blue-600 transition-colors">
                         Settings
                       </a>
-                      <span className="text-gray-300 dark:text-dark-text-secondary">•</span>
-                      <span className="text-gray-500 dark:text-dark-text-secondary">Made with ❤️ for privacy</span>
+                      <span className="text-gray-300 dark:text-dark-text-secondary px-2">•</span>
+                      <ThemeToggle />
                     </div>
                   </div>
                 </div>

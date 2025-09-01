@@ -62,7 +62,7 @@ export default async function Home() {
             <div className="text-center">
               <div className="bg-friendly-blue/10 dark:bg-friendly-blue/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-friendly-blue dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text mb-2">Simple & Secure</h3>
@@ -75,7 +75,7 @@ export default async function Home() {
             <div className="text-center">
               <div className="bg-success-teal/10 dark:bg-success-teal/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-success-teal dark:text-teal-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clipRule="evenodd" />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text mb-2">Track Progress</h3>
@@ -88,7 +88,7 @@ export default async function Home() {
             <div className="text-center">
               <div className="bg-purple-100 dark:bg-purple-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+                  <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text mb-2">Made for Everyone</h3>
@@ -96,6 +96,68 @@ export default async function Home() {
                 Whether you're a complete beginner or privacy-conscious user, our tasks are 
                 designed to be approachable and empowering.
               </p>
+            </div>
+          </div>
+
+          {/* "Nothing to Hide" Section */}
+          <div className="mt-20 max-w-4xl mx-auto">
+            <div className="bg-gray-50 dark:bg-dark-surface rounded-2xl p-8 lg:p-12">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl lg:text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-4">
+                  "I Have Nothing to Hide" — But Should You Care?
+                </h3>
+                <p className="text-lg text-gray-600 dark:text-gray-300">
+                  Privacy isn't about hiding wrongdoing — it's about protecting what's rightfully yours.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="text-lg font-semibold text-charcoal-gray dark:text-dark-text mb-3">
+                    Your Personal Life Matters
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    You lock your front door, close your curtains, and keep personal conversations private. 
+                    Digital privacy is the same — it's about having control over your personal space and information.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-lg font-semibold text-charcoal-gray dark:text-dark-text mb-3">
+                    Your Data Has Value
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    Companies spend billions collecting your data because it's valuable. Your browsing habits, 
+                    location data, and personal preferences are being sold to advertisers and data brokers.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-lg font-semibold text-charcoal-gray dark:text-dark-text mb-3">
+                    Surveillance is Growing
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    Governments around the world are expanding surveillance programs. What's legal today 
+                    might be restricted tomorrow, and your data trail could be used in ways you never intended.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-lg font-semibold text-charcoal-gray dark:text-dark-text mb-3">
+                    Future-Proof Your Life
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    Privacy protects you from identity theft, discrimination, and misuse of your information. 
+                    It's an investment in your family's safety and your own peace of mind.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-8 text-center">
+                <p className="text-gray-600 dark:text-gray-300 italic">
+                  Privacy is a fundamental right, not a privilege. You deserve control over your own information.
+                </p>
+              </div>
             </div>
           </div>
         </div>
