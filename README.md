@@ -135,7 +135,6 @@ Key Privacy-Focused Components:
 ├── content/             # Markdown-based content (no database)
 └── docs/development/    # Privacy implementation documentation
 ```
-```
 
 ### **Privacy Implementation Details**
 - **Local-Only State**: React Context with localStorage - never uploaded to servers
