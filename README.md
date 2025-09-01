@@ -60,21 +60,35 @@ Content Structure:
 └── Automatic Processing  # Tasks become interactive experiences
 ```
 
-### **Progressive Enhancement**
-- **Base Experience**: Static content that works everywhere
-- **Enhanced Features**: JavaScript adds interactivity and progress tracking
-- **Offline Capable**: Core content available without internet connection
+## Privacy-by-Design Architecture
 
-### **User-Centered Design**
-```
-User Journey:
-1. Discover tasks by difficulty level and category
-2. Follow clear, tested instructions with visual guidance
-3. Complete tasks and earn points, badges, and levels
-4. Stay informed with Privacy Pulse news and connected tasks
-5. Build comprehensive privacy skills and confidence
-6. Manage progress data with full user control and portability
-```
+### **How We Protect Your Privacy**
+Unlike most web applications, The Privacy Guide is built with **privacy as the core architectural principle**:
+
+#### **Zero Data Collection**
+- **No User Accounts**: Complete functionality without personal information
+- **No Tracking**: Zero analytics, cookies, or behavioral monitoring
+- **No External Services**: All resources self-hosted to prevent data leakage
+- **Local-Only Storage**: Your progress stays on your device via browser localStorage
+
+#### **Data Transparency & Control**
+- **View Your Data**: Settings page shows exactly what's stored locally
+- **Export Everything**: Download your complete progress in standard JSON format
+- **Import Anywhere**: Transfer progress between devices or browsers
+- **Delete Instantly**: One-click data clearing with immediate effect
+- **No Vendor Lock-in**: Your data is yours, in an open format
+
+#### **Technical Privacy Measures**
+- **Self-Hosted Fonts**: No Google Fonts requests that reveal your reading habits
+- **Static Generation**: Pre-built pages eliminate server-side tracking opportunities
+- **Client-Side Processing**: All gamification logic runs in your browser
+- **No Third-Party Scripts**: Zero external JavaScript that could compromise privacy
+- **Content Security Policy**: Prevents unauthorized data transmission
+
+### **Progressive Enhancement**
+- **Base Experience**: All content accessible without JavaScript
+- **Enhanced Features**: Progress tracking and interactivity layer on top
+- **Offline Capable**: Core privacy guides work without internet connection
 
 ## Content Philosophy
 
@@ -90,120 +104,72 @@ User Journey:
 - **Tested Instructions**: Every step verified across platforms and devices
 - **Plain Language**: No jargon, clear explanations of technical concepts
 
-## Technical Foundation
+## User Journey
 
-### **Modern Web Stack**
-- **Next.js 14**: React framework with App Router for optimal performance
-- **Tailwind CSS**: Utility-first styling for consistent, responsive design
-- **Static Generation**: Pre-built pages for speed and reliability
-- **Markdown Processing**: Content management without databases
-
-### **Project Structure**
 ```
-theprivacy.guide/
-├── app/                  # Next.js App Router pages
-│   ├── layout.js           # Root layout with theme & progress
-│   ├── page.js             # Homepage with features overview
-│   ├── tasks/              # Task library and individual task pages
-│   ├── privacy-pulse/      # Privacy news system with articles
-│   ├── settings/           # User data management and preferences
-│   ├── about/              # Project information and mission
-│   └── privacy/            # Comprehensive privacy policy
-├── components/          # Reusable React components
-│   ├── Header.js           # Navigation with mobile menu
-│   ├── TaskCard.js         # Interactive task previews
-│   ├── ProgressCard.js     # Gamification dashboard
-│   ├── ProgressDashboard.js # Collapsible progress overview
-│   ├── PrivacyPulseWidget.js # News widget for homepage
-│   ├── ThemeToggle.js      # Dark/light mode switcher
-│   └── LoadingWrapper.js   # Hydration-safe loading states
-├── content/             # Markdown content management
-│   ├── tasks/              # 13 privacy task guides (.md)
-│   └── news/               # Privacy news articles (.md)
-├── context/             # React state management
-│   ├── ProgressContext.js  # User progress and achievements
-│   └── ThemeContext.js     # Dark/light mode preferences
-├── lib/                 # Utility functions
-│   ├── tasks.js            # Task content processing
-│   ├── news.js             # News content processing with remark-gfm
-│   ├── levels.js           # Gamification and level logic
-│   └── accessibility.js   # Accessibility helpers
-├── styles/              # CSS and design system
-│   ├── globals.css         # Enhanced typography and components
-│   ├── fonts.css           # Self-hosted font system
-│   └── accessibility.css  # WCAG compliance styles
-├── hooks/               # Custom React hooks
-├── public/              # Static assets
-│   ├── images/             # Optimized graphics
-│   └── fonts/              # Self-hosted typography (optional)
-└── docs/                # Documentation and templates
-    ├── content-creation/   # Guides for adding tasks and news
-    └── development/        # Technical and accessibility docs
-```
-├── content/             # Markdown content management
-│   ├── tasks/              # Privacy task guides (.md)
-│   └── news/               # Privacy news articles (.md)
-├── context/             # React state management
-│   ├── ProgressContext.js  # User progress and achievements
-│   └── ThemeContext.js     # Dark/light mode preferences
-├── lib/                 # Utility functions
-│   ├── tasks.js            # Task content processing
-│   ├── news.js             # News content processing
-│   └── levels.js           # Gamification logic
-├── styles/              # CSS and design system
-└── docs/                # Documentation and templates
-    ├── content-creation/   # Guides for adding content
-    └── development/        # Technical documentation
+Privacy Protection Journey:
+1. Discover tasks by difficulty level and category
+2. Follow clear, tested instructions with visual guidance  
+3. Complete tasks and earn points, badges, and levels
+4. Stay informed with Privacy Pulse news and connected tasks
+5. Build comprehensive privacy skills and confidence
+6. Manage progress data with full user control and portability
 ```
 
-### **State Management**
-- **React Context**: User progress and theme preferences
-- **Local Storage**: Privacy-respecting data persistence on user's device
-- **No External Tracking**: Zero analytics, cookies, or third-party data collection
-- **Data Export/Import**: Full user control over progress data
-- **Session Persistence**: Maintains state across browser sessions
+## Technical Implementation
 
-### **Performance Features**
-- **Static Site Generation**: Pre-built pages for instant loading
-- **Optimized Assets**: Compressed images and efficient resource loading
-- **Minimal JavaScript Bundle**: Core functionality without bloat
-- **Progressive Enhancement**: Works with JavaScript disabled
-- **Edge-Ready**: Deployable to CDNs for global performance
-- **Self-Hosted Fonts**: No external font requests for privacy protection
+### **Privacy-First Tech Stack**
+- **Next.js 14**: Static site generation eliminates server-side tracking
+- **Local Storage Only**: Browser localStorage for progress (never uploaded)
+- **Self-Hosted Assets**: All fonts, images, and resources served locally
+- **Zero Third-Party Dependencies**: No external services that could leak data
+- **Content Security Policy**: Prevents unauthorized scripts and requests
 
-## Design System
+### **Project Architecture**
+```
+Key Privacy-Focused Components:
+├── app/settings/         # Complete user data transparency and control
+├── context/ProgressContext.js  # Local-only state management
+├── lib/accessibility.js # WCAG 2.1 AA compliance helpers
+├── styles/fonts.css     # Self-hosted typography (no Google Fonts)
+├── content/             # Markdown-based content (no database)
+└── docs/development/    # Privacy implementation documentation
+```
+```
 
-### **Brand Identity**
-- **Friendly Blue** (#4A90E2): Trustworthy, approachable
-- **Success Teal** (#50E3C2): Achievement and progress  
-- **Charcoal Gray** (#333333): Professional, readable
-- **Calm Off-White** (#F8F9FA): Clean, uncluttered backgrounds
+### **Privacy Implementation Details**
+- **Local-Only State**: React Context with localStorage - never uploaded to servers
+- **Data Transparency**: Settings page shows users exactly what's stored
+- **Instant Data Control**: Export, import, or delete progress with one click
+- **Zero External Requests**: Self-hosted fonts, images, and all resources
+- **Progressive Enhancement**: Core content works without JavaScript
+- **Static Generation**: Pre-built pages eliminate tracking opportunities
+
+## Design & User Experience
+
+### **Brand Identity & Accessibility**
+- **Trustworthy Design**: Professional colors (Friendly Blue, Success Teal, Charcoal Gray)
+- **WCAG 2.1 AA Compliant**: Screen reader support, keyboard navigation, color contrast
+- **Mobile-First**: Responsive design optimized for all devices
+- **Dark Mode**: Automatic theme switching with user preference memory
+- **Clear Typography**: Self-hosted fonts for performance and privacy
 
 ### **User Experience Principles**
-- **Clarity Over Cleverness**: Direct communication beats cute UI
-- **Progress Visibility**: Users always know where they stand
-- **Consistent Patterns**: Similar actions work the same way
-- **Inclusive Design**: Accessible to users with different abilities
+- **Clarity Over Cleverness**: Direct communication beats complex UI
+- **Progress Visibility**: Users always understand their privacy journey
+- **Consistent Patterns**: Predictable interactions across all features
+- **Inclusive Design**: Accessible to users with different technical abilities
 
-## Project Impact
+## Project Stats
 
-### **Content Coverage**
-- **13 Privacy Tasks**: Comprehensive coverage of essential digital privacy practices
-- **Multiple Difficulty Levels**: "Quick Wins" to "Expert" - accessible to all skill levels
-- **Privacy Pulse News**: Real-time privacy and security news with expert analysis
-- **Connected Learning**: News articles linked to actionable privacy tasks
-- **Mobile-First Design**: Optimized for smartphones and tablets
-- **Community-Ready**: Open architecture for privacy expert contributions
+- **13 Privacy Tasks** across 4 difficulty levels (Quick Wins → Expert)
+- **Privacy Pulse News System** with real-time security updates
+- **35+ Static Pages** with sub-100kB JavaScript bundle
+- **Zero External Dependencies** - complete privacy protection
+- **WCAG 2.1 AA Compliant** accessibility standards
+- **Open Source** architecture ready for community contributions
 
-### **Technical Metrics**
-- **35+ Static Pages**: Fast, reliable content delivery across all features
-- **Sub-100kB JavaScript**: Lightweight, performance-focused architecture
-- **100% Responsive**: Seamless experience on all device sizes
-- **WCAG 2.1 AA Compliant**: Full accessibility with screen reader support
-- **Zero External Dependencies**: Complete privacy protection with self-hosted resources
-- **Perfect Lighthouse Scores**: Optimized for performance and user experience
-
-## Community & Contributions
+## Contributing
 
 The Privacy Guide is designed for **collaborative content creation**:
 
