@@ -82,6 +82,13 @@ export default function MobileMenu() {
                       Privacy Tasks
                     </Link>
                     <Link 
+                      href="/privacy-pulse" 
+                      onClick={closeMenu}
+                      className="flex items-center px-4 py-3 rounded-lg text-charcoal-gray dark:text-dark-text hover:bg-gray-50 dark:hover:bg-dark-surface hover:text-friendly-blue transition-colors text-lg font-medium"
+                    >
+                      Privacy Pulse
+                    </Link>
+                    <Link 
                       href="/about" 
                       onClick={closeMenu}
                       className="flex items-center px-4 py-3 rounded-lg text-charcoal-gray dark:text-dark-text hover:bg-gray-50 dark:hover:bg-dark-surface hover:text-friendly-blue transition-colors text-lg font-medium"

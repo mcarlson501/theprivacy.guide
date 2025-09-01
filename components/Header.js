@@ -55,6 +55,12 @@ export default function Header() {
                 Tasks
               </Link>
               <Link 
+                href="/privacy-pulse" 
+                className="text-charcoal-gray dark:text-dark-text hover:text-friendly-blue dark:hover:text-friendly-blue font-medium transition-colors"
+              >
+                Privacy Pulse
+              </Link>
+              <Link 
                 href="/about" 
                 className="text-charcoal-gray dark:text-dark-text hover:text-friendly-blue dark:hover:text-friendly-blue font-medium transition-colors"
               >

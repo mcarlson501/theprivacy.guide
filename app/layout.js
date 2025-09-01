@@ -67,6 +67,10 @@ export default function RootLayout({ children }) {
                         Settings
                       </a>
                       <span className="text-gray-300 dark:text-dark-text-secondary px-3">•</span>
+                      <a href="https://github.com/mcarlson501/theprivacy.guide" target="_blank" rel="noopener noreferrer" className="text-friendly-blue hover:text-blue-600 transition-colors">
+                        GitHub
+                      </a>
+                      <span className="text-gray-300 dark:text-dark-text-secondary px-3">•</span>
                       <ThemeToggle />
                     </div>
                   </div>
@@ -88,6 +92,10 @@ export default function RootLayout({ children }) {
                       <span className="text-gray-300 dark:text-dark-text-secondary px-2">•</span>
                       <a href="/settings" className="text-friendly-blue hover:text-blue-600 transition-colors">
                         Settings
+                      </a>
+                      <span className="text-gray-300 dark:text-dark-text-secondary px-2">•</span>
+                      <a href="https://github.com/mcarlson501/theprivacy.guide" target="_blank" rel="noopener noreferrer" className="text-friendly-blue hover:text-blue-600 transition-colors">
+                        GitHub
                       </a>
                       <span className="text-gray-300 dark:text-dark-text-secondary px-2">•</span>
                       <ThemeToggle />
