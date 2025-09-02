@@ -78,7 +78,7 @@ export default function Header() {
                 {/* Logo - Update the src to match your logo filename */}
                 <div className="w-8 h-8 mr-2 flex items-center justify-center">
                   <Image
-                    src="/images/logo.png"
+                    src="/images/logo.png?v=2"
                     alt="The Privacy Guide Logo"
                     width={32}
                     height={32}
