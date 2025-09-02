@@ -4,7 +4,7 @@ date: "2025-09-01"
 category: "Data Breaches"
 summary: "Major credit bureau TransUnion suffered a Salesforce attack exposing names, SSNs, addresses, and birthdates of millions of customers."
 source: "Bleeping Computer"
-sourceUrl: "https://www.bleepingcomputer.com/news/security/transunion-discloses-data-breach-after-salesforce-attack/"
+sourceUrl: "https://www.bleepingcomputer.com/news/security/transunion-suffers-data-breach-impacting-over-44-million-people/"
 relatedTasks: ["use-password-manager", "enable-two-factor-auth", "spot-phishing-emails"]
 ---
 
@@ -132,7 +132,7 @@ This is connected to a wave of Salesforce attacks hitting major companies throug
 
 ## Source Information
 
-**Original Report:** [Bleeping Computer - TransUnion discloses data breach after Salesforce attack](https://www.bleepingcomputer.com/news/security/transunion-discloses-data-breach-after-salesforce-attack/)
+**Original Report:** [Bleeping Computer - TransUnion discloses data breach after Salesforce attack](https://www.bleepingcomputer.com/news/security/transunion-suffers-data-breach-impacting-over-44-million-people/)
 
 **Additional Resources:**
 - **Official TransUnion breach notice**: Check Maine Attorney General's office website for sample notifications
