@@ -14,20 +14,20 @@ export const metadata = {
   icons: {
     icon: [
       {
-        url: '/favicon.svg',
-        type: 'image/svg+xml',
+        url: '/images/logo.png',
+        type: 'image/png',
       },
       {
-        url: '/favicon-32x32.svg',
+        url: '/images/logo.png',
         sizes: '32x32',
-        type: 'image/svg+xml',
+        type: 'image/png',
       },
     ],
     apple: [
       {
-        url: '/apple-touch-icon.svg',
+        url: '/images/logo.png',
         sizes: '180x180',
-        type: 'image/svg+xml',
+        type: 'image/png',
       },
     ],
   },
