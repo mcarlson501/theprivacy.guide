@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'About Us - The Privacy Guide',
   description: 'Learn about our mission to make digital privacy accessible to everyone. Discover why we created The Privacy Guide and how we\'re helping people take control of their data.',
@@ -9,6 +11,20 @@ export default function AboutPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="text-center mb-12 sm:mb-16">
+          {/* Logo */}
+          <div className="flex justify-center mb-6 sm:mb-8">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 flex items-center justify-center">
+              <Image
+                src="/images/logo.png?v=2"
+                alt="The Privacy Guide Logo"
+                width={112}
+                height={112}
+                className="max-w-full max-h-full object-contain"
+                priority
+              />
+            </div>
+          </div>
+          
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal-gray dark:text-dark-text mb-4 sm:mb-6">
             About The Privacy Guide
           </h1>
@@ -107,6 +123,24 @@ export default function AboutPage() {
                 Our progressive approach ensures everyone can make meaningful improvements.
               </p>
             </div>
+
+            <div className="card md:col-span-2">
+              <div className="flex items-center mb-4">
+                <div className="bg-green-100 dark:bg-green-900/30 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-green-600 dark:text-green-300" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text">Independent & Unbiased</h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-300 mb-3">
+                We don't accept advertising, sponsorships, or affiliate commissions that could compromise our recommendations. 
+                Our task recommendations are based solely on security research, community feedback, and real-world effectiveness — never financial incentives.
+              </p>
+              <p className="text-gray-600 dark:text-gray-300">
+                This independence ensures you get honest, practical advice that's in your best interest, not ours.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -169,6 +203,115 @@ export default function AboutPage() {
                 For comprehensive privacy resources that dive deeper into threat modeling, OPSEC, 
                 and advanced techniques, there are excellent resources available across the privacy community. 
                 We're here to get people started—you're here to take them further.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Transparency & Trust Section */}
+        <section className="mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-6 sm:mb-8 text-center">Our Commitment to You</h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="card">
+              <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text mb-4 flex items-center">
+                <svg className="w-6 h-6 text-success-teal mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
+                </svg>
+                Complete Privacy
+              </h3>
+              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+                <li>• No tracking scripts or analytics</li>
+                <li>• No user accounts or personal data collection</li>
+                <li>• All progress stored locally on your device</li>
+                <li>• No cookies beyond essential functionality</li>
+                <li>• No email lists or marketing</li>
+              </ul>
+            </div>
+
+            <div className="card">
+              <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text mb-4 flex items-center">
+                <svg className="w-6 h-6 text-friendly-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+                Open Source Transparency
+              </h3>
+              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+                <li>• Full source code available on GitHub</li>
+                <li>• See exactly how we protect your privacy</li>
+                <li>• Community contributions welcome</li>
+                <li>• Regular security audits and updates</li>
+                <li>• No hidden functionality or backdoors</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Get Involved Section */}
+        <section className="mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-6 sm:mb-8 text-center">Get Involved</h2>
+          
+          <div className="bg-gradient-to-br from-friendly-blue/5 to-success-teal/5 dark:from-friendly-blue/10 dark:to-success-teal/10 rounded-2xl p-6 sm:p-8 border border-friendly-blue/10 dark:border-friendly-blue/20">
+            <div className="text-center mb-6">
+              <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text mb-4">Help Us Improve Privacy for Everyone</h3>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto">
+                The Privacy Guide is a community effort. Whether you're a privacy expert, developer, or someone who's 
+                learned from our tasks, there are many ways to contribute to making digital privacy more accessible.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white dark:bg-dark-bg rounded-lg p-6">
+                <h4 className="font-semibold text-charcoal-gray dark:text-dark-text mb-3 flex items-center">
+                  <svg className="w-5 h-5 text-friendly-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                  Contribute on GitHub
+                </h4>
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                  Help improve our code, suggest new tasks, fix bugs, or enhance the user experience.
+                </p>
+                <a 
+                  href="https://github.com/mcarlson501/theprivacy.guide" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-friendly-blue hover:text-blue-600 transition-colors text-sm font-medium"
+                >
+                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+
+              <div className="bg-white dark:bg-dark-bg rounded-lg p-6">
+                <h4 className="font-semibold text-charcoal-gray dark:text-dark-text mb-3 flex items-center">
+                  <svg className="w-5 h-5 text-success-teal mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                  </svg>
+                  Share Feedback & Ideas
+                </h4>
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                  Suggest new privacy tasks, report issues, or share your experience with our existing guides.
+                </p>
+                <a 
+                  href="https://github.com/mcarlson501/theprivacy.guide/issues" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-success-teal hover:text-teal-600 transition-colors text-sm font-medium"
+                >
+                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                  </svg>
+                  Open an Issue
+                </a>
+              </div>
+            </div>
+
+            <div className="text-center mt-6 pt-6 border-t border-gray-200 dark:border-gray-600">
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                Every contribution, no matter how small, helps make digital privacy more accessible to everyone.
               </p>
             </div>
           </div>

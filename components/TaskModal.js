@@ -2,17 +2,39 @@
 
 import { useState } from 'react';
 import { useProgress } from '../context/ProgressContext';
+import { useConfetti } from '../lib/confetti';
 
 export default function TaskModal({ task, isOpen, onClose }) {
   const { completeTask, isTaskCompleted } = useProgress();
+  const { triggerConfetti } = useConfetti();
   const [activeTab, setActiveTab] = useState('overview');
+  const [isAnimating, setIsAnimating] = useState(false);
   const completed = task ? isTaskCompleted(task.id) : false;
 
   if (!isOpen || !task) return null;
 
-  const handleCompleteTask = () => {
-    if (!completed) {
+  const handleCompleteTask = async (event) => {
+    console.log('🔘 Complete button clicked!', { completed, isAnimating }); // Debug log
+    
+    if (!completed && !isAnimating) {
+      console.log('✅ Starting completion process...'); // Debug log
+      setIsAnimating(true);
+      
+      // Trigger the confetti celebration from button position
+      console.log('🎊 Triggering confetti from button...'); // Debug log
+      await triggerConfetti(event.currentTarget);
+      
+      // Complete the task
+      console.log('📝 Completing task...'); // Debug log
       completeTask(task.id, task.points, task.badgeId, task.badgeName);
+      
+      // Reset animation state
+      setTimeout(() => {
+        console.log('🔄 Resetting animation state...'); // Debug log
+        setIsAnimating(false);
+      }, 1000);
+    } else {
+      console.log('❌ Cannot complete:', { completed, isAnimating }); // Debug log
     }
   };
 
@@ -248,12 +270,28 @@ export default function TaskModal({ task, isOpen, onClose }) {
             ) : (
               <button
                 onClick={handleCompleteTask}
-                className="btn-secondary hover:shadow-md bg-success-teal text-white hover:bg-success-teal/90 flex items-center"
+                disabled={isAnimating}
+                className={`btn-secondary hover:shadow-md bg-success-teal text-white hover:bg-success-teal/90 flex items-center transition-all duration-300 ${
+                  isAnimating 
+                    ? 'scale-110 animate-pulse bg-success-teal/80' 
+                    : 'hover:scale-105 active:scale-95'
+                }`}
               >
-                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                Mark as Complete
+                {isAnimating ? (
+                  <>
+                    <svg className="w-4 h-4 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    </svg>
+                    Celebrating...
+                  </>
+                ) : (
+                  <>
+                    <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Mark as Complete
+                  </>
+                )}
               </button>
             )}
           </div>

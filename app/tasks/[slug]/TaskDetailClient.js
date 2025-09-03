@@ -2,16 +2,40 @@
 
 import { useState } from 'react';
 import { useProgress } from '../../../context/ProgressContext';
+import { useConfetti } from '../../../lib/confetti';
 import Link from 'next/link';
 import { enhanceContentAccessibility, enhanceForScreenReaders } from '../../../lib/accessibility';
 
 export default function TaskDetailClient({ task }) {
   const { isTaskCompleted, completeTask } = useProgress();
+  const { triggerConfetti } = useConfetti();
   const [activeTab, setActiveTab] = useState('overview');
+  const [isAnimating, setIsAnimating] = useState(false);
   const completed = isTaskCompleted(task.id);
 
-  const handleCompleteTask = () => {
-    completeTask(task.id, task.points, task.badgeId, task.badgeName);
+  const handleCompleteTask = async (event) => {
+    console.log('🔘 TaskDetail Complete button clicked!', { completed, isAnimating }); // Debug log
+    
+    if (!completed && !isAnimating) {
+      console.log('✅ Starting completion process...'); // Debug log
+      setIsAnimating(true);
+      
+      // Trigger the confetti celebration from button position
+      console.log('🎊 Triggering confetti from button...'); // Debug log
+      await triggerConfetti(event.currentTarget);
+      
+      // Complete the task
+      console.log('📝 Completing task...'); // Debug log
+      completeTask(task.id, task.points, task.badgeId, task.badgeName);
+      
+      // Reset animation state
+      setTimeout(() => {
+        console.log('🔄 Resetting animation state...'); // Debug log
+        setIsAnimating(false);
+      }, 1000);
+    } else {
+      console.log('❌ Cannot complete:', { completed, isAnimating }); // Debug log
+    }
   };
 
   // Enhanced content parsing with better formatting and title extraction
@@ -181,10 +205,13 @@ export default function TaskDetailClient({ task }) {
               <div className="flex-shrink-0">
                 <button
                   onClick={handleCompleteTask}
-                  className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+                  disabled={isAnimating}
+                  className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
                     completed
                       ? 'bg-success-teal/10 text-success-teal border-2 border-success-teal/20 hover:bg-success-teal/20 focus:ring-success-teal'
-                      : 'bg-friendly-blue text-white hover:bg-friendly-blue/90 shadow-lg hover:shadow-xl focus:ring-friendly-blue'
+                      : isAnimating
+                        ? 'bg-friendly-blue/80 text-white scale-110 animate-pulse'
+                        : 'bg-friendly-blue text-white hover:bg-friendly-blue/90 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 focus:ring-friendly-blue'
                   }`}
                   aria-pressed={completed}
                   aria-label={completed ? 'Task completed' : 'Mark task as complete'}
@@ -195,6 +222,13 @@ export default function TaskDetailClient({ task }) {
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       Completed
+                    </span>
+                  ) : isAnimating ? (
+                    <span className="flex items-center">
+                      <svg className="w-5 h-5 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                      </svg>
+                      Celebrating...
                     </span>
                   ) : (
                     <span className="flex items-center">

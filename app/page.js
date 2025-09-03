@@ -188,6 +188,97 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Trust & Credibility Section */}
+      <section className="py-16 lg:py-20 bg-gray-50 dark:bg-dark-surface">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-charcoal-gray dark:text-dark-text mb-4">
+              Why Trust The Privacy Guide?
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              We practice what we preach. Our commitment to privacy isn't just talk — it's built into everything we do.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {/* No Tracking */}
+            <div className="bg-white dark:bg-dark-bg rounded-xl p-6 text-center border border-gray-200 dark:border-dark-border">
+              <div className="bg-success-teal/10 dark:bg-success-teal/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-success-teal" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-charcoal-gray dark:text-dark-text mb-2">No Tracking</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">We don't use Google Analytics, Facebook pixels, or any third-party trackers.</p>
+            </div>
+
+            {/* Open Source */}
+            <div className="bg-white dark:bg-dark-bg rounded-xl p-6 text-center border border-gray-200 dark:border-dark-border">
+              <div className="bg-friendly-blue/10 dark:bg-friendly-blue/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-friendly-blue" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-charcoal-gray dark:text-dark-text mb-2">Open Source</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">Our code is open on GitHub. See exactly how we protect your privacy.</p>
+            </div>
+
+            {/* Local Storage */}
+            <div className="bg-white dark:bg-dark-bg rounded-xl p-6 text-center border border-gray-200 dark:border-dark-border">
+              <div className="bg-purple-100 dark:bg-purple-900/30 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-charcoal-gray dark:text-dark-text mb-2">Local Storage</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">Your progress stays on your device. We never see your personal data.</p>
+            </div>
+
+            {/* No Ads */}
+            <div className="bg-white dark:bg-dark-bg rounded-xl p-6 text-center border border-gray-200 dark:border-dark-border">
+              <div className="bg-green-100 dark:bg-green-900/30 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-charcoal-gray dark:text-dark-text mb-2">Ad-Free</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">No advertisements, no sponsored content, no hidden agenda.</p>
+            </div>
+          </div>
+
+          {/* Security Badges */}
+          <div className="text-center">
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">Trusted by privacy-conscious users worldwide</p>
+            <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-600 dark:text-gray-400">
+              <div className="flex items-center space-x-2">
+                <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span>HTTPS Secure</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span>Privacy by Design</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span>Privacy Focused</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span>No Data Collection</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Section */}
       <section className="py-16 lg:py-24 bg-white dark:bg-dark-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
