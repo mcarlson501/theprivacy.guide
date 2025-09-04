@@ -18,25 +18,25 @@ The Privacy Guide bridges the gap between complex privacy advice and real-world 
 ## ✨ Key Features
 
 ### **🎯 Interactive Privacy Tasks**
-13 progressive tasks from 5-minute "Quick Wins" to comprehensive "Advanced" guides with step-by-step instructions and real-world impact.
+19 comprehensive tasks from 5-minute "Quick Wins" to advanced privacy guides with step-by-step instructions and real-world impact, including a complete social media privacy series and practical retail rewards guidance.
 
 ### **🎮 Gamified Experience**  
-Earn points, badges, and levels as you progress from "Privacy Novice" to "Privacy Expert" through an engaging visual dashboard with celebratory confetti animations.
+Earn points, badges, and levels as you progress from "Privacy Novice" to "Privacy Expert" through an engaging visual dashboard with celebratory confetti animations and progress tracking.
 
 ### **📰 Privacy Pulse News**
-Breaking privacy news with expert analysis, connecting current events to actionable privacy improvements.
+Breaking privacy news with expert analysis, connecting current events to actionable privacy improvements. Features call-to-action prompts to convert news awareness into privacy action.
 
 ### **🔒 Privacy-First Architecture**
-Zero data collection, local-only storage, no tracking, and complete data portability—practice what we preach.
+Zero data collection, local-only storage, no tracking, complete data portability, and enterprise-grade security hardening—practice what we preach.
 
 ### **♿ Accessible Design**
-WCAG 2.1 AA compliant with dark mode, mobile responsiveness, semantic HTML, and enhanced screen reader support.
+WCAG 2.1 AA compliant with dark mode, mobile responsiveness, semantic HTML, enhanced screen reader support, and user-friendly interfaces.
 
 ### **📱 Mobile-Optimized Experience**
-Responsive design with touch-friendly interface, optimized spacing, and smooth scroll animations for seamless mobile usage.
+Responsive design with touch-friendly interface, optimized spacing, smooth scroll animations, and clickable card interfaces for seamless mobile usage.
 
 ### **🎨 Beautiful User Interface**
-Modern design with smooth animations, confetti celebrations, custom brand colors, and an intuitive user experience.
+Modern design with smooth animations, confetti celebrations, custom brand colors, intuitive navigation, and strategic typography for better readability.
 
 ## 🏗️ Architecture Overview
 
@@ -83,9 +83,10 @@ Privacy guidance should be **empowering, not fearful**—focusing on practical s
 - Complete transparency through open source code
 
 ### **Task Categories**
-- **Quick Wins** (5-10 minutes): Immediate privacy improvements
-- **Essential** (15-30 minutes): Core privacy protection  
-- **Advanced** (30+ minutes): Enhanced privacy controls
+- **Quick Wins** (5-10 minutes): Immediate privacy improvements including retail rewards privacy
+- **Essential** (15-30 minutes): Core privacy protection and security fundamentals
+- **Social Media** (10-20 minutes): Platform-specific privacy guides for Facebook, Instagram, TikTok, Twitter/X, and LinkedIn
+- **Advanced** (30+ minutes): Enhanced privacy controls and expert-level security
 
 ## 🚀 User Journey
 
@@ -111,27 +112,39 @@ Privacy Protection Journey:
 - **Self-Hosted Assets**: Complete privacy independence
 
 ### **Recent Enhancements**
-- ✅ Mobile-first responsive design optimization
-- ✅ Smooth scroll animations and micro-interactions
-- ✅ Confetti celebration system for task completion
-- ✅ Enhanced accessibility features (WCAG 2.1 AA)
-- ✅ Dark mode support with system preference detection
-- ✅ GitHub integration with security policies and templates
-- ✅ Trust-building elements and transparency features
+- ✅ Complete social media privacy task series (Facebook, Instagram, TikTok, Twitter/X, LinkedIn)
+- ✅ Retail rewards privacy guidance with pragmatic approach
+- ✅ Privacy Pulse news system with actionable call-to-action banners
+- ✅ Enhanced article templates with proper source attribution and concise formatting
+- ✅ Comprehensive security hardening for JSON import functionality
+- ✅ Improved settings page with clear user education and privacy explanations
+- ✅ Clickable card interfaces for better user experience consistency
+- ✅ Strategic typography improvements and homepage messaging optimization
+- ✅ Enhanced content creation workflows with AI-assisted templates
+- ✅ Confetti celebration system for task completion and engagement
 
 ## 📊 Project Stats
 
-- **13 Privacy Tasks** across 3 difficulty levels
-- **Privacy Pulse News System** with security updates  
-- **Zero External Dependencies** for complete privacy
-- **WCAG 2.1 AA Compliant** accessibility
-- **Open Source** MIT License
-- **Mobile Optimized** responsive design
-- **Celebration Animations** for enhanced user experience
+- **19 Privacy Tasks** across 4 comprehensive categories (Quick Win, Essential, Social Media, Advanced)
+- **Complete Social Media Privacy Series** covering Facebook, Instagram, TikTok, Twitter/X, and LinkedIn
+- **Enhanced Privacy Pulse News** with expert analysis and action-oriented call-to-action prompts
+- **Enterprise-Grade Security** with comprehensive input validation and security hardening
+- **Zero External Dependencies** for complete privacy and data independence
+- **WCAG 2.1 AA Compliant** accessibility with enhanced user experience
+- **Open Source** MIT License with community-driven development
+- **Mobile-First Design** with responsive interface and touch optimization
+- **Privacy-by-Design** architecture with local-only data storage and full user control
 
 ## 🤝 Contributing
 
 We welcome contributions from privacy experts, developers, and users! Here's how you can help:
+
+### **📋 Task Suggestions & Roadmap**
+Want to see what privacy tasks are coming next? Check out our **[Public Task Backlog](docs/development/TASK_BACKLOG.md)** to see planned tasks and suggest your own ideas!
+
+- **[View Task Backlog](docs/development/TASK_BACKLOG.md)** - See upcoming tasks and development priorities
+- **[Suggest New Tasks](https://github.com/mcarlson501/theprivacy.guide/issues/new?labels=task-suggestion&template=task-suggestion.md)** - Submit your privacy task ideas
+- **Vote on Priorities** - Comment on issues to help prioritize development
 
 ### **For Privacy Experts**
 - Add new tasks using simple Markdown
@@ -153,7 +166,9 @@ See `CONTRIBUTING.md` for detailed guidelines, or open an issue on GitHub to get
 ## 🔗 Links
 
 - **Live Site**: [theprivacy.guide](https://theprivacy.guide)
+- **Task Backlog**: [View upcoming privacy tasks](docs/development/TASK_BACKLOG.md)
 - **GitHub Issues**: [Report bugs or suggest features](https://github.com/mcarlson501/theprivacy.guide/issues)
+- **Suggest Tasks**: [Submit task ideas](https://github.com/mcarlson501/theprivacy.guide/issues/new?labels=task-suggestion&template=task-suggestion.md)
 - **Security Policy**: See `SECURITY.md` for security practices
 - **Contributing Guide**: See `CONTRIBUTING.md` for contribution guidelines
 

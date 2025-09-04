@@ -110,8 +110,9 @@ export default async function Home() {
           <div className="mt-20 max-w-4xl mx-auto">
             <div className="bg-gray-50 dark:bg-dark-surface rounded-2xl p-8 lg:p-12">
               <div className="text-center mb-8">
-                <h3 className="text-2xl lg:text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-4">
-                  "I Have Nothing to Hide" — But Should You Care?
+                <h3 className="text-2xl lg:text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-4 max-w-3xl mx-auto leading-tight">
+                  "I Have Nothing to Hide" —<br className="hidden sm:block" />
+                  <span className="block sm:inline"> Here's Why Privacy Still Matters</span>
                 </h3>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
                   Privacy isn't about hiding wrongdoing — it's about protecting what's rightfully yours.

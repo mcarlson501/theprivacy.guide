@@ -14,27 +14,19 @@ export default function TaskModal({ task, isOpen, onClose }) {
   if (!isOpen || !task) return null;
 
   const handleCompleteTask = async (event) => {
-    console.log('🔘 Complete button clicked!', { completed, isAnimating }); // Debug log
-    
     if (!completed && !isAnimating) {
-      console.log('✅ Starting completion process...'); // Debug log
       setIsAnimating(true);
       
       // Trigger the confetti celebration from button position
-      console.log('🎊 Triggering confetti from button...'); // Debug log
       await triggerConfetti(event.currentTarget);
       
       // Complete the task
-      console.log('📝 Completing task...'); // Debug log
       completeTask(task.id, task.points, task.badgeId, task.badgeName);
       
       // Reset animation state
       setTimeout(() => {
-        console.log('🔄 Resetting animation state...'); // Debug log
         setIsAnimating(false);
       }, 1000);
-    } else {
-      console.log('❌ Cannot complete:', { completed, isAnimating }); // Debug log
     }
   };
 

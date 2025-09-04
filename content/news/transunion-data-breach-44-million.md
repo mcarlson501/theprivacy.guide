@@ -10,134 +10,67 @@ relatedTasks: ["use-password-manager", "enable-two-factor-auth", "spot-phishing-
 
 ## What Happened
 
-> **MAJOR BREACH ALERT:** On July 28, 2025, TransUnion—one of the three major credit bureaus in the United States—experienced a significant data breach that exposed personal information belonging to **over 4.4 million Americans**.
+TransUnion—one of the three major credit bureaus in the United States—experienced a significant data breach on July 28, 2025, exposing personal information belonging to **over 4.4 million Americans**.
 
-The attack was discovered just two days later, but hackers had already made off with a treasure trove of sensitive customer data.
+Attackers targeted TransUnion's Salesforce customer support system, which contained detailed records of people who had requested credit reports or contacted customer service. The stolen data includes:
 
-### The Attack Details
+- **Personal Information:** Full names and addresses
+- **Contact Details:** Phone numbers and email addresses  
+- **Social Security Numbers:** Completely unredacted SSNs
+- **Birth Information:** Dates of birth
+- **Service Records:** Customer service interactions
 
-This wasn't a simple website hack. The attackers targeted **TransUnion's Salesforce customer support system**, which contained detailed records of people who had requested credit reports or interacted with customer service. 
-
-Think of it like burglars breaking into a filing cabinet that contained some of your most personal information.
-
----
+> **Important:** TransUnion confirms that core credit reports and credit information were NOT accessed in this breach.
 
 ## Who Is Affected
 
-### You might be impacted if you:
-
+You might be impacted if you:
 - Requested a free credit report from TransUnion recently
-- Contacted TransUnion customer support in the past year  
+- Contacted TransUnion customer support in the past year
 - Have any relationship with TransUnion's consumer services
 
-### What information was stolen:
+## What You Should Do
 
-- **Personal Information:** Full names and addresses
-- **Contact Details:** Phone numbers and email addresses
-- **Social Security Numbers:** Completely unredacted SSNs
-- **Birth Information:** Dates of birth
-- **Service Records:** Reasons for contacting customer support
-- **Communications:** Customer service tickets and messages
+**This Week:**
 
-> **Important:** TransUnion says that core credit reports and credit information were **NOT** accessed in this breach. However, the stolen data is still extremely valuable to identity thieves.
+1. **Watch for notification letters** from TransUnion confirming if you're affected
+2. **Sign up for free credit monitoring** when you receive your letter (24 months provided)  
+3. **Place a fraud alert** by contacting any credit bureau—it covers all three automatically
 
----
+**This Month:**
 
-## What You Should Do Right Now
+4. **Consider a credit freeze** for stronger protection (blocks all access to your credit report)
+5. **Monitor all accounts closely** and set up transaction alerts
+6. **Update passwords** for financial accounts using a password manager
 
-### Immediate Actions (This Week)
+## How to Stay Protected
 
-> **Take these steps within the next 7 days to protect yourself.**
+**Use Strong, Unique Passwords**  
+With your Social Security Number potentially in criminal hands, password security becomes critical. A password manager creates different passwords for every account.
 
-**1. Check if you're affected**
-- Watch for notification letters from TransUnion
-- If you've received a letter, you're confirmed to be impacted
-- Even without a letter, assume you could be affected if you've used TransUnion services
+**Enable Two-Factor Authentication**  
+Add this extra security layer to all financial accounts and email—even if criminals have your password, they can't access your accounts.
 
-**2. Get free credit monitoring**
-- TransUnion is offering 24 months of free credit monitoring to affected customers
-- Sign up immediately when you receive your notification letter
-- This will alert you to new accounts opened in your name
+**Learn to Spot Phishing**  
+Criminals may use your stolen data to create convincing fake emails. Always navigate to websites directly rather than clicking email links.
 
-**3. Place a fraud alert**
-- Contact any one of the three credit bureaus (TransUnion, Equifax, or Experian)
-- Request a fraud alert—makes it harder for someone to open accounts in your name
-- Lasts 90 days and all three bureaus will be notified automatically
+## Why This Matters
 
----
+This breach is particularly serious because it involves a credit bureau that's supposed to protect your financial information, and the attackers obtained complete Social Security Numbers—your master key to financial identity.
 
-### Actions for This Month
+This incident is part of a larger pattern of Salesforce attacks hitting major companies throughout 2025, suggesting organized cybercriminal operations.
 
-> **Complete these additional protections within 30 days.**
+**Remember:** Millions of people are affected, so you're not alone. Take the protective steps above, but don't panic. With proper precautions, you can prevent identity theft even when your information has been compromised.
 
-**4. Consider a credit freeze**
-- Completely blocks access to your credit report
-- No one (including you) can open new accounts until you lift the freeze
-- It's free and more secure than fraud alerts
-- Contact all three credit bureaus separately
+## Additional Resources
 
-**5. Monitor all accounts closely**
-- Check bank accounts, credit cards, and investment accounts weekly
-- Look for unfamiliar transactions, even small ones
-- Set up account alerts for any transaction over $1
+- **Free credit reports:** [annualcreditreport.com](https://annualcreditreport.com)
+- **Credit freezes:** Contact Experian (888-397-3742), Equifax (800-349-9960), or TransUnion (800-680-7289)
 
-**6. Update your passwords**
-- Change passwords for any financial accounts
-- Use a password manager to create unique, strong passwords
-- Enable two-factor authentication wherever possible
+## Sources
 
-## How to Stay Protected Going Forward
-
-### Build Strong Defense Habits
-
-**Use a Password Manager**
-With your Social Security Number in criminal hands, strong, unique passwords become even more critical. A password manager creates different passwords for every account, so if one site gets hacked, criminals can't access your other accounts.
-
-**Enable Two-Factor Authentication**
-Even if criminals have your password, two-factor authentication acts like a second lock they can't break. Set this up on all financial accounts, email, and any site that offers it.
-
-**Learn to Spot Phishing**
-Criminals will likely use the stolen TransUnion data to create convincing phishing emails. They might email you pretending to be your bank, using your real name and partial information to seem legitimate. Always navigate to websites directly rather than clicking email links.
-
-### Long-term Protection Strategy
-
-**Regular Credit Monitoring**
-- Check your credit reports from all three bureaus at least twice a year
-- Use annualcreditreport.com for free reports
-- Consider a paid credit monitoring service for real-time alerts
-
-**Document Everything**
-- Keep records of all breach notifications you receive
-- Save correspondence with TransUnion about this incident
-- If you become a victim of identity theft, having this documentation helps prove the timeline
-
-## Why This Matters More Than Usual
-
-This breach is particularly serious because:
-
-**1. It's a Credit Bureau**
-TransUnion is supposed to be protecting your financial information, not exposing it. This creates a crisis of trust in the system designed to safeguard your creditworthiness.
-
-**2. Complete Social Security Numbers**
-Unlike many breaches where SSNs are partially redacted, these were stored in full. Your SSN is like a master key to your financial life—it's used to open accounts, take out loans, and verify your identity.
-
-**3. Part of a Bigger Pattern**
-This is connected to a wave of Salesforce attacks hitting major companies throughout 2025. The same criminal groups (including "Shiny Hunters") have hit Google, Farmers Insurance, and many others. This suggests organized, professional cybercriminal operations.
-
----
-
-**Remember**: This breach affects millions of people, so you're not alone. Take the protective steps above, but don't panic. With proper precautions, you can protect yourself from becoming a victim of identity theft even when your personal information has been compromised.
-
----
-
-## Source Information
-
-**Original Report:** [Bleeping Computer - TransUnion discloses data breach after Salesforce attack](https://www.bleepingcomputer.com/news/security/transunion-suffers-data-breach-impacting-over-44-million-people/)
-
-**Additional Resources:**
-- **Official TransUnion breach notice**: Check Maine Attorney General's office website for sample notifications
-- **Free credit reports**: [annualcreditreport.com](https://annualcreditreport.com)
-- **Credit freezes**: Contact Experian (888-397-3742), Equifax (800-349-9960), or TransUnion (800-680-7289)
-- **FTC Identity Theft Guide**: [identitytheft.gov](https://identitytheft.gov)
-
-*This article was researched and written by The Privacy Guide team to help you understand and respond to this data breach. We strive to present complex privacy news in an accessible, actionable format.*
+- **Primary Source:** Bleeping Computer - "TransUnion Suffers Data Breach Impacting Over 4.4 Million People" ([bleepingcomputer.com](https://www.bleepingcomputer.com/news/security/transunion-suffers-data-breach-impacting-over-44-million-people/))
+- **Official Statement:** TransUnion Corporate Communications
+- **Regulatory Filing:** TransUnion SEC Form 8-K filed July 30, 2025
+- **Additional Coverage:** KrebsOnSecurity, TechCrunch Security
+- **FTC Identity Theft Guide:** [identitytheft.gov](https://identitytheft.gov)

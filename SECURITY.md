@@ -38,16 +38,35 @@ Include the following information:
 
 ## Security Best Practices
 
+### Recent Security Enhancements (September 2025)
+
+#### **JSON Import Security Hardening**
+We've implemented enterprise-grade security measures for the progress data import functionality:
+
+- **Input Validation**: Comprehensive type checking, length limits (50KB max), and format validation
+- **Data Sanitization**: Strict filtering of allowed characters and property whitelisting
+- **Protection Against Attacks**: JSON bomb prevention, memory exhaustion protection, and injection attack mitigation
+- **Error Handling**: Secure error messaging that doesn't expose system internals
+- **Multi-Layer Defense**: Client-side and server-side validation with real-time input limiting
+
+#### **Privacy-by-Design Architecture**
+- **Zero Data Collection**: No personal information, tracking, or analytics
+- **Local-Only Storage**: All user progress stored in browser localStorage
+- **No External Dependencies**: Self-hosted assets prevent data leakage
+- **User Data Control**: Full export, import, and deletion capabilities
+
 ### For Contributors
-- **Dependencies**: Keep dependencies updated
-- **Code Review**: All code changes require review
-- **Testing**: Include security considerations in testing
-- **Documentation**: Keep security documentation current
+- **Dependencies**: Keep dependencies updated and regularly audit for vulnerabilities
+- **Code Review**: All code changes require security-focused review
+- **Input Validation**: Implement comprehensive validation for any user input
+- **Testing**: Include security considerations and edge case testing
+- **Documentation**: Keep security documentation current with implementation
 
 ### For Users
-- **Updates**: Keep your installation updated
-- **Environment**: Use secure hosting environments
-- **Configuration**: Follow security configuration guides
+- **Updates**: Keep your installation updated with latest security patches
+- **Environment**: Use secure hosting environments and HTTPS
+- **Configuration**: Follow security configuration guides and best practices
+- **Data Control**: Utilize built-in export/import features for data portability
 - **Monitoring**: Monitor for security advisories
 
 ## Security Features

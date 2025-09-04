@@ -48,12 +48,33 @@ export default function ProgressManager() {
   };
 
   const handleImport = () => {
-    if (!importData.trim()) {
+    // Client-side input validation before processing
+    if (!importData || typeof importData !== 'string') {
       setImportMessage('Please paste your progress data first');
       return;
     }
 
-    const result = importProgress(importData);
+    const trimmedData = importData.trim();
+    
+    // Basic client-side checks
+    if (trimmedData.length === 0) {
+      setImportMessage('Progress data cannot be empty');
+      return;
+    }
+
+    if (trimmedData.length > 50000) {
+      setImportMessage('Progress data is too large (maximum 50KB allowed)');
+      return;
+    }
+
+    // Basic format check
+    if (!trimmedData.startsWith('{') || !trimmedData.endsWith('}')) {
+      setImportMessage('Progress data must be in JSON format (starting with { and ending with })');
+      return;
+    }
+
+    // Attempt import with comprehensive validation
+    const result = importProgress(trimmedData);
     setImportMessage(result.message);
     
     if (result.success) {
@@ -157,9 +178,20 @@ export default function ProgressManager() {
             <div className="space-y-3">
               <textarea
                 value={importData}
-                onChange={(e) => setImportData(e.target.value)}
+                onChange={(e) => {
+                  // Limit input length and sanitize on input
+                  const input = e.target.value;
+                  if (input.length <= 50000) {
+                    setImportData(input);
+                  }
+                }}
                 placeholder="Paste your exported progress data here..."
                 className="w-full h-24 p-3 border border-gray-300 dark:border-dark-border rounded-lg bg-white dark:bg-dark-bg text-sm font-mono text-charcoal-gray dark:text-dark-text placeholder-gray-400 dark:placeholder-gray-500"
+                maxLength={50000}
+                spellCheck={false}
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="off"
               />
               <button
                 onClick={handleImport}
