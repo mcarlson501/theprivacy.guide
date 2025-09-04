@@ -3,7 +3,7 @@ title: 'Before You Click: Link Safety Check'
 description: 'Master quick techniques to verify suspicious links and protect yourself from malicious websites.'
 category: 'Quick Win'
 time: '⏰ 5 minutes'
-points: 10
+points: 25
 badgeId: 'link-guardian'
 badgeName: 'Link Guardian'
 ---

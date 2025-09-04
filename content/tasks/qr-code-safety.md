@@ -3,7 +3,7 @@ title: 'Be Careful with QR Codes in Public'
 description: 'Learn to safely scan QR codes and avoid "QR code quishing" scams that can steal your data or money.'
 category: 'Quick Win'
 time: '⚡ 3 minutes'
-points: 40
+points: 25
 badgeId: 'qr-guardian'
 badgeName: 'QR Guardian'
 ---

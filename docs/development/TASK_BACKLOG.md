@@ -6,14 +6,14 @@
 
 ### **Social Media Privacy Task Series** - ✅ **COMPLETED**
 **Complete platform-specific privacy guides for major social networks:**
-- ✅ Facebook Privacy Settings (Social Media, 15 min, 85 points)
-- ✅ Instagram Privacy Settings (Social Media, 12 min, 75 points) 
-- ✅ TikTok Privacy & Safety (Social Media, 18 min, 90 points)
-- ✅ Twitter/X Privacy Settings (Social Media, 15 min, 80 points)
-- ✅ LinkedIn Privacy for Professionals (Social Media, 20 min, 95 points)
+- ✅ Facebook Privacy Settings (Social Media, 15 min, 50 points)
+- ✅ Instagram Privacy Settings (Social Media, 12 min, 50 points) 
+- ✅ TikTok Privacy & Safety (Social Media, 18 min, 50 points)
+- ✅ Twitter/X Privacy Settings (Social Media, 15 min, 50 points)
+- ✅ LinkedIn Privacy for Professionals (Social Media, 20 min, 50 points)
 
 ### **Retail & Consumer Privacy** - ✅ **COMPLETED**
-- ✅ Retail Rewards Privacy (Quick Win, 8 min, 75 points)
+- ✅ Retail Rewards Privacy (Quick Win, 8 min, 25 points)
 
 ### **Platform Enhancements** - ✅ **COMPLETED**
 - ✅ Privacy Pulse News System with actionable call-to-action integration
@@ -41,7 +41,7 @@ Great ideas for future development
 ## 🚀 **P1 - High Priority Tasks**
 
 ### **1. "Clean Up Your Email Subscriptions" (Quick Win)**
-- **Time:** ☕ 10 minutes | **Points:** 50 | **Badge:** Email Minimalist
+- **Time:** ☕ 10 minutes | **Points:** 25 | **Badge:** Email Minimalist
 - **Priority:** P1 - Fills major gap in email hygiene
 - **Description:** Help users manage email overload without complex setup
 - **Key Points:**
@@ -51,7 +51,7 @@ Great ideas for future development
   - Simple inbox organization tips
 
 ### **2. "Secure Your Home WiFi Network" (Essential)**
-- **Time:** ⏰ 15 minutes | **Points:** 100 | **Badge:** Network Guardian
+- **Time:** ⏰ 15 minutes | **Points:** 75 | **Badge:** Network Guardian
 - **Priority:** P1 - Critical home security foundation
 - **Description:** Basic router security that protects entire household
 - **Key Points:**
@@ -61,7 +61,7 @@ Great ideas for future development
   - Guest network setup for visitors
 
 ### **3. "Spot Fake Shopping Websites" (Quick Win)**
-- **Time:** ☕ 5 minutes | **Points:** 40 | **Badge:** Shop Safe Scout
+- **Time:** ☕ 5 minutes | **Points:** 25 | **Badge:** Shop Safe Scout
 - **Priority:** P1 - High impact safety awareness
 - **Description:** Essential online shopping safety skills
 - **Key Points:**
@@ -75,7 +75,7 @@ Great ideas for future development
 ## 🔧 **P2 - Medium Priority Tasks**
 
 ### **4. "Backup Your Photos Safely" (Essential)**
-- **Time:** ⏰ 20 minutes | **Points:** 125 | **Badge:** Memory Keeper
+- **Time:** ⏰ 20 minutes | **Points:** 100 | **Badge:** Memory Keeper
 - **Priority:** P2 - Important data protection
 - **Description:** Protect precious memories with privacy-conscious backup
 - **Key Points:**
@@ -85,7 +85,7 @@ Great ideas for future development
   - Digital legacy basics (what happens to your photos when you die)
 
 ### **5. "Smart TV Privacy Checkup" (Advanced)**
-- **Time:** ⏰ 25 minutes | **Points:** 150 | **Badge:** Screen Master
+- **Time:** ⏰ 25 minutes | **Points:** 100 | **Badge:** Screen Master
 - **Priority:** P2 - Growing smart home privacy concern
 - **Description:** Control data collection from your television
 - **Key Points:**
@@ -96,7 +96,7 @@ Great ideas for future development
   - Network-level blocking for advanced users
 
 ### **6. "Browser Extension Safety" (Essential)**
-- **Time:** ⏰ 15 minutes | **Points:** 100 | **Badge:** Extension Expert
+- **Time:** ⏰ 15 minutes | **Points:** 75 | **Badge:** Extension Expert
 - **Priority:** P2 - Important browser security
 - **Description:** Choose safe browser extensions and remove risky ones
 - **Key Points:**
@@ -110,7 +110,7 @@ Great ideas for future development
 ## 🔮 **P3 - Future Consideration**
 
 ### **7. "Protect Your Smart Doorbell" (Advanced)**
-- **Time:** ⏰ 20 minutes | **Points:** 125 | **Badge:** Door Guardian
+- **Time:** ⏰ 20 minutes | **Points:** 100 | **Badge:** Door Guardian
 - **Priority:** P3 - Emerging smart home device
 - **Description:** Privacy settings for video doorbells and security cameras
 

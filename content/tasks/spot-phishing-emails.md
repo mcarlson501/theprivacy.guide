@@ -3,7 +3,7 @@ title: 'Spot Phishing Emails Like a Pro'
 description: 'Learn the telltale signs of phishing attempts and protect yourself from email scams in just 5 minutes.'
 category: 'Quick Win'
 time: '⏰ 5 minutes'
-points: 10
+points: 25
 badgeId: 'email-detective'
 badgeName: 'Email Detective'
 ---

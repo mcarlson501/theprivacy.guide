@@ -3,7 +3,7 @@ title: 'Add Yourself to the Do Not Call Registry'
 description: 'Stop most telemarketing calls with this free government service that takes just 2 minutes to set up.'
 category: 'Quick Win'
 time: '⚡ 2 minutes'
-points: 50
+points: 25
 badgeId: 'call-blocker'
 badgeName: 'Call Blocker'
 ---

@@ -3,7 +3,7 @@ title: 'Email App Privacy Settings Cleanup'
 description: 'Secure your email apps by turning off tracking features and preventing data collection.'
 category: 'Essential'
 time: '⏰ 15 minutes'
-points: 25
+points: 75
 badgeId: 'email-guardian'
 badgeName: 'Email Guardian'
 ---

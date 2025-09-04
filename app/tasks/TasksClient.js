@@ -23,12 +23,20 @@ export default function TasksClient({ tasks, categories }) {
       const aCompleted = completedTasks.includes(a.id);
       const bCompleted = completedTasks.includes(b.id);
       
-      // Incomplete tasks first, completed tasks last
+      // Priority 1: Uncompleted Essential tasks always come first
+      const aIsEssentialIncomplete = a.category === 'Essential' && !aCompleted;
+      const bIsEssentialIncomplete = b.category === 'Essential' && !bCompleted;
+      
+      if (aIsEssentialIncomplete !== bIsEssentialIncomplete) {
+        return aIsEssentialIncomplete ? -1 : 1;
+      }
+      
+      // Priority 2: Among remaining tasks, incomplete tasks come before completed tasks
       if (aCompleted !== bCompleted) {
         return aCompleted ? 1 : -1;
       }
       
-      // If both have same completion status, maintain the original sorting from lib/tasks.js
+      // Priority 3: If both have same completion status, maintain the original sorting from lib/tasks.js
       // (which already sorts by category priority, then points, then title)
       return 0;
     });

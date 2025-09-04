@@ -3,7 +3,7 @@ title: 'Twitter/X Privacy Settings Guide'
 description: 'Protect your personal information on Twitter/X while staying connected to news, conversations, and communities you care about.'
 category: 'Social Media'
 time: '⏰ 10-15 minutes'
-points: 100
+points: 50
 badgeId: 'twitter-guardian'
 badgeName: 'Twitter Guardian'
 ---

@@ -3,7 +3,7 @@ title: 'Facebook Privacy Settings Checkup'
 description: 'Secure your Facebook account with privacy settings that actually matter, without losing the social connection you value.'
 category: 'Social Media'
 time: '⏰ 15-20 minutes'
-points: 100
+points: 50
 badgeId: 'facebook-guardian'
 badgeName: 'Facebook Guardian'
 ---

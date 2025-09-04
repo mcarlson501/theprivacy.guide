@@ -3,7 +3,7 @@ title: 'Instagram Privacy Settings Essentials'
 description: 'Protect your photos and personal life on Instagram while keeping the visual sharing experience you enjoy.'
 category: 'Social Media'
 time: '⏰ 12-15 minutes'
-points: 100
+points: 50
 badgeId: 'insta-protector'
 badgeName: 'Insta Protector'
 ---

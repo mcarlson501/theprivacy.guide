@@ -3,7 +3,7 @@ title: 'Review App Permissions on Your Phone'
 description: 'Discover which apps have access to your camera, microphone, contacts, and location.'
 category: 'Quick Win'
 time: '☕️ 10 minutes'
-points: 75
+points: 25
 badgeId: 'permission-detective'
 badgeName: 'Permission Detective'
 ---

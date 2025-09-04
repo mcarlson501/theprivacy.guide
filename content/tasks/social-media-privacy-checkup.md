@@ -3,7 +3,7 @@ title: 'Social Media Privacy Checkup'
 description: 'Take control of what you share and who can see it with a simple privacy settings review.'
 category: 'Quick Win'
 time: '☕️ 15 minutes'
-points: 75
+points: 25
 badgeId: 'privacy-guardian'
 badgeName: 'Privacy Guardian'
 ---

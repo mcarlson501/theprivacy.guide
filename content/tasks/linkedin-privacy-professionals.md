@@ -3,7 +3,7 @@ title: 'LinkedIn Privacy for Professionals'
 description: 'Balance professional networking with privacy protection on LinkedIn without limiting your career opportunities.'
 category: 'Social Media'
 time: '⏰ 15-20 minutes'
-points: 100
+points: 50
 badgeId: 'linkedin-pro'
 badgeName: 'LinkedIn Pro'
 ---

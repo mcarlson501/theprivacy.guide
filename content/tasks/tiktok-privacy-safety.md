@@ -3,7 +3,7 @@ title: 'TikTok Privacy and Safety Setup'
 description: 'Enjoy TikTok content while protecting your personal information and reducing data collection from this highly engaging platform.'
 category: 'Social Media'
 time: '⏰ 10-15 minutes'
-points: 100
+points: 50
 badgeId: 'tiktok-shield'
 badgeName: 'TikTok Shield'
 ---

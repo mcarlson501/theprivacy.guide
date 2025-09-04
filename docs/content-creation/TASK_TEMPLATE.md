@@ -148,10 +148,14 @@ You're building: **[Skill category]** - [Brief description of the transferable s
 - **id**: lowercase-with-hyphens, unique identifier
 - **title**: User-facing title (action-oriented)
 - **description**: One sentence benefit statement
-- **category**: Quick Win | Essential | Advanced | Expert
+- **category**: Quick Win | Essential | Social Media | Advanced
 - **difficulty**: Beginner | Intermediate | Advanced  
 - **timeEstimate**: "X minutes" (realistic estimate)
-- **points**: 10 (Quick Win), 15-25 (Essential), 30+ (Advanced)
+- **points**: Standardized point system:
+  - Quick Win: 25 points
+  - Essential: 75 points
+  - Social Media: 50 points
+  - Advanced: 100 points
 - **order**: Sequential number for category ordering
 - **badgeId/badgeName**: If task earns a badge
 
@@ -203,7 +207,7 @@ description: "[one sentence describing benefit]"
 category: "[category from above]"
 difficulty: "Beginner"
 timeEstimate: "[X] minutes"
-points: [10 for Quick Win, 15-25 for Essential, 30+ for Advanced]
+points: [25 for Quick Win, 75 for Essential, 50 for Social Media, 100 for Advanced]
 order: 1
 time: "[X] min"
 badgeId: "[if applicable]"

@@ -3,7 +3,7 @@ title: 'Use a Password Manager'
 description: 'Stop reusing passwords and let a password manager create and remember unique passwords for every account.'
 category: 'Essential'
 time: '⏰ 30 minutes setup'
-points: 150
+points: 75
 badgeId: 'password-master'
 badgeName: 'Password Master'
 ---

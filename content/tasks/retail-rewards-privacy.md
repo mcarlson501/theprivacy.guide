@@ -3,7 +3,7 @@ title: 'Smart Choices with Retail Rewards Programs'
 description: 'Make informed decisions about sharing your phone number and email for discounts while understanding the privacy trade-offs.'
 category: 'Quick Win'
 time: '☕ 5-10 minutes'
-points: 75
+points: 25
 badgeId: 'smart-shopper'
 badgeName: 'Smart Shopper'
 ---

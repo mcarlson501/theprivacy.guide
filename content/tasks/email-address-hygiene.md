@@ -3,7 +3,7 @@ title: 'Email Address Hygiene Basics'
 description: 'Master advanced email management strategies including aliases, disposable addresses, and strategic email separation.'
 category: 'Advanced'
 time: '⏰ 15-20 minutes'
-points: 35
+points: 100
 badgeId: 'email-strategist'
 badgeName: 'Email Strategist'
 ---

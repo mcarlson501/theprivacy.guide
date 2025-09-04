@@ -3,7 +3,7 @@ title: 'Use AI Tools Safely'
 description: 'Learn how to enjoy the benefits of AI assistants while protecting your personal and professional information.'
 category: 'Essential'
 time: '⏰ 20 minutes'
-points: 100
+points: 75
 badgeId: 'ai-safety-expert'
 badgeName: 'AI Safety Expert'
 ---

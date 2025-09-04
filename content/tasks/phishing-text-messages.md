@@ -3,7 +3,7 @@ title: 'Phishing Text Messages: The Mobile Threat'
 description: 'Learn to spot and handle SMS phishing scams that target your phone and personal information.'
 category: 'Essential'
 time: '⏰ 10 minutes'
-points: 20
+points: 75
 badgeId: 'sms-defender'
 badgeName: 'SMS Defender'
 ---

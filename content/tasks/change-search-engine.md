@@ -3,7 +3,7 @@ title: 'Change Your Default Search Engine'
 description: 'Stop search engines from profiling you. Switch to one that respects your privacy.'
 category: 'Quick Win'
 time: '☕️ About 5 minutes'
-points: 50
+points: 25
 badgeId: 'search-sentinel'
 badgeName: 'Search Sentinel'
 ---

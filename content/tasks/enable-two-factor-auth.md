@@ -3,7 +3,7 @@ title: 'Enable Two-Factor Authentication'
 description: 'Add an extra layer of security to your most important accounts with 2FA.'
 category: 'Essential'
 time: '⏰ 15-20 minutes'
-points: 100
+points: 75
 badgeId: 'security-guardian'
 badgeName: 'Security Guardian'
 ---
