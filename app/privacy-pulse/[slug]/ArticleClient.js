@@ -131,7 +131,11 @@ export default function ArticleClient({ article }) {
                 prose-li:text-gray-700 dark:prose-li:text-gray-300 prose-li:leading-relaxed
                 prose-hr:border-gray-200 dark:prose-hr:border-gray-700
                 prose-a:text-friendly-blue hover:prose-a:text-blue-600 prose-a:font-medium prose-a:no-underline hover:prose-a:underline"
-              dangerouslySetInnerHTML={{ __html: article.contentHtml }}
+              dangerouslySetInnerHTML={{ 
+                __html: typeof window !== 'undefined' 
+                  ? require('dompurify').sanitize(article.contentHtml)
+                  : article.contentHtml 
+              }}
             />
           </div>
         </article>

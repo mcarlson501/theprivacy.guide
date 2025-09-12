@@ -316,7 +316,11 @@ export default function TaskDetailClient({ task }) {
                       <div className="ml-16 -mt-2">
                         <div 
                           className="prose prose-lg max-w-none task-content-overview"
-                          dangerouslySetInnerHTML={{ __html: section.content }}
+                          dangerouslySetInnerHTML={{ 
+                            __html: typeof window !== 'undefined' 
+                              ? require('dompurify').sanitize(section.content)
+                              : section.content 
+                          }}
                         />
                       </div>
                     </>
@@ -324,7 +328,11 @@ export default function TaskDetailClient({ task }) {
                   
                   {!section.title && (
                     <div className="prose prose-lg max-w-none task-content-overview">
-                      <div dangerouslySetInnerHTML={{ __html: section.content }} />
+                      <div dangerouslySetInnerHTML={{ 
+                        __html: typeof window !== 'undefined' 
+                          ? require('dompurify').sanitize(section.content)
+                          : section.content 
+                      }} />
                     </div>
                   )}
                 </section>
@@ -357,7 +365,11 @@ export default function TaskDetailClient({ task }) {
                   <div className="ml-16 -mt-2">
                     <div 
                       className="prose prose-lg max-w-none task-content-step"
-                      dangerouslySetInnerHTML={{ __html: stepData.content }}
+                      dangerouslySetInnerHTML={{ 
+                        __html: typeof window !== 'undefined' 
+                          ? require('dompurify').sanitize(stepData.content)
+                          : stepData.content 
+                      }}
                     />
                   </div>
                 </section>

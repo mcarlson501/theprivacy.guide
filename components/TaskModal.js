@@ -193,7 +193,11 @@ export default function TaskModal({ task, isOpen, onClose }) {
             <div className="space-y-8">
               <div 
                 className="prose prose-lg max-w-none task-content-overview"
-                dangerouslySetInnerHTML={{ __html: content.overview }}
+                dangerouslySetInnerHTML={{ 
+                  __html: typeof window !== 'undefined' 
+                    ? require('dompurify').sanitize(content.overview)
+                    : content.overview 
+                }}
               />
             </div>
           )}
@@ -220,7 +224,11 @@ export default function TaskModal({ task, isOpen, onClose }) {
                   <div className="px-8 py-8">
                     <div 
                       className="prose max-w-none task-content-step"
-                      dangerouslySetInnerHTML={{ __html: stepData.content }}
+                      dangerouslySetInnerHTML={{ 
+                        __html: typeof window !== 'undefined' 
+                          ? require('dompurify').sanitize(stepData.content)
+                          : stepData.content 
+                      }}
                     />
                   </div>
                 </div>
