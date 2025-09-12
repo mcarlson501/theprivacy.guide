@@ -50,8 +50,9 @@ We've implemented enterprise-grade security measures for the progress data impor
 - **Multi-Layer Defense**: Client-side and server-side validation with real-time input limiting
 
 #### **Privacy-by-Design Architecture**
-- **Zero Data Collection**: No personal information, tracking, or analytics
-- **Local-Only Storage**: All user progress stored in browser localStorage
+- **Minimal Data Collection**: Privacy-first analytics using GoatCounter (aggregate data only, no personal information, cookies, or cross-site tracking)
+- **No Personal Data Storage**: No user accounts, emails, or identifiable information
+- **Local Storage Only**: User progress stored locally on device
 - **No External Dependencies**: Self-hosted assets prevent data leakage
 - **User Data Control**: Full export, import, and deletion capabilities
 
@@ -76,12 +77,15 @@ We've implemented enterprise-grade security measures for the progress data impor
 - **Client-Side Only**: Minimal attack surface
 - **No Authentication**: No user data stored
 - **Local Storage**: Progress data stays on device
+- **Content Security Policy**: Comprehensive CSP headers preventing XSS attacks and unauthorized script execution
+- **Security Headers**: X-Frame-Options, X-Content-Type-Options, Referrer-Policy, and Permissions-Policy for defense in depth
 
 ### Privacy Protection
-- **No Tracking**: No analytics or tracking scripts
-- **No External Calls**: Content served from your domain
-- **Minimal Dependencies**: Reduced third-party risk
-- **Open Source**: Full transparency
+- **Privacy-First Analytics**: GoatCounter for aggregate usage data (no personal data, cookies, or user tracking)
+- **Self-Hosted Assets**: No external resource loading beyond analytics
+- **Local Progress**: All user data stays on your device
+- **No Invasive Tracking**: No advertising networks, social media pixels, or cross-site tracking
+- **Restricted External Connections**: CSP policy only allows connections to our GoatCounter analytics endpoint (theprivacyguide.goatcounter.com)
 
 ## Reporting Other Issues
 

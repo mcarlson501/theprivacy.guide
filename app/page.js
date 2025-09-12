@@ -202,15 +202,15 @@ export default async function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {/* No Tracking */}
+            {/* Privacy-First Analytics */}
             <div className="bg-white dark:bg-dark-bg rounded-xl p-6 text-center border border-gray-200 dark:border-dark-border">
               <div className="bg-success-teal/10 dark:bg-success-teal/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-success-teal" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z" clipRule="evenodd" />
+                  <path fillRule="evenodd" d="M9 12l2 2 4-4m5-6a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
                 </svg>
               </div>
-              <h3 className="font-semibold text-charcoal-gray dark:text-dark-text mb-2">No Tracking</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">We don't use Google Analytics, Facebook pixels, or any third-party trackers.</p>
+              <h3 className="font-semibold text-charcoal-gray dark:text-dark-text mb-2">Privacy-First Analytics</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">We use GoatCounter for basic metrics - no cookies, no tracking, no personal data collection.</p>
             </div>
 
             {/* Open Source */}

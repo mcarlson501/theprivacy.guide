@@ -39,7 +39,8 @@ Tasks are processed into interactive pages during the build.
 
 The Privacy Guide is built to minimize data collection and give users control over their information.
 
-- Zero data collection by default: no accounts or tracking.
+- Privacy-first analytics: minimal, anonymous aggregate data using GoatCounter (no personal data, cookies, or cross-site tracking).
+- No user accounts or personal information collection.
 - Local-only progress storage with export/import options.
 - Static generation and self-hosted assets reduce external dependencies.
 - One-click data clearing and clear controls for users.
@@ -77,7 +78,8 @@ Tech stack:
 - Tailwind CSS
 - Markdown content for tasks and news
 - Local storage for progress tracking
-- Self-hosted assets and CSP for privacy
+- Self-hosted assets and comprehensive CSP via meta tags for privacy
+- Content Security Policy restricting external connections to GoatCounter analytics only
 
 Recent enhancements include the social media task series, Privacy Pulse integration, improved templates, and security hardening for JSON import.
 
@@ -87,7 +89,7 @@ Recent enhancements include the social media task series, Privacy Pulse integrat
 - Full social media privacy series
 - Privacy Pulse news with action prompts
 - Enterprise-grade input validation and security hardening
-- No external trackers; local-only progress storage
+- Privacy-first analytics with no personal data collection; local-only progress storage
 - WCAG 2.1 AA accessibility considerations
 - Open-source (MIT)
 

@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
           <div className="mt-6 flex justify-center items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
             <span>Effective Date: August 31, 2025</span>
             <span>•</span>
-            <span>Last Updated: September 1, 2025</span>
+            <span>Last Updated: September 11, 2025</span>
           </div>
         </div>
 
@@ -43,9 +43,9 @@ export default function PrivacyPolicyPage() {
               <h3 className="font-semibold text-charcoal-gray dark:text-dark-text mb-2">❌ What We Don't Do</h3>
               <ul className="text-sm text-gray-600 dark:text-gray-300 space-y-1">
                 <li>• Collect personal information or emails</li>
-                <li>• Use tracking cookies or analytics</li>
+                <li>• Use tracking cookies or invasive analytics</li>
                 <li>• Share data with third parties</li>
-                <li>• Store your data on our servers</li>
+                <li>• Store your personal data on our servers</li>
               </ul>
             </div>
           </div>
@@ -73,15 +73,28 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700/30 rounded-lg p-6 mb-6">
-            <h4 className="text-blue-800 dark:text-blue-300 font-semibold mb-3">Technical Information (No Personal Identification)</h4>
-            <ul className="text-blue-700 dark:text-blue-300 space-y-1">
-              <li>• Basic website usage patterns for improving user experience</li>
-              <li>• Error logs to help us fix technical issues</li>
-              <li>• Device type (mobile/desktop) for responsive design optimization</li>
-            </ul>
-            <p className="text-blue-700 dark:text-blue-300 text-sm mt-3 mb-0">
-              This information cannot be used to identify you personally.
-            </p>
+            <h4 className="text-blue-800 dark:text-blue-300 font-semibold mb-3">Website Analytics (Privacy-Friendly)</h4>
+            <div className="space-y-3 text-blue-700 dark:text-blue-300">
+              <p><strong>GoatCounter Analytics:</strong> We use GoatCounter, an open-source, privacy-friendly analytics service to understand how our website is used.</p>
+              <p><strong>What's Collected (Aggregate Only):</strong></p>
+              <ul className="ml-4 space-y-1 text-sm">
+                <li>• Page visits and referrer information</li>
+                <li>• Browser type and screen width (for responsive design)</li>
+                <li>• General geographic location (country level only)</li>
+                <li>• Basic website usage patterns for improving user experience</li>
+              </ul>
+              <p><strong>What's NOT Collected:</strong></p>
+              <ul className="ml-4 space-y-1 text-sm">
+                <li>• No IP addresses stored</li>
+                <li>• No cookies or tracking identifiers</li>
+                <li>• No personal information or user profiles</li>
+                <li>• No cross-site tracking capabilities</li>
+              </ul>
+              <p className="text-sm font-medium mt-3">
+                GoatCounter stores only aggregate data that cannot be used to identify individual users. 
+                It operates under GDPR compliance on a legitimate interest basis.
+              </p>
+            </div>
           </div>
 
           <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-700/30 rounded-lg p-6 mb-6">
@@ -141,7 +154,10 @@ export default function PrivacyPolicyPage() {
                 <strong>Self-Hosted Fonts:</strong> We use self-hosted system fonts for typography. No external font requests are made to Google or other services.
               </p>
               <p>
-                <strong>No Analytics or Tracking:</strong> We don't use Google Analytics, Cloudflare Analytics, advertising networks, social media plugins, or any other third-party services that collect user data.
+                <strong>GoatCounter Analytics:</strong> We use GoatCounter for privacy-friendly website analytics. GoatCounter is an open-source service that collects only aggregate, non-personal data and operates under GDPR compliance. No personal data is shared with GoatCounter.
+              </p>
+              <p>
+                <strong>No Invasive Tracking:</strong> We don't use Google Analytics, Facebook Pixel, advertising networks, social media plugins, or any other services that create user profiles or track you across websites.
               </p>
             </div>
           </div>
@@ -184,6 +200,8 @@ export default function PrivacyPolicyPage() {
             <ul className="text-gray-700 dark:text-gray-300 space-y-2">
               <li><strong>No central database</strong> – No personal data to breach since everything is stored locally</li>
               <li><strong>HTTPS encryption</strong> – All website traffic is encrypted in transit via Cloudflare's SSL/TLS</li>
+              <li><strong>Content Security Policy</strong> – Comprehensive CSP headers prevent XSS attacks and restrict external connections to only our analytics endpoint</li>
+              <li><strong>Security headers</strong> – Additional protections including X-Frame-Options, X-Content-Type-Options, and Permissions-Policy</li>
               <li><strong>DDoS protection</strong> – Cloudflare provides enterprise-grade security to keep the site available</li>
               <li><strong>No login vulnerabilities</strong> – No accounts mean no password breaches</li>
               <li><strong>Minimal attack surface</strong> – We can't lose what we don't collect or store</li>
@@ -228,7 +246,7 @@ export default function PrivacyPolicyPage() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-success-teal mr-2">✅</span>
-                  <span>No third-party tracking or analytics</span>
+                  <span>Privacy-first analytics with no personal data collection</span>
                 </li>
               </ul>
               <ul className="space-y-2 text-charcoal-gray dark:text-dark-text">

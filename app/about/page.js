@@ -221,12 +221,35 @@ export default function AboutPage() {
                 Complete Privacy
               </h3>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                <li>• No tracking scripts or analytics</li>
-                <li>• No user accounts or personal data collection</li>
-                <li>• All progress stored locally on your device</li>
-                <li>• No cookies beyond essential functionality</li>
+                <li>• Privacy-first analytics (no personal data collection)</li>
+                <li>• No user accounts or personal information stored</li>
+                <li>• All your progress stored locally on your device</li>
+                <li>• No tracking cookies or advertising</li>
                 <li>• No email lists or marketing</li>
               </ul>
+            </div>
+
+            <div className="card">
+              <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text mb-4 flex items-center">
+                <svg className="w-6 h-6 text-success-teal mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                Transparent Analytics
+              </h3>
+              <div className="space-y-2 text-gray-600 dark:text-gray-300">
+                <p className="text-sm">
+                  <strong>Full Transparency:</strong> We use GoatCounter, an open-source, privacy-first analytics service to understand how people use our site and improve the experience.
+                </p>
+                <ul className="space-y-1 text-sm ml-4">
+                  <li>• Only aggregate data (e.g., "20 people visited today")</li>
+                  <li>• No IP addresses, cookies, or personal identifiers stored</li>
+                  <li>• Cannot track you across websites or create profiles</li>
+                  <li>• GDPR compliant and operates under legitimate interest</li>
+                </ul>
+                <p className="text-xs italic">
+                  See our <a href="/privacy" className="text-friendly-blue hover:underline">Privacy Policy</a> for complete details.
+                </p>
+              </div>
             </div>
 
             <div className="card">
