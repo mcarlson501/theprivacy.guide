@@ -1,58 +1,53 @@
 # Contributing to The Privacy Guide
 
-Thank you for your interest in contributing to The Privacy Guide! We welcome contributions that help make digital privacy more accessible to everyone.
+Thank you for your interest in contributing to The Privacy Guide. We welcome contributions that help make digital privacy more accessible to everyone.
 
-## 🎯 Ways to Contribute
+## Ways to Contribute
 
 ### Content Contributions
 - **Privacy Tasks**: Create new step-by-step privacy guides
 - **News Articles**: Write about privacy breaches, tool updates, or policy changes
-- **Improvements**: Enhance existing content with better explanations or updated steps
+- **Content Improvements**: Enhance existing content with better explanations or updated steps
 
 ### Code Contributions
 - **Bug Fixes**: Report and fix issues
-- **Features**: Add new functionality to improve user experience
+- **Feature Development**: Add new functionality to improve user experience
 - **Performance**: Optimize loading times and accessibility
-- **Mobile**: Improve mobile experience and responsiveness
+- **Mobile Experience**: Improve mobile usability and responsiveness
 
-## 📋 Content Guidelines
+## Content Guidelines
 
 ### Privacy Tasks
 - **Clear Language**: Write for non-technical users
-- **Step-by-Step**: Break complex processes into simple steps
-- **Screenshots**: Include helpful visuals when possible
-- **Testing**: Verify instructions work on multiple devices/platforms
-- **Categories**: Use appropriate difficulty levels (Quick Win, Essential, Advanced, Expert)
+- **Step-by-Step Format**: Break complex processes into simple, numbered steps
+- **Platform Testing**: Verify instructions work across devices and platforms
+- **Appropriate Categories**: Use correct difficulty levels (Quick Win, Essential, Social Media, Advanced)
 
 ### News Articles
-- **Timely**: Focus on recent privacy/security developments
-- **Actionable**: Always include "what users should do"
-- **Accessible**: Translate tech news into user-friendly language
-- **Sources**: Link to official sources and trusted security sites
+- **Timely Content**: Focus on recent privacy and security developments
+- **Actionable Information**: Always include practical steps users can take
+- **Accessible Language**: Translate technical concepts into user-friendly explanations
+- **Reliable Sources**: Link to official sources and trusted security resources
 
-## 🚀 Getting Started
+## Getting Started
 
-### 1. Fork and Clone
+### Development Setup
 ```bash
-git fork https://github.com/mcarlson501/theprivacy.guide
+# Fork the repository on GitHub, then:
 git clone https://github.com/YOUR_USERNAME/theprivacy.guide.git
 cd theprivacy.guide
-```
-
-### 2. Set Up Development Environment
-```bash
 npm install
 npm run dev
 ```
 
-### 3. Create a Branch
+### Creating a Branch
 ```bash
 git checkout -b feature/your-feature-name
-# or
+# or for content:
 git checkout -b content/new-task-name
 ```
 
-## 📝 Content Creation Process
+## Content Creation Process
 
 ### Adding a Privacy Task
 
@@ -63,8 +58,8 @@ git checkout -b content/new-task-name
    ---
    title: 'Your Task Title'
    description: 'Brief description'
-   category: 'Quick Win' # or Essential, Advanced, Expert
-   time: '⏱️ About 10 minutes'
+   category: 'Quick Win' # or Essential, Social Media, Advanced
+   time: '10 minutes'
    points: 50
    ---
    ```
@@ -88,82 +83,82 @@ git checkout -b content/new-task-name
 4. **Fact-check** against original sources
 5. **Submit a pull request**
 
-## 🔧 Technical Contributions
+## Technical Contributions
 
-### Development Setup
-- **Node.js 18+** required
-- **Next.js 14** with App Router
-- **Tailwind CSS** for styling
-- **Markdown** with gray-matter for content
+### Development Requirements
+- Node.js 18 or higher
+- Next.js 14 with App Router
+- Tailwind CSS for styling
+- Markdown with gray-matter for content processing
 
 ### Code Standards
-- **ESLint**: Follow the existing linting rules
-- **Formatting**: Use consistent indentation and naming
-- **Comments**: Document complex logic
-- **Testing**: Test on multiple browsers and devices
+- Follow existing ESLint configuration
+- Use consistent indentation and naming conventions
+- Document complex logic with clear comments
+- Test across multiple browsers and devices
 
 ### Pull Request Process
-1. **Update documentation** if you change functionality
-2. **Test thoroughly** across different screen sizes
-3. **Write clear commit messages**
-4. **Link to relevant issues** in your PR description
-5. **Be responsive** to feedback during review
+1. Update documentation if functionality changes
+2. Test thoroughly across different screen sizes
+3. Write clear, descriptive commit messages
+4. Link to relevant issues in PR description
+5. Respond promptly to review feedback
 
-## 🎨 Design Guidelines
+## Design Guidelines
 
 ### Visual Consistency
-- **Colors**: Use the established brand palette
-- **Typography**: Maintain consistent text styles
-- **Spacing**: Follow existing layout patterns
-- **Icons**: Use consistent icon styles
+- Use established brand color palette
+- Maintain consistent typography and text styles
+- Follow existing layout patterns and spacing
+- Use consistent icon styles throughout
 
-### Accessibility
-- **Contrast**: Ensure sufficient color contrast
-- **Navigation**: Support keyboard navigation
-- **Screen Readers**: Use proper heading structure and alt text
-- **Mobile**: Ensure touch targets are appropriately sized
+### Accessibility Standards
+- Ensure sufficient color contrast ratios
+- Support keyboard navigation
+- Use proper heading structure and alt text
+- Ensure touch targets meet minimum size requirements
 
-## 📊 Content Review Process
+## Review Process
 
-### Automatic Checks
+### Automated Validation
 - Markdown syntax validation
-- Link checking
-- Build verification
+- Link checking and verification
+- Build process verification
 
-### Human Review
-- **Accuracy**: Technical accuracy of instructions
-- **Clarity**: Language appropriate for target audience
-- **Completeness**: All necessary steps included
-- **Safety**: Recommendations are secure and current
+### Human Review Criteria
+- Technical accuracy of instructions
+- Language appropriate for target audience
+- Completeness of all necessary steps
+- Security and currency of recommendations
 
-## 🤝 Community Guidelines
+## Community Guidelines
 
-### Be Respectful
-- **Constructive Feedback**: Focus on improving content, not criticizing contributors
-- **Inclusive Language**: Use welcoming, inclusive language
-- **Patient Teaching**: Remember that privacy is new to many people
+### Professional Standards
+- Provide constructive, specific feedback
+- Use inclusive, welcoming language
+- Be patient when helping newcomers to privacy concepts
 
-### Focus on Users
-- **User-First**: Every change should benefit end users
-- **Accessibility**: Consider users with different technical skills
-- **Practical**: Prioritize actionable, implementable advice
+### User-Focused Approach
+- Prioritize end-user benefit in all changes
+- Consider users with varying technical skill levels
+- Focus on practical, implementable advice
 
-## ❓ Getting Help
+## Getting Help
 
-### Questions About Contributing
-- **Open an Issue**: For questions about the project direction
-- **Discussions**: For general questions and community chat
-- **Documentation**: Check the `/docs` folder for detailed guides
+### Support Channels
+- **GitHub Issues**: Project direction questions and bug reports
+- **Documentation**: Comprehensive guides in `/docs` folder
+- **Security Issues**: Email concerns privately to maintainers
 
-### Technical Issues
-- **Bug Reports**: Use the issue tracker with clear reproduction steps
-- **Feature Requests**: Describe the problem you're trying to solve
-- **Security Issues**: Email security concerns privately
+### Issue Reporting
+- **Bug Reports**: Include clear reproduction steps
+- **Feature Requests**: Describe the problem being solved
+- **Content Issues**: Provide specific accuracy concerns
 
-## 📄 License
+## License
 
 By contributing to The Privacy Guide, you agree that your contributions will be licensed under the MIT License.
 
 ---
 
-Thank you for helping make digital privacy accessible to everyone! 🔒
+Thank you for helping make digital privacy accessible to everyone.
