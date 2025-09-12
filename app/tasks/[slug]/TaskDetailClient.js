@@ -351,7 +351,7 @@ export default function TaskDetailClient({ task }) {
                 <section key={stepIndex} className="border-b border-gray-100 dark:border-gray-700 pb-6">
                   {/* Step Header */}
                   <div className="flex items-start space-x-4 mb-2">
-                    <div className="w-12 h-12 bg-friendly-blue text-white rounded-full flex items-center justify-center text-lg font-semibold flex-shrink-0" aria-hidden="true">
+                    <div className="step-number" aria-hidden="true">
                       {stepIndex + 1}
                     </div>
                     <div className="flex-1">

@@ -169,3 +169,18 @@ a[role="button"] {
   overflow-x: auto;
   margin-bottom: 1rem;
 }
+
+/* Step number consistency */
+.step-number {
+  background-color: #4A90E2 !important; /* friendly-blue */
+  color: white !important;
+  width: 3rem !important;
+  height: 3rem !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  flex-shrink: 0 !important;
+}

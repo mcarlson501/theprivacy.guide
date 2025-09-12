@@ -15,50 +15,33 @@ content/tasks/[category]-[task-name].md
 ### Task Template Structure
 ```markdown
 ---
-id: "unique-task-id"
-title: "Task Title - Clear and Action-Oriented"
-description: "One sentence describing what the user will accomplish and why it matters."
-category: "Quick Win | Essential | Advanced | Expert"
-difficulty: "Beginner | Intermediate | Advanced"
-timeEstimate: "X minutes"
+title: 'Task Title - Clear and Action-Oriented'
+description: 'One sentence describing what the user will accomplish and why it matters.'
+category: 'Quick Win | Essential | Social Media | Advanced'
+time: '⏰ X minutes'
 points: X
-order: X
-time: "X min"
-badgeId: "badge-identifier"
-badgeName: "Badge Display Name"
-published: true
-featured: false
+badgeId: 'badge-identifier'
+badgeName: 'Badge Display Name'
 ---
 
-# Task Title
+#### The Big Picture (Why It's Important)
+Brief introduction paragraph that connects with the user's everyday experience. Explain why this matters in terms they can relate to - what could go wrong if they don't do this, or what peace of mind they'll gain. Include the broader context and real-world impact with concrete examples.
 
-Brief introduction paragraph that connects with the user's everyday experience. Explain why this matters in terms they can relate to - what could go wrong if they don't do this, or what peace of mind they'll gain.
-
-## Why It Matters
-
-### The Big Picture
-Explain the broader context and real-world impact. Use concrete examples:
-- "When you click that suspicious link..."
-- "If someone gets access to your account..."
-- "This is how scammers trick people..."
-
-**What tech people know that you don't:** [Insight that tech-savvy people take for granted but non-tech users need to learn]
-
-### What This Accomplishes
-- ✅ **Immediate benefit 1** - Specific protection or improvement
-- ✅ **Immediate benefit 2** - Measurable outcome
-- ✅ **Long-term benefit** - Skill or awareness that transfers to other situations
+#### What This Accomplishes (How It Helps)
+* **Immediate benefit 1** - Specific protection or improvement
+* **Immediate benefit 2** - Measurable outcome  
+* **Long-term benefit** - Skill or awareness that transfers to other situations
 
 **Real Impact:** [Specific example of how this protects the user]
 
-## How To Do It
+---
 
 ### Step 1: [Clear Action Title]
 **What you're doing:** Brief explanation of this step's purpose
 
 **Instructions:**
 1. [Specific action with visual cues - "Click the blue button labeled..."]
-2. [Next action with expected result - "You should see..."]
+2. [Next action with expected result - "You should see..."]  
 3. [Final verification - "Confirm by checking..."]
 
 **If you see [specific thing], do this:** [Troubleshooting guidance]
@@ -74,24 +57,26 @@ Explain the broader context and real-world impact. Use concrete examples:
 ### Step 3: [Final Step if needed]
 [Follow same format]
 
-## ✅ You're Done When...
-- [ ] **Checkpoint 1** - Specific thing user can verify
-- [ ] **Checkpoint 2** - Another verification point
-- [ ] **Checkpoint 3** - Final confirmation
+---
+
+### ✅ You're Done When...
+* **Checkpoint 1** - Specific thing user can verify
+* **Checkpoint 2** - Another verification point
+* **Checkpoint 3** - Final confirmation
 
 **Success indicator:** [What the user should see/experience that confirms completion]
 
-## 🎯 Pro Tips
-- **Quick tip:** [One-liner that makes this easier or more effective]
-- **Remember:** [Important point to reinforce the habit]
-- **Next level:** [Optional enhancement they can do later]
+### Pro Tips for Success
+* **Quick tip:** [One-liner that makes this easier or more effective]
+* **Remember:** [Important point to reinforce the habit]
+* **Next level:** [Optional enhancement they can do later]
 
-## ⚠️ Common Pitfalls
-- **"But I thought..."** - [Common misconception and correction]
-- **"What if I..."** - [Address likely concern or confusion]
-- **Red flag:** [Warning about what not to do]
+### Common Pitfalls to Avoid  
+* **"But I thought..."** - [Common misconception and correction]
+* **"What if I..."** - [Address likely concern or confusion]
+* **Red flag:** [Warning about what not to do]
 
-## 🔗 What's Next?
+### What's Next?
 This skill helps you with these other privacy tasks:
 - [Link to related task 1]
 - [Link to related task 2]

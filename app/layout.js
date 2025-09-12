@@ -34,13 +34,26 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  // Only apply strict security headers in production
+  const isProduction = process.env.NODE_ENV === 'production';
+  
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://gc.zgo.at http://gc.zgo.at; connect-src 'self' https://theprivacyguide.goatcounter.com https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;" />
-        <meta httpEquiv="X-Frame-Options" content="DENY" />
-        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
-        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        {isProduction && (
+          <>
+            <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://gc.zgo.at http://gc.zgo.at; connect-src 'self' https://theprivacyguide.goatcounter.com https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; media-src 'self' data: blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;" />
+            <meta httpEquiv="X-Frame-Options" content="DENY" />
+            <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+            <meta name="referrer" content="strict-origin-when-cross-origin" />
+          </>
+        )}
+        {!isProduction && (
+          <>
+            {/* Development-friendly CSP - allows localhost, hot reload, and canvas for confetti */}
+            <meta httpEquiv="Content-Security-Policy" content="default-src 'self' 'unsafe-eval' 'unsafe-inline' http: https: ws: wss: data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' http: https:; connect-src 'self' http: https: ws: wss:; style-src 'self' 'unsafe-inline' http: https:; img-src 'self' data: http: https:; font-src 'self' data: http: https:; media-src 'self' data: blob:;" />
+          </>
+        )}
       </head>
       <body className="font-inter bg-calm-off-white dark:bg-dark-bg text-charcoal-gray dark:text-dark-text transition-colors duration-200">
         <ThemeProvider>
