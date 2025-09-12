@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://gc.zgo.at; connect-src 'self' https://theprivacyguide.goatcounter.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;" />
+        <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://gc.zgo.at http://gc.zgo.at; connect-src 'self' https://theprivacyguide.goatcounter.com https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;" />
         <meta httpEquiv="X-Frame-Options" content="DENY" />
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -110,7 +110,7 @@ export default function RootLayout({ children }) {
         </ProgressProvider>
         </ThemeProvider>
         <script data-goatcounter="https://theprivacyguide.goatcounter.com/count"
-                async src="//gc.zgo.at/count.js"></script>
+                async src="https://gc.zgo.at/count.js"></script>
       </body>
     </html>
   )
