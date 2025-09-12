@@ -213,59 +213,115 @@ export default function AboutPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-6 sm:mb-8 text-center">Our Commitment to You</h2>
           
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mb-8">
-            <div className="card">
-              <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text mb-4 flex items-center">
-                <svg className="w-6 h-6 text-success-teal mr-3" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
-                </svg>
-                Complete Privacy
-              </h3>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
-                <li>• Privacy-first analytics (no personal data)</li>
-                <li>• No user accounts or personal information</li>
-                <li>• Progress stored locally on your device</li>
-                <li>• No tracking cookies or advertising</li>
-                <li>• No email lists or marketing</li>
-              </ul>
-            </div>
-
-            <div className="card">
-              <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text mb-4 flex items-center">
-                <svg className="w-6 h-6 text-success-teal mr-3" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                Transparent Analytics
-              </h3>
-              <div className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
-                <p>
-                  <strong>GoatCounter Analytics:</strong> Open-source, privacy-first service for basic site metrics.
+            <div className="card h-full flex flex-col">
+              <div className="flex-shrink-0 mb-4">
+                <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text mb-3 flex items-center">
+                  <svg className="w-6 h-6 text-success-teal mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
+                  </svg>
+                  Complete Privacy
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                  Privacy-first analytics with no personal data collection or tracking.
                 </p>
-                <ul className="space-y-1 ml-3">
-                  <li>• Only aggregate data ("20 visitors today")</li>
-                  <li>• No IP addresses, cookies, or identifiers</li>
-                  <li>• Cannot track across websites</li>
-                  <li>• GDPR compliant</li>
+              </div>
+              <div className="flex-grow">
+                <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-success-teal mr-2 flex-shrink-0">•</span>
+                    <span>No user accounts or personal information</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-success-teal mr-2 flex-shrink-0">•</span>
+                    <span>Progress stored locally on your device</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-success-teal mr-2 flex-shrink-0">•</span>
+                    <span>No tracking cookies or advertising</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-success-teal mr-2 flex-shrink-0">•</span>
+                    <span>No email lists or marketing</span>
+                  </li>
                 </ul>
-                <p className="text-xs italic">
-                  <a href="/privacy" className="text-friendly-blue hover:underline">Full privacy details →</a>
-                </p>
               </div>
             </div>
 
-            <div className="card">
-              <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text mb-4 flex items-center">
-                <svg className="w-6 h-6 text-friendly-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-                Open Source
-              </h3>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
-                <li>• Full source code on GitHub</li>
-                <li>• See exactly how we protect privacy</li>
-                <li>• Community contributions welcome</li>
-                <li>• Regular security audits</li>
-                <li>• No hidden functionality</li>
-              </ul>
+            <div className="card h-full flex flex-col">
+              <div className="flex-shrink-0 mb-4">
+                <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text mb-3 flex items-center">
+                  <svg className="w-6 h-6 text-success-teal mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  Transparent Analytics
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                  <strong>GoatCounter Analytics:</strong> Open-source, privacy-first service for basic site metrics.
+                </p>
+              </div>
+              <div className="flex-grow">
+                <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm mb-3">
+                  <li className="flex items-start">
+                    <span className="text-success-teal mr-2 flex-shrink-0">•</span>
+                    <span>Only aggregate data ("20 visitors today")</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-success-teal mr-2 flex-shrink-0">•</span>
+                    <span>No IP addresses, cookies, or identifiers</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-success-teal mr-2 flex-shrink-0">•</span>
+                    <span>Cannot track across websites</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-success-teal mr-2 flex-shrink-0">•</span>
+                    <span>GDPR compliant</span>
+                  </li>
+                </ul>
+                <div className="mt-auto">
+                  <a href="/privacy" className="text-xs text-friendly-blue hover:underline italic">
+                    Full privacy details →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="card h-full flex flex-col">
+              <div className="flex-shrink-0 mb-4">
+                <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text mb-3 flex items-center">
+                  <svg className="w-6 h-6 text-friendly-blue mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                  Open Source
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                  Full transparency with complete source code availability and community involvement.
+                </p>
+              </div>
+              <div className="flex-grow">
+                <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-friendly-blue mr-2 flex-shrink-0">•</span>
+                    <span>Full source code on GitHub</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-friendly-blue mr-2 flex-shrink-0">•</span>
+                    <span>See exactly how we protect privacy</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-friendly-blue mr-2 flex-shrink-0">•</span>
+                    <span>Community contributions welcome</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-friendly-blue mr-2 flex-shrink-0">•</span>
+                    <span>Regular security audits</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-friendly-blue mr-2 flex-shrink-0">•</span>
+                    <span>No hidden functionality</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
