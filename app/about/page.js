@@ -212,7 +212,7 @@ export default function AboutPage() {
         <section className="mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl font-bold text-charcoal-gray dark:text-dark-text mb-6 sm:mb-8 text-center">Our Commitment to You</h2>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mb-8">
             <div className="card">
               <h3 className="text-xl font-semibold text-charcoal-gray dark:text-dark-text mb-4 flex items-center">
                 <svg className="w-6 h-6 text-success-teal mr-3" fill="currentColor" viewBox="0 0 20 20">
@@ -220,10 +220,10 @@ export default function AboutPage() {
                 </svg>
                 Complete Privacy
               </h3>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                <li>• Privacy-first analytics (no personal data collection)</li>
-                <li>• No user accounts or personal information stored</li>
-                <li>• All your progress stored locally on your device</li>
+              <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
+                <li>• Privacy-first analytics (no personal data)</li>
+                <li>• No user accounts or personal information</li>
+                <li>• Progress stored locally on your device</li>
                 <li>• No tracking cookies or advertising</li>
                 <li>• No email lists or marketing</li>
               </ul>
@@ -236,18 +236,18 @@ export default function AboutPage() {
                 </svg>
                 Transparent Analytics
               </h3>
-              <div className="space-y-2 text-gray-600 dark:text-gray-300">
-                <p className="text-sm">
-                  <strong>Full Transparency:</strong> We use GoatCounter, an open-source, privacy-first analytics service to understand how people use our site and improve the experience.
+              <div className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
+                <p>
+                  <strong>GoatCounter Analytics:</strong> Open-source, privacy-first service for basic site metrics.
                 </p>
-                <ul className="space-y-1 text-sm ml-4">
-                  <li>• Only aggregate data (e.g., "20 people visited today")</li>
-                  <li>• No IP addresses, cookies, or personal identifiers stored</li>
-                  <li>• Cannot track you across websites or create profiles</li>
-                  <li>• GDPR compliant and operates under legitimate interest</li>
+                <ul className="space-y-1 ml-3">
+                  <li>• Only aggregate data ("20 visitors today")</li>
+                  <li>• No IP addresses, cookies, or identifiers</li>
+                  <li>• Cannot track across websites</li>
+                  <li>• GDPR compliant</li>
                 </ul>
                 <p className="text-xs italic">
-                  See our <a href="/privacy" className="text-friendly-blue hover:underline">Privacy Policy</a> for complete details.
+                  <a href="/privacy" className="text-friendly-blue hover:underline">Full privacy details →</a>
                 </p>
               </div>
             </div>
@@ -257,14 +257,14 @@ export default function AboutPage() {
                 <svg className="w-6 h-6 text-friendly-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
-                Open Source Transparency
+                Open Source
               </h3>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                <li>• Full source code available on GitHub</li>
-                <li>• See exactly how we protect your privacy</li>
+              <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
+                <li>• Full source code on GitHub</li>
+                <li>• See exactly how we protect privacy</li>
                 <li>• Community contributions welcome</li>
-                <li>• Regular security audits and updates</li>
-                <li>• No hidden functionality or backdoors</li>
+                <li>• Regular security audits</li>
+                <li>• No hidden functionality</li>
               </ul>
             </div>
           </div>
