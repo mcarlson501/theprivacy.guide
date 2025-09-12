@@ -3,7 +3,7 @@
 import { useProgress } from '../context/ProgressContext';
 import { getPrivacyLevel } from '../lib/levels';
 
-export default function ProgressCard({ totalPossiblePoints = 1000, totalTasks = 12 }) {
+export default function ProgressCard({ totalPossiblePoints = 1000, totalTasks = 21 }) {
   const { score, completedTasks, badges } = useProgress();
   
   // Use the actual task count passed from server components

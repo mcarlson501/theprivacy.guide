@@ -2,143 +2,95 @@
 title: 'Social Media Privacy Checkup'
 description: 'Take control of what you share and who can see it with a simple privacy settings review.'
 category: 'Quick Win'
-time: '☕️ 15 minutes'
+time: '15 minutes'
 points: 25
 badgeId: 'privacy-guardian'
 badgeName: 'Privacy Guardian'
 ---
 
-#### The Big Picture (Why It's Important)
-Your social media profiles are like your front yard—by default, they're often visible to anyone walking by. Most people set up their accounts quickly and never revisit the privacy settings, which means strangers, employers, advertisers, and even scammers might be seeing much more than you intended. Think of this task as putting up a privacy fence around your digital life.
+#### Why This Matters
+Your social media profiles are like your front yard - by default, they're often visible to anyone walking by. Most people set up accounts quickly and never revisit privacy settings, which means strangers, employers, and scammers might see much more than you intended. This is your digital privacy fence - you decide who gets to see into your personal life.
 
-#### What This Accomplishes (How It Helps)
-* **Controls who sees your content:** Only share with people you actually want to share with
-* **Reduces unwanted contact:** Stop strangers from messaging or finding you easily
-* **Protects your location:** Prevent accidentally broadcasting where you are or have been
-* **Limits data collection:** Reduce how much platforms can learn about you for advertising
-* **Prevents embarrassing discoveries:** Keep old posts from surfacing at inappropriate times
-
----
-
-### Step 1: Facebook Privacy Settings
-
-#### Make Your Posts Private by Default
-1. Click the **down arrow** in the top right corner
-2. Select **Settings & Privacy** → **Settings**
-3. Click **Privacy** in the left sidebar
-4. Under **"Who can see your future posts?"** → Select **Friends**
-5. Click **"Limit Past Posts"** to make old public posts friends-only
-
-#### Control Who Can Find You
-1. Still in **Privacy** settings
-2. **"Who can send you friend requests?"** → Choose **Friends of friends** (not Everyone)
-3. **"Who can look you up using email/phone?"** → Choose **Friends** or **Friends of friends**
-4. **"Do you want search engines to link to your profile?"** → Select **No**
-
-#### Review Tagged Photos
-1. Go to **Timeline and Tagging** in left sidebar
-2. **"Who can post on your timeline?"** → Choose **Friends** (not Public)
-3. **"Review posts you're tagged in?"** → Turn **On**
-4. **"Who sees posts you're tagged in?"** → Choose **Friends**
+#### What You'll Accomplish
+After completing this task, you will have:
+* Made your social media posts private by default so only friends can see them
+* Stopped strangers from finding and contacting you through social media platforms
+* Removed personal information that could be used for identity theft or scams
 
 ---
 
-### Step 2: Instagram Privacy Settings
+### Step 1: Make Your Posts Private by Default
+Stop sharing with strangers automatically.
 
-#### Switch to a Private Account
-1. Tap your **profile picture** (bottom right)
-2. Tap the **three lines** (top right) → **Settings and Privacy**
-3. Tap **Account Privacy**
-4. Turn on **Private Account**
+**Facebook:**
+1. Click the down arrow (top right) → Settings & Privacy → Settings
+2. Click "Privacy" → "Who can see your future posts?" → Select "Friends"
+3. Click "Limit Past Posts" to make old public posts friends-only
+4. "Do you want search engines to link to your profile?" → Select "No"
 
-#### Control Story and Post Sharing
-1. In Settings, tap **Privacy**
-2. **Story** → Choose who can see your stories (Close Friends is safest)
-3. **Posts** → Turn off **Allow sharing to other apps**
-4. **Activity Status** → Turn **Off** (hides when you were last online)
+**Instagram:**
+1. Profile → Three lines → Settings and Privacy → Account Privacy
+2. Turn ON "Private Account" 
+3. Settings → Privacy → Activity Status → Turn OFF (hides when you're online)
 
-#### Limit Location Sharing
-1. In Privacy settings, tap **Location**
-2. Turn off **Location Services** for Instagram
-3. Remove location from old posts: Go to your profile → **Edit Profile** → Remove any location info
-
----
-
-### Step 3: Twitter/X Privacy Settings
-
-#### Protect Your Tweets
-1. Click **More** in left sidebar → **Settings and Privacy**
-2. Click **Privacy and Safety**
-3. **Audience and Tagging** → Check **Protect your posts** (makes account private)
-4. **Direct Messages** → Uncheck **Allow message requests from everyone**
-
-#### Control Data Sharing
-1. Still in Privacy and Safety
-2. **Data sharing and off-Twitter activity** → Turn off **Allow additional information sharing**
-3. **Ads preferences** → Turn off **Personalized ads**
-4. **Location information** → Uncheck **Add location to tweets**
+**Twitter/X:**
+1. More → Settings and Privacy → Privacy and Safety
+2. Audience and Tagging → Check "Protect your posts" (makes account private)
+3. Location information → Uncheck "Add location to tweets"
 
 ---
 
-### Step 4: LinkedIn Privacy Settings
+### Step 2: Control Who Can Contact You
+Stop strangers from finding and messaging you.
 
-#### Control Your Public Profile
-1. Click **Me** → **Settings & Privacy**
-2. **Visibility** → **Edit your public profile**
-3. Turn off sections you don't want public (like full work history)
-4. **Make your public profile visible to no one** for maximum privacy
+**Facebook:**
+1. Privacy settings → "Who can send friend requests?" → "Friends of friends" (not Everyone)
+2. "Who can look you up using email/phone?" → "Friends" or "Friends of friends"
+3. Timeline and Tagging → "Who can post on your timeline?" → "Friends"
 
-#### Manage Professional Visibility
-1. In Visibility settings
-2. **Profile viewing options** → Choose **Private mode** (anonymous browsing)
-3. **Active status** → Turn **Off**
-4. **Manage who can see your connections** → Choose **Only you**
+**Instagram:**
+1. Settings → Privacy → Messages → Choose who can message you
+2. Story → Choose "Close Friends" for who can see your stories
+3. Turn OFF "Allow sharing to other apps"
 
----
-
-### Step 5: Quick Wins for All Platforms
-
-#### The 5-Minute Security Boost
-1. **Turn off location services** for all social media apps in your phone settings
-2. **Review your followers/friends list** and remove people you don't actually know
-3. **Check your tagged photos** and remove tags from unflattering or inappropriate images
-4. **Set up login alerts** so you know if someone else accesses your accounts
-
-#### Red Flags to Remove
-* **Phone numbers** in bio or posts
-* **Full birth dates** (keep the day/month, remove the year)
-* **Home address** or specific location check-ins
-* **Vacation posts in real-time** (post after you return)
-* **Photos with house numbers or license plates** visible
+**LinkedIn:**
+1. Me → Settings & Privacy → Visibility → "Profile viewing options" → "Private mode"
+2. "Active status" → Turn OFF
+3. "Manage who can see your connections" → "Only you"
 
 ---
 
-### Step 6: The Final Check
+### Step 3: Remove Personal Information Red Flags
+Clean up information that could be used against you.
 
-#### Test Your Privacy
-1. **Log out** of your accounts
-2. **Search for yourself** on each platform while logged out
-3. **Ask a friend** to search for you and screenshot what they see
-4. If you can see more than you're comfortable with, go back and tighten settings
+**Remove These From All Platforms:**
+- Phone numbers in bio or posts
+- Full birth dates (keep day/month, remove year)
+- Home address or specific locations 
+- Real-time vacation posts (post after you return)
+- Photos showing house numbers or license plates
 
-#### Monthly Maintenance
-* **Review tagged photos** before approving them
-* **Clean up your friends/followers list** quarterly
-* **Check privacy settings** when platforms update (they often reset)
-* **Google yourself** to see what information is publicly available
+**Location Privacy:**
+- Turn OFF location services for all social media apps in your phone settings
+- Remove location tags from old posts
+- Stop checking in to specific places
+
+**Quick Test:**
+1. Log out of your accounts
+2. Search for yourself while logged out
+3. If you can see more than you're comfortable with, tighten your settings
 
 ---
 
-### 🎯 Success Checklist
+### The Bottom Line
 
-By the end of this task, you should have:
-- [  ] Set all future posts to friends-only by default
-- [  ] Removed your profile from search engine results
-- [  ] Turned off location sharing for all platforms
-- [  ] Made your accounts private or limited public visibility
-- [  ] Reviewed and cleaned up your friends/followers list
-- [  ] Enabled post/tag review before they appear on your profile
+**What You Just Accomplished**
+You've made your social media accounts much more private. Strangers can no longer see your posts, find you easily, or contact you directly. Your personal information is no longer broadcasting to the world.
 
-**🏆 Congratulations!** You've just taken control of your social media privacy. Your digital footprint is now much smaller and more intentional.
+**Ongoing Protection**
+Social media companies frequently update their settings and often reset them to be more public (because they make money from your data). Check your privacy settings every few months to make sure they haven't changed.
 
-**What tech people know that you don't:** Most privacy settings are designed to be confusing and buried deep in menus because social media companies make money from your data. What took you 15 minutes to fix was intentionally made difficult—but you just outsmarted their system!
+**Smart Strategy**
+The goal isn't to avoid social media - it's to share intentionally with people you actually want to share with. You've just put up a digital privacy fence around your social media life.
+
+**Remember:** Privacy settings are deliberately buried and confusing because social media companies profit from your data being public. You just outsmarted their system by taking control of your digital privacy.

@@ -2,80 +2,57 @@
 title: 'Facebook Privacy Settings Checkup'
 description: 'Secure your Facebook account with privacy settings that actually matter, without losing the social connection you value.'
 category: 'Social Media'
-time: '⏰ 15-20 minutes'
+time: '15-20 minutes'
 points: 50
 badgeId: 'facebook-guardian'
 badgeName: 'Facebook Guardian'
 ---
 
-#### The Big Picture (Why It's Important)
-Facebook knows more about you than almost any other company—not just what you post, but where you go, what you buy, and even what you look at (but don't click on). With over 3 billion users, it's unrealistic to ask people to delete Facebook entirely. Instead, let's make your experience more private while keeping the social connections you value.
+#### Why This Matters
+Facebook knows more about you than almost any other company - not just what you post, but where you go, what you buy, and even what you look at without clicking on. They track your activity across millions of websites and apps, building a detailed profile for advertising.
 
-#### What This Accomplishes (How It Helps)
-* **Limits data collection:** Reduce how much Facebook tracks your activity
-* **Controls who sees your content:** Keep personal posts away from strangers and advertisers
-* **Reduces targeted advertising:** Fewer creepy ads based on your personal life
-* **Protects your location:** Stop broadcasting where you are and where you've been
-* **Secures your account:** Prevent unauthorized access and suspicious activity
+With over 3 billion users, deleting Facebook isn't realistic for most people. Instead, you can significantly limit what they collect and who sees your information through privacy settings that actually work.
 
----
-
-### What Facebook Really Knows About You
-
-Facebook doesn't just see what you post—they track:
-* **Every click and hover** on their platform (even things you don't actually click)
-* **Your location** whenever you have the app open
-* **What you buy** through partnerships with retailers
-* **Your contacts** when you upload your phone's address book
-* **Websites you visit** through Facebook pixels and login buttons
-
-**The goal:** Keep using Facebook for what you love, but limit what they can learn about you.
+#### What You'll Accomplish
+After completing this task, you will have:
+* Limited how much Facebook tracks your activity outside their platform
+* Controlled who can see your posts and personal information
+* Reduced targeted advertising based on your personal data
 
 ---
 
 ### Step 1: Lock Down Your Profile Visibility
+Control who can see your posts and personal information.
 
-#### Who Can See Your Posts
-1. **Go to Settings & Privacy** → **Settings** → **Privacy**
-2. **Click "Who can see your future posts?"**
-3. **Change from "Public" to "Friends"** (or "Friends except..." for more control)
-4. **Review past posts:** Click "Review posts friends have tagged you in"
+1. Go to Settings & Privacy → Settings → Privacy
+2. Click "Who can see your future posts?" and change from "Public" to "Friends"
+3. Go to your Profile and click "About"
+4. Review each section (Work, Education, Contact Info) and change visibility from "Public" to "Friends"
+5. Pay special attention to phone number, email, and current city
 
-#### Profile Information
-1. **Go to your Profile** and click **"About"**
-2. **Review each section** (Work, Education, Contact Info, etc.)
-3. **Change visibility** from "Public" to "Friends" or "Only Me"
-4. **Pay special attention to:** Phone number, email, and current city
-
-**Facebook-Specific Risk:** Your profile is often the first thing people see when they search your name. Public profiles can be viewed by anyone, including potential employers, scammers, or people with bad intentions.
+**Note:** Your profile is often the first thing people see when they search your name.
 
 ---
 
 ### Step 2: Control Location Tracking
+Stop Facebook from tracking everywhere you go.
 
-#### Turn Off Location Services
-1. **On your phone:** Go to **Settings** → **Privacy** → **Location Services**
-2. **Find Facebook** and change to **"Never"** or **"While Using App"**
-3. **In Facebook:** Go to **Settings** → **Privacy** → **Location Settings**
-4. **Turn off "Location History"** and **"Background Location"**
-
-#### Review Location Posts
-1. **Go to your Profile** → **"Check-ins"**
-2. **Review old location posts** and delete any you don't want public
-3. **Turn off automatic location tagging** for future posts
-
-**Facebook-Specific Risk:** Facebook's location data is extremely detailed and is often shared with law enforcement. It can also be used to infer your daily routines, workplace, and home address.
+1. On your phone: Go to Settings → Privacy → Location Services
+2. Find Facebook and change to "Never" or "While Using App"
+3. In Facebook: Go to Settings → Privacy → Location Settings
+4. Turn off "Location History" and "Background Location"
+5. Review old location posts in your Profile → "Check-ins" and delete unwanted ones
 
 ---
 
-### Step 3: Manage What Facebook Shares About You
+### Step 3: Limit Advertising Data Collection
+Reduce how Facebook uses your data for targeted ads.
 
-#### Advertising Preferences
-1. **Go to Settings** → **Ads** → **Ad Preferences**
-2. **Click "Your information"** and review what Facebook thinks it knows about you
-3. **Turn off "Ads based on data from partners"**
-4. **Turn off "Ads based on your activity on Facebook Company Products"**
-5. **Review and remove interests** that feel too personal or inaccurate
+1. Go to Settings → Ads → Ad Preferences
+2. Click "Your information" and review what Facebook thinks it knows about you
+3. Turn off "Ads based on data from partners"
+4. Turn off "Ads based on your activity on Facebook Company Products"
+5. Review and remove interests that feel too personal or inaccurate
 
 #### Apps and Websites
 1. **Go to Settings** → **Apps and Websites**
@@ -102,23 +79,17 @@ Facebook doesn't just see what you post—they track:
 
 ---
 
-### Step 5: Protect Your Account
+### The Bottom Line
 
-#### Security Basics
-1. **Go to Settings** → **Security and Login**
-2. **Turn on Two-Factor Authentication** (use an authenticator app, not SMS if possible)
-3. **Review "Where You're Logged In"** and log out of suspicious locations
-4. **Set up login alerts** to know when someone accesses your account
+**What You Just Accomplished**
+You've significantly limited how much Facebook can track your activity and who can see your personal information. While Facebook will always collect some data, you've made it much harder for them to build a complete profile of your life.
 
-#### Regular Maintenance
-* **Review your friends list quarterly**—remove people you don't actually know
-* **Check your activity log** to see what Facebook thinks you've done
-* **Download your data** once a year to see what Facebook has stored about you
+**What to Expect**
+You'll see fewer creepy targeted ads, less location tracking, and more control over who sees your posts. Your Facebook experience remains the same, but with much better privacy protection.
 
----
+**Pro Tips**
+* Review your privacy settings every few months as Facebook often adds new features
+* Be selective about what you post - privacy settings can't protect oversharing
+* Consider using Facebook in a separate browser to limit cross-site tracking
 
-### The Reality Check
-
-**Facebook will always collect data—that's their business model.** But you can significantly reduce how much they collect and how it's used. The goal isn't perfect privacy (that's impossible on Facebook), but rather informed choices about what you're willing to trade for social connection.
-
-**Remember:** Every privacy setting you enable makes it a little harder for Facebook to build a complete picture of your life. Small changes add up to meaningful protection.
+**Remember:** You've taken back significant control over your Facebook privacy. These small changes add up to meaningful protection of your personal information.

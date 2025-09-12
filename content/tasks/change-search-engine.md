@@ -2,46 +2,73 @@
 title: 'Change Your Default Search Engine'
 description: 'Stop search engines from profiling you. Switch to one that respects your privacy.'
 category: 'Quick Win'
-time: '☕️ About 5 minutes'
+time: '5 minutes'
 points: 25
 badgeId: 'search-sentinel'
 badgeName: 'Search Sentinel'
 ---
 
-#### The Big Picture (Why It's Important)
-Think of your search engine like a personal assistant. Every time you ask it a question, it remembers what you asked, where you asked from, and what you clicked on. Some assistants use this memory to build a detailed profile about you to sell to advertisers. Our goal is to switch to an assistant that has a very bad memory on purpose—one that treats every question like the first time you've ever met.
+#### Why This Matters
+Every time you search, Google, Bing, and Yahoo remember what you searched for, when you searched, and what you clicked on. They build a detailed profile of your interests, health concerns, shopping habits, and personal life to sell to advertisers.
 
-#### What This Accomplishes (How It Helps)
-* Stops your search engine from building a personal profile on you.
-* Reduces the number of targeted ads you see around the web.
-* Keeps your search history private and separate from your other online accounts (like Google or Microsoft).
+Switching to a private search engine is like having a conversation that nobody records. You get the same search results without someone documenting your every question and curiosity.
 
----
-
-### Option 1: The Easiest First Step
-This is our top recommendation because it's free, effective, and takes only a few clicks to set up. It provides a massive privacy boost for the least amount of effort.
-
-* **Recommendation:** **Use DuckDuckGo**
-* **What it is:** A private search engine that doesn't track your searches.
-* **How to do it:**
-    1. Go to [duckduckgo.com](https://duckduckgo.com) in your web browser
-    2. Look for "Add DuckDuckGo to your browser" button or settings
-    3. Follow the simple setup instructions for your specific browser
-    4. Set DuckDuckGo as your default search engine when prompted
-
-**Why DuckDuckGo?** They have a strict no-tracking policy, don't store your personal information, and still provide excellent search results. It's like having Google's power without the privacy invasion.
+#### What You'll Accomplish
+After completing this task, you will have:
+* A search engine that doesn't track or profile your searches
+* Reduced targeted advertising based on your search history
+* The same quality search results without privacy invasion
 
 ---
 
-### Want to take it a step further?
-The option above is fantastic for everyday privacy. However, if you want an even higher level of anonymity or are looking for more advanced features, this next option is a great choice.
+### Step 1: Choose DuckDuckGo
+The easiest private search engine that works just like Google.
 
-* **Recommendation:** **Use Startpage**
-* **What it is:** A search engine that gives you Google's powerful search results, but anonymously.
-* **How to do it:**
-    1. Visit [startpage.com](https://startpage.com)
-    2. Click on "Make Startpage your homepage" or look for browser setup instructions
-    3. Follow the setup process to make it your default search engine
-    4. Optionally, explore their privacy settings for additional protection
+1. Go to duckduckgo.com in your browser
+2. Try a few searches to see how it works (just like Google!)
+3. Click "Add DuckDuckGo to [Browser Name]" button at the top of the page
+4. Follow the prompts to set it as your default search engine
 
-**Why Startpage?** If you love Google's search results but hate the tracking, Startpage is perfect. They get Google's results for you anonymously, so you get the best of both worlds.
+**Note:** DuckDuckGo doesn't track you, store your searches, or build a profile about you. It's like Google with amnesia.
+
+---
+
+### Step 2: Update Your Mobile Browser
+Make sure your phone uses private search too.
+
+1. Open your phone's browser (Safari, Chrome, etc.)
+2. Go to duckduckgo.com 
+3. Look for "Add to [Browser]" or "Make Default" option
+4. Follow the setup instructions for your specific phone
+
+**iPhone users:** Go to Settings → Safari → Search Engine → DuckDuckGo
+**Android users:** Open Chrome → Settings → Search Engine → DuckDuckGo
+
+---
+
+### Step 3: Test Your New Setup
+Make sure everything is working correctly.
+
+1. Open a new browser tab
+2. Type a search in the address bar (not duckduckgo.com)
+3. Verify that DuckDuckGo results appear instead of Google
+4. Search for something you're genuinely curious about and enjoy the privacy!
+
+**Success check:** Your searches should now show "duckduckgo.com" in the address bar.
+
+---
+
+### The Bottom Line
+
+**What You Just Accomplished**
+You've stopped one of the biggest data collectors from tracking your searches and building a profile about your interests. Your curiosity is now private again.
+
+**What to Expect**
+Your search experience stays exactly the same, but without the creepy targeted ads that follow you around the web. You might notice fewer ads that seem to know exactly what you were just thinking about.
+
+**Pro Tips**
+* DuckDuckGo has the same features as Google - images, videos, news, maps
+* Use "!g" before any search to get Google results when needed (without the tracking)
+* DuckDuckGo doesn't filter results based on your past searches, so you might discover new things
+
+**Remember:** This simple change eliminates one of the largest sources of personal data collection in your daily internet use. Your searches are now truly private.

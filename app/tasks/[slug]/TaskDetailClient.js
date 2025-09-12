@@ -14,14 +14,16 @@ export default function TaskDetailClient({ task }) {
   const completed = isTaskCompleted(task.id);
 
   const handleCompleteTask = async (event) => {
-    if (!completed && !isAnimating) {
+    if (!isAnimating) {
       setIsAnimating(true);
       
       // Trigger the confetti celebration from button position
       await triggerConfetti(event.currentTarget);
       
-      // Complete the task
-      completeTask(task.id, task.points, task.badgeId, task.badgeName);
+      // Complete the task (only if not already completed)
+      if (!completed) {
+        completeTask(task.id, task.points, task.badgeId, task.badgeName);
+      }
       
       // Reset animation state
       setTimeout(() => {
@@ -200,7 +202,7 @@ export default function TaskDetailClient({ task }) {
                   disabled={isAnimating}
                   className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
                     completed
-                      ? 'bg-success-teal/10 text-success-teal border-2 border-success-teal/20 hover:bg-success-teal/20 focus:ring-success-teal'
+                      ? 'bg-success-teal/10 text-success-teal border-2 border-success-teal/20 hover:bg-success-teal/20 hover:scale-105 focus:ring-success-teal cursor-pointer'
                       : isAnimating
                         ? 'bg-friendly-blue/80 text-white scale-110 animate-pulse'
                         : 'bg-friendly-blue text-white hover:bg-friendly-blue/90 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 focus:ring-friendly-blue'
@@ -381,7 +383,7 @@ export default function TaskDetailClient({ task }) {
                   onClick={handleCompleteTask}
                   className={`px-8 py-4 rounded-lg font-medium text-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
                     completed
-                      ? 'bg-success-teal/10 text-success-teal border-2 border-success-teal/20 hover:bg-success-teal/20 focus:ring-success-teal'
+                      ? 'bg-success-teal/10 text-success-teal border-2 border-success-teal/20 hover:bg-success-teal/20 hover:scale-105 focus:ring-success-teal cursor-pointer'
                       : 'bg-friendly-blue text-white hover:bg-friendly-blue/90 shadow-lg hover:shadow-xl focus:ring-friendly-blue'
                   }`}
                   aria-pressed={completed}

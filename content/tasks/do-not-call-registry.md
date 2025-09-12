@@ -2,135 +2,80 @@
 title: 'Add Yourself to the Do Not Call Registry'
 description: 'Stop most telemarketing calls with this free government service that takes just 2 minutes to set up.'
 category: 'Quick Win'
-time: '⚡ 2 minutes'
+time: '2 minutes'
 points: 25
 badgeId: 'call-blocker'
 badgeName: 'Call Blocker'
 ---
 
-#### The Big Picture (Why It's Important)
-Imagine having a bouncer for your phone that automatically turns away unwanted sales calls. The National Do Not Call Registry is exactly that—a free government service that tells legitimate telemarketers they're not allowed to call you. While it won't stop all unwanted calls (scammers don't follow rules), it significantly reduces the number of legal marketing calls you receive.
+#### Why This Matters
+The National Do Not Call Registry is a free government service that tells legitimate telemarketers they're not allowed to call you. Companies that ignore this list can be fined up to $43,792 per call. While it won't stop scammers (they don't follow laws), it dramatically reduces legal marketing calls.
 
-#### What This Accomplishes (How It Helps)
-* **Reduces interruptions:** Fewer sales calls during dinner, work, or family time
-* **Saves mental energy:** Less decision fatigue from screening unknown numbers
-* **Provides legal protection:** Companies that call you after registration can be fined up to $43,792 per call
-* **Works long-term:** Registration never expires—you're protected for life
-* **Covers all your numbers:** You can register landlines, cell phones, and business numbers
+Most people don't know this service exists, so they suffer through years of dinner-time interruptions that could be stopped in 2 minutes. Registration never expires - you're protected for life once you sign up.
 
----
-
-### Step 1: Register Your Phone Numbers
-
-#### The Official Website
-**⚠️ Important:** Only use the official government website to avoid scams.
-
-**Official URL:** [donotcall.gov](https://www.donotcall.gov)
-* Look for the ".gov" in the address—this confirms it's the real government site
-* Never pay money to register (it's completely free)
-* Don't trust ads or emails offering "premium" do-not-call services
-
-#### Registration Process
-1. **Go to donotcall.gov** in your web browser
-2. **Click "Register Your Phone"** (big blue button on homepage)
-3. **Enter your phone number** (include area code)
-4. **Enter your email address** (they'll send a confirmation)
-5. **Complete the verification** by clicking the link in your email
-
-#### Register Multiple Numbers
-* **Cell phone:** Your primary mobile number
-* **Home phone:** If you have a landline
-* **Work phone:** If you get personal calls there
-* **Family members:** Help register your spouse, parents, or adult children
+#### What You'll Accomplish
+After completing this task, you will have:
+* Significantly fewer telemarketing and sales calls within 31 days
+* Legal protection against companies that continue to call you
+* A way to report and fine companies that violate the registry
 
 ---
 
-### Step 2: Understand What Changes (And What Doesn't)
+### Step 1: Register at the Official Government Site
+Use only the real government website to avoid scams.
 
-#### Calls That Should Stop (Within 31 Days)
-* **Telemarketing sales calls** from legitimate companies
-* **Survey calls** from market research companies
-* **Promotional calls** from businesses you haven't bought from
-* **Cold calls** trying to sell products or services
+1. Go to **donotcall.gov** in your web browser (look for the ".gov" - this confirms it's official)
+2. Click "Register Your Phone" (big blue button)
+3. Enter your phone number with area code
+4. Enter your email address for confirmation
+5. Check your email and click the verification link
 
-#### Calls That Will Continue
-* **Scam calls:** Criminals don't follow the law (we'll address this separately)
-* **Political calls:** Campaigns and political organizations are exempt
-* **Charities:** Non-profit fundraising calls are allowed
-* **Companies you do business with:** Banks, insurance, etc. can still call existing customers
-* **Debt collectors:** If you owe money, they can still contact you
+**Warning:** This service is completely free. Never pay money for "premium" do-not-call services - they're scams.
 
 ---
 
-### Step 3: Know Your Rights
+### Step 2: Know What Changes
+Understand which calls will stop and which will continue.
 
-#### What Companies Must Do
-* **Stop calling within 31 days** of your registration
-* **Check the registry every 31 days** to remove new registrations
-* **Honor your request immediately** if you ask them to stop calling during a call
+**Calls that should stop within 31 days:**
+* Telemarketing sales calls from legitimate companies
+* Survey calls from market research companies
+* Cold calls trying to sell you products or services
 
-#### How to Report Violations
-1. **Keep records:** Note the company name, date, and time of illegal calls
-2. **File a complaint:** Go back to donotcall.gov and click "Report Unwanted Calls"
-3. **Include details:** The more information you provide, the better
-4. **Follow up:** The FTC investigates patterns and can issue significant fines
-
----
-
-### Step 4: Boost Your Protection
-
-#### Additional Steps for Maximum Effect
-1. **Enable "Silence Unknown Callers"** on your smartphone
-   * iPhone: Settings → Phone → Silence Unknown Callers
-   * Android: Phone app → Settings → Caller ID & spam → Filter spam calls
-
-2. **Use your carrier's spam protection** (usually free)
-   * Verizon: Call Guard
-   * AT&T: Call Protect
-   * T-Mobile: Scam Shield
-   * Check with your carrier for their specific service
-
-3. **Consider call-blocking apps** for extra protection
-   * Truecaller (free with premium options)
-   * RoboKiller (paid, very effective)
-   * Your phone's built-in spam detection
-
-#### The "Never Give Out Your Number" Rule
-* **Online forms:** Use a Google Voice number instead of your real number
-* **Store loyalty cards:** Ask if you can skip the phone number
-* **Contests and giveaways:** Consider if it's worth the potential calls
-* **Social media:** Don't put your phone number in your public profile
+**Calls that will continue:**
+* Scam calls (criminals don't follow laws)
+* Political campaigns and charities
+* Companies you already do business with
+* Debt collectors (if you owe money)
 
 ---
 
-### Step 5: Handle the Calls That Still Get Through
+### Step 3: Boost Your Protection
+Add your phone's built-in spam blocking for extra protection.
 
-#### The "Gray Rock" Method for Unwanted Calls
-* **Don't engage:** "I'm not interested" then hang up immediately
-* **Don't say "yes":** Scammers record you saying yes to authorize fake charges
-* **Don't press numbers:** Even "Press 9 to be removed" can confirm your number is active
-* **Just hang up:** You don't owe strangers your time or politeness
+**iPhone:** Settings → Phone → Silence Unknown Callers
+**Android:** Phone app → Settings → Caller ID & spam → Filter spam calls
 
-#### Red Flags That Indicate Scams
-* **Urgent pressure:** "This offer expires today!"
-* **Requests for personal info:** Social Security numbers, banking details
-* **Upfront payments:** "Pay a fee to claim your prize"
-* **Threats:** "You'll be arrested if you don't..."
+**Also contact your carrier for free spam protection:**
+* Verizon: Call Guard
+* AT&T: Call Protect  
+* T-Mobile: Scam Shield
+
+**Remember:** If companies continue calling after 31 days, report them at donotcall.gov - they can be fined up to $43,792 per illegal call.
 
 ---
 
-### 🎯 Success Checklist
+### The Bottom Line
 
-By the end of this task, you should have:
-- [  ] Registered your primary phone number at donotcall.gov
-- [  ] Checked your email and clicked the confirmation link
-- [  ] Registered any additional numbers (landline, work phone)
-- [  ] Enabled your phone's built-in spam call filtering
-- [  ] Contacted your carrier about their free spam protection service
-- [  ] Saved the donotcall.gov website for future complaint filing
+**What You Just Accomplished**
+You've registered for a free government service that will significantly reduce telemarketing calls. Legitimate businesses must check this registry and stop calling you, or face massive fines.
 
-**🏆 Congratulations!** You've just significantly reduced the number of unwanted calls you'll receive. Most legitimate telemarketers will stop calling within 31 days.
+**What to Expect**
+Within 31 days, you should notice fewer sales calls interrupting your day. The calls that continue are likely from scammers (who don't follow laws) or exempt organizations like political campaigns.
 
-**What tech people know that you don't:** The Do Not Call Registry works because there are massive financial penalties for violations—up to $43,792 per illegal call. Legitimate companies can't afford to ignore it, but scammers operate outside the law anyway. That's why you still need additional protection like call blocking apps and carrier services.
+**Pro Tips**
+* Never say "yes" to unknown callers - scammers can record it to authorize fake charges
+* Just hang up on unwanted calls - you don't owe strangers your time
+* Report companies that keep calling you illegally at donotcall.gov
 
-**Pro tip:** If you get fewer calls after 31 days, the registry is working! If calls increase, they're likely from scammers who got your number from data breaches—that's when call-blocking apps become essential.
+**Remember:** This registration never expires. You're now protected for life from most legitimate telemarketing calls with just this 2-minute setup.

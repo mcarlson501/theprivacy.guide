@@ -18,70 +18,115 @@ content/tasks/[category]-[task-name].md
 title: 'Task Title - Clear and Action-Oriented'
 description: 'One sentence describing what the user will accomplish and why it matters.'
 category: 'Quick Win | Essential | Social Media | Advanced'
-time: '⏰ X minutes'
+time: '10-15 minutes'
 points: X
 badgeId: 'badge-identifier'
 badgeName: 'Badge Display Name'
 ---
 
-#### The Big Picture (Why It's Important)
-Brief introduction paragraph that connects with the user's everyday experience. Explain why this matters in terms they can relate to - what could go wrong if they don't do this, or what peace of mind they'll gain. Include the broader context and real-world impact with concrete examples.
+#### Why This Matters
+One or two paragraphs explaining the importance in plain language. Connect to real-world impact and what could go wrong without this protection. Use everyday analogies when helpful. Define any technical terms clearly.
 
-#### What This Accomplishes (How It Helps)
-* **Immediate benefit 1** - Specific protection or improvement
-* **Immediate benefit 2** - Measurable outcome  
-* **Long-term benefit** - Skill or awareness that transfers to other situations
-
-**Real Impact:** [Specific example of how this protects the user]
+#### What You'll Accomplish
+After completing this task, you will have:
+* Specific protection or improvement gained
+* Measurable security enhancement
+* Peace of mind about this aspect of your privacy
 
 ---
 
 ### Step 1: [Clear Action Title]
-**What you're doing:** Brief explanation of this step's purpose
+Brief explanation of what this step accomplishes.
 
-**Instructions:**
-1. [Specific action with visual cues - "Click the blue button labeled..."]
-2. [Next action with expected result - "You should see..."]  
-3. [Final verification - "Confirm by checking..."]
+1. [Specific instruction with clear navigation]
+2. [Next action with expected result]
+3. [Verification step]
 
-**If you see [specific thing], do this:** [Troubleshooting guidance]
-
-**Platform-specific notes:**
-- **iPhone/iPad:** [iOS-specific instructions if different]
-- **Android:** [Android-specific instructions if different]
-- **Computer:** [Desktop-specific guidance]
-
-### Step 2: [Next Clear Action Title]
-[Follow same format as Step 1]
-
-### Step 3: [Final Step if needed]
-[Follow same format]
+**Note:** [Any important clarification or platform difference]
 
 ---
 
-### ✅ You're Done When...
-* **Checkpoint 1** - Specific thing user can verify
-* **Checkpoint 2** - Another verification point
-* **Checkpoint 3** - Final confirmation
+### Step 2: [Next Action Title]
+Brief explanation of this step.
 
-**Success indicator:** [What the user should see/experience that confirms completion]
+1. [Clear instruction]
+2. [Follow-up action]
+3. [Confirmation step]
 
-### Pro Tips for Success
-* **Quick tip:** [One-liner that makes this easier or more effective]
-* **Remember:** [Important point to reinforce the habit]
-* **Next level:** [Optional enhancement they can do later]
+---
 
-### Common Pitfalls to Avoid  
-* **"But I thought..."** - [Common misconception and correction]
-* **"What if I..."** - [Address likely concern or confusion]
-* **Red flag:** [Warning about what not to do]
+### Step 3: [Final Step if needed]
+Brief explanation.
 
-### What's Next?
-This skill helps you with these other privacy tasks:
-- [Link to related task 1]
-- [Link to related task 2]
+1. [Instruction]
+2. [Final verification]
 
-You're building: **[Skill category]** - [Brief description of the transferable skill they've gained]
+---
+
+### The Bottom Line
+
+**What You Just Accomplished**
+Summary of the security improvements you made and why they matter.
+
+**What to Expect**
+Brief description of any changes in user experience or what happens next.
+
+**Pro Tips**
+* Key best practice or habit to maintain
+* Optional enhancement for more security
+* Red flag to watch out for
+
+**Remember:** [One key takeaway to reinforce the value of this task]
+
+---
+
+## Task Formatting Notes
+
+### Step Numbering Format
+Each step MUST use this exact markdown format to render as blue circles with numbers:
+
+```markdown
+### Step 1: Clear Action Title
+Brief explanation of what this step accomplishes.
+
+1. Specific instruction with clear navigation
+2. Next action with expected result
+3. Verification step
+
+**Note:** Any important clarification or platform difference
+
+---
+
+### Step 2: Next Action Title
+Brief explanation of this step.
+
+1. Clear instruction
+2. Follow-up action
+3. Confirmation step
+```
+
+**CRITICAL:** Each step section MUST be separated by `---` horizontal rules. Without these separators, all steps will appear nested under Step 1.
+
+The component will:
+- Split content by `---` horizontal rules to create separate step sections
+- Extract the title after "Step X:" from each section
+- Render a blue circle with the step number
+- Display the title next to the circle
+- Process the content below with proper formatting
+
+### The Bottom Line Section
+Use this exact format for the final wrap-up section:
+
+```markdown
+### The Bottom Line
+
+**What You Just Accomplished**
+**What to Expect** 
+**Pro Tips**
+**Remember:**
+```
+
+This section will render with an appropriate icon (checkmark, shield, etc.) in the circle.
 ```
 
 ---

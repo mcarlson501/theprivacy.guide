@@ -50,8 +50,7 @@ export default function RootLayout({ children }) {
         )}
         {!isProduction && (
           <>
-            {/* Development-friendly CSP - allows localhost, hot reload, and canvas for confetti */}
-            <meta httpEquiv="Content-Security-Policy" content="default-src 'self' 'unsafe-eval' 'unsafe-inline' http: https: ws: wss: data: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' http: https:; connect-src 'self' http: https: ws: wss:; style-src 'self' 'unsafe-inline' http: https:; img-src 'self' data: http: https:; font-src 'self' data: http: https:; media-src 'self' data: blob:;" />
+            {/* No CSP in development to allow confetti and full functionality */}
           </>
         )}
       </head>

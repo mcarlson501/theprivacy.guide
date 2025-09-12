@@ -16,7 +16,7 @@ export default function Header() {
 
   // Use the current actual task count 
   // Updated to match current number of tasks in content/tasks/ directory
-  const totalTasks = 12; // Current task files: password-manager, 2FA, search-engine, app-permissions, email tasks (5), social-media, do-not-call, qr-code-safety
+  const totalTasks = 21; // All privacy tasks in content/tasks/ directory
   const progressPercentage = totalTasks > 0 ? Math.round((completedTasks.length / totalTasks) * 100) : 0;
   const currentLevel = getPrivacyLevel(progressPercentage);
 
