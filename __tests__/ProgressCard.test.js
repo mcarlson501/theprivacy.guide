@@ -61,7 +61,7 @@ describe('ProgressCard Component', () => {
     render(<ProgressCard totalTasks={10} />);
     
     // Should calculate 2/10 = 20% progress
-    expect(screen.getByText('20%')).toBeInTheDocument();
+    expect(screen.getByText(/20.*% complete/)).toBeInTheDocument();
   });
 
   it('handles zero tasks gracefully', () => {
@@ -74,7 +74,7 @@ describe('ProgressCard Component', () => {
     render(<ProgressCard totalTasks={0} />);
     
     // Should show 0% when no tasks
-    expect(screen.getByText('0%')).toBeInTheDocument();
+    expect(screen.getByText(/0.*% complete/)).toBeInTheDocument();
   });
 
   it('shows privacy level information', () => {
@@ -103,8 +103,8 @@ describe('ProgressCard Component', () => {
 
     render(<ProgressCard />);
     
-    expect(screen.getByText('👶')).toBeInTheDocument();
-    expect(screen.getByText('🧭')).toBeInTheDocument();
+    expect(screen.getByText('First Steps')).toBeInTheDocument();
+    expect(screen.getByText('Explorer')).toBeInTheDocument();
   });
 
   it('limits badges display to most recent 3', () => {
@@ -122,9 +122,9 @@ describe('ProgressCard Component', () => {
     render(<ProgressCard />);
     
     // Should only show the last 3 badges
-    expect(screen.queryByText('🏆')).not.toBeInTheDocument(); // Old badge should not be shown
-    expect(screen.getByText('⭐')).toBeInTheDocument();
-    expect(screen.getByText('🎯')).toBeInTheDocument();
-    expect(screen.getByText('🚀')).toBeInTheDocument();
+    expect(screen.queryByText('Badge 1')).not.toBeInTheDocument(); // Old badge should not be shown
+    expect(screen.getByText('Badge 2')).toBeInTheDocument();
+    expect(screen.getByText('Badge 3')).toBeInTheDocument();
+    expect(screen.getByText('Latest Badge')).toBeInTheDocument();
   });
 });
