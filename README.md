@@ -2,6 +2,9 @@
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-blue)](https://tailwindcss.com/)
+[![Jest](https://img.shields.io/badge/Jest-29-C21325)](https://jestjs.io/)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mcarlson501_theprivacy.guide&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mcarlson501_theprivacy.guide)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=mcarlson501_theprivacy.guide&metric=coverage)](https://sonarcloud.io/summary/new_code?id=mcarlson501_theprivacy.guide)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
 
 An open-source web application that makes digital privacy accessible through clear, actionable tasks for everyday users.
@@ -47,6 +50,13 @@ The Privacy Guide transforms complex privacy concepts into practical, step-by-st
 - Tailwind CSS for styling
 - Markdown content processing
 - Local storage for progress tracking
+
+**Development Infrastructure**
+- Jest + React Testing Library for automated testing
+- SonarCloud integration for code quality and security analysis
+- GitHub Actions CI/CD pipeline with automated testing
+- ESLint and Prettier for code consistency
+- Comprehensive test coverage reporting
 
 **Security Features**
 - Content Security Policy implementation
@@ -113,6 +123,17 @@ We welcome contributions that make privacy more accessible. Ways to help:
 - Accessibility enhancements
 - Mobile experience optimizations
 - Security improvements
+- Test coverage improvements
+
+**Development Setup**
+```bash
+npm install          # Install dependencies
+npm test            # Run test suite
+npm run test:watch  # Run tests in watch mode
+npm run test:coverage # Generate coverage report
+npm run dev         # Start development server
+npm run build       # Build for production
+```
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
@@ -126,7 +147,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 - Enterprise-grade security implementation
 
 **Recent Enhancements**
-- JSON import security hardening
+- Comprehensive test suite with Jest and React Testing Library
+- SonarCloud integration for continuous code quality monitoring
+- GitHub Actions CI/CD pipeline with automated testing and security scanning
+- JSON import security hardening with automated test coverage
 - Comprehensive task formatting standardization
 - Enhanced mobile experience
 - Privacy Pulse call-to-action integration
@@ -134,6 +158,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 ## Resources
 
 - **Live Site:** https://theprivacy.guide
+- **Code Quality:** [SonarCloud Dashboard](https://sonarcloud.io/project/overview?id=mcarlson501_theprivacy.guide)
+- **CI/CD Status:** [GitHub Actions](https://github.com/mcarlson501/theprivacy.guide/actions)
 - **Documentation:** [docs/](docs/) directory
 - **Issues:** [GitHub Issues](https://github.com/mcarlson501/theprivacy.guide/issues)
 - **Security:** [SECURITY.md](SECURITY.md)

@@ -40,6 +40,14 @@ Email security concerns to: **privacy@theprivacy.guide**
 
 ### Recent Security Enhancements
 
+**Automated Testing and Quality Monitoring**
+- Jest test suite with React Testing Library for component security validation
+- SonarCloud integration for continuous security analysis
+- GitHub Actions CI/CD pipeline with automated security scanning
+- Code coverage reporting to identify untested security-critical paths
+- Dependency vulnerability monitoring with automated alerts
+- Pull request security reviews with quality gates
+
 **JSON Import Security Hardening**
 - Input validation with comprehensive type checking
 - 50KB file size limit with format validation
@@ -59,10 +67,13 @@ Email security concerns to: **privacy@theprivacy.guide**
 
 **For Contributors**
 - Keep dependencies updated with regular vulnerability audits
-- All code changes require security-focused review
-- Implement comprehensive input validation
+- All code changes require security-focused review with automated quality gates
+- Run `npm test` before submitting pull requests
+- Maintain or improve test coverage for security-critical components
+- Implement comprehensive input validation with corresponding tests
 - Include security testing for edge cases
 - Maintain current security documentation
+- Monitor SonarCloud reports for security hotspots and vulnerabilities
 
 **For Users and Deployers**
 - Keep installations updated with latest security patches
@@ -80,6 +91,9 @@ Email security concerns to: **privacy@theprivacy.guide**
 - Local storage keeps progress data on user devices
 - Comprehensive Content Security Policy headers
 - Security headers including X-Frame-Options and X-Content-Type-Options
+- Automated security testing with Jest and React Testing Library
+- Continuous security monitoring via SonarCloud analysis
+- GitHub Actions CI/CD pipeline with security scanning on every commit
 
 **Privacy Protection**
 - GoatCounter analytics with no personal data collection
