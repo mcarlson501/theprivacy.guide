@@ -58,7 +58,7 @@ export default function TaskDetailClient({ task }) {
       for (let i = 1; i < parts.length; i++) {
         const part = parts[i];
         const titleMatch = part.match(/^([^<]+)/);
-        const title = titleMatch ? titleMatch[1].replace(/\([^)]*\)/, '').trim() : '';
+        const title = titleMatch ? titleMatch[1].replace(/\([^)]*?\)/g, '').trim() : '';
         
         // Remove the title from content and process
         const contentWithoutTitle = part.replace(/^[^<]+/, '');
@@ -89,7 +89,7 @@ export default function TaskDetailClient({ task }) {
       
       const processedContent = contentWithoutTitle
         .replace(/####\s+(.+?)(?=\n|$)/g, '<h4 class="sub-header">$1</h4>')
-        .replace(/<h4[^>]*>(.*?)<\/h4>/g, '<h4 class="sub-header">$1</h4>')
+        .replace(/<h4[^>]*?>(.*?)<\/h4>/g, '<h4 class="sub-header">$1</h4>')
         .replace(/\*\s+\*\*(.+?)\*\*:/g, '<div class="tip-box"><strong>$1:</strong>')
         .replace(/(?:\r\n|\r|\n){2,}/g, '</p><p class="mb-6">');
       

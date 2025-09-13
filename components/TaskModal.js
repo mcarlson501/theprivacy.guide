@@ -58,7 +58,7 @@ export default function TaskModal({ task, isOpen, onClose }) {
       
       const processedContent = contentWithoutTitle
         .replace(/####\s+(.+?)(?=\n|$)/g, '<h4 class="sub-header">$1</h4>')
-        .replace(/<h4[^>]*>(.*?)<\/h4>/g, '<h4 class="sub-header">$1</h4>')
+        .replace(/<h4[^>]*?>(.*?)<\/h4>/g, '<h4 class="sub-header">$1</h4>')
         .replace(/\*\s+\*\*(.+?)\*\*:/g, '<div class="tip-box"><strong>$1:</strong>')
         .replace(/(?:\r\n|\r|\n){2,}/g, '</p><p class="mb-4">');
       
