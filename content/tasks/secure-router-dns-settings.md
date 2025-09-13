@@ -25,13 +25,13 @@ Connect to your router's control panel to change the DNS settings.
 **Get Connected:**
 1. Make sure you're connected to your home WiFi
 2. Open a web browser and type one of these addresses:
-   - `192.168.1.1` (most common)
-   - `192.168.0.1`
-   - `10.0.0.1`
+   - `192.168.1.1` (most common - Netgear, D-Link, some ISP routers)
+   - `192.168.0.1` (Linksys, Belkin, some TP-Link)
+   - `10.0.0.1` (Xfinity, some cable company routers)
 
 **Find Login Info:**
 1. Look for a sticker on your router (usually on the bottom)
-2. Write down the username and password listed
+2. Note the username and password listed
 3. If no sticker, try: username `admin` password `admin`
 
 **Log In:**
@@ -62,15 +62,22 @@ Look for these menu options (varies by router brand):
 ### Step 3: Choose and Enter Privacy DNS Servers
 Replace your ISP's DNS with privacy-focused alternatives.
 
-**Recommended Option - Quad9:**
+**Privacy-Focused Options:**
+
+**Cloudflare (Fastest):**
+- Primary DNS: `1.1.1.1`
+- Secondary DNS: `1.0.0.1` (family-friendly version)
+- Very fast, privacy-focused, no logging
+
+**Quad9 (Security-First):**
 - Primary DNS: `9.9.9.9`
 - Secondary DNS: `149.112.112.112`
-- Blocks malware automatically, no tracking
+- Blocks malware/phishing, privacy-focused
 
-**Fastest Option - Cloudflare:**
-- Primary DNS: `1.1.1.1`
-- Secondary DNS: `1.0.0.1`
-- Very fast, claims no tracking
+**OpenDNS (Content Filtering):**
+- Primary DNS: `208.67.222.222`
+- Secondary DNS: `208.67.220.220`
+- Customizable blocking, parental controls available
 
 **Enter the Settings:**
 1. Find "Primary DNS" field and clear it
