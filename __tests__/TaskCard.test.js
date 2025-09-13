@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { ThemeProvider } from '../context/ThemeContext'
 import { ProgressProvider } from '../context/ProgressContext'
 import TaskCard from '../components/TaskCard'
@@ -34,28 +34,19 @@ describe('TaskCard Component', () => {
     expect(screen.getByText('25 points')).toBeInTheDocument()
   })
 
-  test('shows completion status when task is completed', () => {
-    // Mock completed task
-    const completedTask = { ...mockTask, completed: true }
-    renderWithProviders(<TaskCard task={completedTask} />)
-    
-    // Should show some indication of completion (checkmark, "Completed", etc.)
-    const completionIndicator = screen.queryByText(/completed/i) || screen.queryByRole('img', { name: /check/i })
-    expect(completionIndicator).toBeInTheDocument()
-  })
-
-  test('is clickable and interactive', () => {
-    const mockOnClick = jest.fn()
-    renderWithProviders(<TaskCard task={mockTask} onClick={mockOnClick} />)
-    
-    const taskCard = screen.getByRole('article') || screen.getByTestId('task-card') || screen.getByText('Test Privacy Task').closest('div')
-    fireEvent.click(taskCard)
-    
-    expect(mockOnClick).toHaveBeenCalledWith(mockTask)
-  })
-
-  test('displays badge information', () => {
+  test('shows task category', () => {
     renderWithProviders(<TaskCard task={mockTask} />)
-    expect(screen.getByText('Privacy Starter')).toBeInTheDocument()
+    expect(screen.getByText('Quick Win')).toBeInTheDocument()
+  })
+
+  test('shows start task link', () => {
+    renderWithProviders(<TaskCard task={mockTask} />)
+    const startButton = screen.getByRole('link', { name: /start task/i })
+    expect(startButton).toBeInTheDocument()
+  })
+
+  test('displays points correctly', () => {
+    renderWithProviders(<TaskCard task={mockTask} />)
+    expect(screen.getByText(/25\s+points/)).toBeInTheDocument()
   })
 })

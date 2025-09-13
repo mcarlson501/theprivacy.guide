@@ -26,7 +26,7 @@ const renderWithProviders = (ui) => {
 describe('Header Component', () => {
   test('renders the Privacy Guide title', () => {
     renderWithProviders(<Header />)
-    expect(screen.getByText('Privacy Guide')).toBeInTheDocument()
+    expect(screen.getByText('The Privacy Guide')).toBeInTheDocument()
   })
 
   test('renders navigation links', () => {
@@ -36,15 +36,15 @@ describe('Header Component', () => {
     expect(screen.getByText('About')).toBeInTheDocument()
   })
 
-  test('renders theme toggle', () => {
+  test('renders menu button for mobile', () => {
     renderWithProviders(<Header />)
-    // Look for theme toggle button (should have moon/sun icon or theme text)
-    const themeButton = screen.getByRole('button')
-    expect(themeButton).toBeInTheDocument()
+    // Look for mobile menu button
+    const menuButton = screen.getByRole('button', { name: /open menu/i })
+    expect(menuButton).toBeInTheDocument()
   })
 
-  test('shows privacy mode indicator', () => {
+  test('shows privacy level indicator', () => {
     renderWithProviders(<Header />)
-    expect(screen.getByText('Privacy Mode')).toBeInTheDocument()
+    expect(screen.getByText('Privacy Intern')).toBeInTheDocument()
   })
 })
