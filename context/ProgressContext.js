@@ -146,121 +146,136 @@ export const ProgressProvider = ({ children }) => {
     return JSON.stringify(state, null, 2);
   };
 
+  // Helper validation functions to reduce complexity
+  const validateProgressInput = (progressData) => {
+    if (!progressData || typeof progressData !== 'string') {
+      return { valid: false, message: 'Invalid input: Progress data must be a string' };
+    }
+    if (progressData.length > 50000) {
+      return { valid: false, message: 'Invalid input: Progress data too large (max 50KB)' };
+    }
+    return { valid: true };
+  };
+
+  const validateJsonStructure = (sanitizedData) => {
+    const nestingLevel = (sanitizedData.match(/\{|\[/g) || []).length;
+    if (nestingLevel > 20) {
+      return { valid: false, message: 'Invalid input: Data structure too complex' };
+    }
+    
+    try {
+      const parsed = JSON.parse(sanitizedData);
+      if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+        return { valid: false, message: 'Invalid data: Root must be an object' };
+      }
+      return { valid: true, data: parsed };
+    } catch (parseError) {
+      return { valid: false, message: 'Invalid JSON format' };
+    }
+  };
+
+  const validateProgressStructure = (parsed) => {
+    if (!Number.isInteger(parsed.score) || parsed.score < 0 || parsed.score > 1000000) {
+      return { valid: false, message: 'Invalid score: Must be integer between 0-1,000,000' };
+    }
+    if (!Array.isArray(parsed.completedTasks)) {
+      return { valid: false, message: 'Invalid completedTasks: Must be an array' };
+    }
+    if (!Array.isArray(parsed.badges)) {
+      return { valid: false, message: 'Invalid badges: Must be an array' };
+    }
+    if (parsed.completedTasks.length > 1000) {
+      return { valid: false, message: 'Invalid data: Too many completed tasks (max 1000)' };
+    }
+    if (parsed.badges.length > 500) {
+      return { valid: false, message: 'Invalid data: Too many badges (max 500)' };
+    }
+    return { valid: true };
+  };
+
+  const validateTaskIds = (taskIds) => {
+    for (const taskId of taskIds) {
+      if (typeof taskId !== 'string' || taskId.length === 0 || taskId.length > 100) {
+        return { valid: false, message: 'Invalid task ID: Must be non-empty string under 100 chars' };
+      }
+      if (!/^[a-zA-Z0-9_-]+$/.test(taskId)) {
+        return { valid: false, message: 'Invalid task ID format: Only letters, numbers, hyphens, underscores allowed' };
+      }
+    }
+    
+    const uniqueTaskIds = new Set(taskIds);
+    if (uniqueTaskIds.size !== taskIds.length) {
+      return { valid: false, message: 'Invalid data: Duplicate task IDs found' };
+    }
+    return { valid: true };
+  };
+
+  const validateBadges = (badges) => {
+    for (const badge of badges) {
+      if (!badge || typeof badge !== 'object' || Array.isArray(badge)) {
+        return { valid: false, message: 'Invalid badge: Must be an object' };
+      }
+      if (typeof badge.id !== 'string' || badge.id.length === 0 || badge.id.length > 100) {
+        return { valid: false, message: 'Invalid badge ID: Must be non-empty string under 100 chars' };
+      }
+      if (typeof badge.name !== 'string' || badge.name.length === 0 || badge.name.length > 200) {
+        return { valid: false, message: 'Invalid badge name: Must be non-empty string under 200 chars' };
+      }
+      if (!/^[a-zA-Z0-9_-]+$/.test(badge.id)) {
+        return { valid: false, message: 'Invalid badge ID format: Only letters, numbers, hyphens, underscores allowed' };
+      }
+      if (!/^[a-zA-Z0-9\s_-]+$/.test(badge.name)) {
+        return { valid: false, message: 'Invalid badge name format: Only letters, numbers, spaces, hyphens, underscores allowed' };
+      }
+    }
+    
+    const uniqueBadgeIds = new Set(badges.map(b => b.id));
+    if (uniqueBadgeIds.size !== badges.length) {
+      return { valid: false, message: 'Invalid data: Duplicate badge IDs found' };
+    }
+    return { valid: true };
+  };
+
+  const validateAllowedProperties = (parsed) => {
+    const allowedProperties = ['score', 'completedTasks', 'badges'];
+    const unexpectedProperties = Object.keys(parsed).filter(prop => !allowedProperties.includes(prop));
+    
+    if (unexpectedProperties.length > 0) {
+      return { valid: false, message: `Invalid data: Unexpected properties: ${unexpectedProperties.join(', ')}` };
+    }
+    return { valid: true };
+  };
+
   const importProgress = (progressData) => {
     try {
-      // Input sanitization and length limits
-      if (!progressData || typeof progressData !== 'string') {
-        return { success: false, message: 'Invalid input: Progress data must be a string' };
-      }
+      // Step 1: Input validation
+      const inputValidation = validateProgressInput(progressData);
+      if (!inputValidation.valid) return { success: false, message: inputValidation.message };
 
-      // Prevent extremely large payloads (max 50KB)
-      if (progressData.length > 50000) {
-        return { success: false, message: 'Invalid input: Progress data too large (max 50KB)' };
-      }
-
-      // Remove any potential whitespace/control characters
+      // Step 2: JSON parsing and structure validation
       const sanitizedData = progressData.trim();
-      
-      // Basic JSON bomb protection - check for excessive nesting/complexity
-      const nestingLevel = (sanitizedData.match(/\{|\[/g) || []).length;
-      if (nestingLevel > 20) {
-        return { success: false, message: 'Invalid input: Data structure too complex' };
-      }
+      const jsonValidation = validateJsonStructure(sanitizedData);
+      if (!jsonValidation.valid) return { success: false, message: jsonValidation.message };
 
-      // Parse with error handling
-      let parsed;
-      try {
-        parsed = JSON.parse(sanitizedData);
-      } catch (parseError) {
-        return { success: false, message: 'Invalid JSON format' };
-      }
+      const parsed = jsonValidation.data;
 
-      // Strict type and structure validation
-      if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
-        return { success: false, message: 'Invalid data: Root must be an object' };
-      }
+      // Step 3: Progress structure validation
+      const structureValidation = validateProgressStructure(parsed);
+      if (!structureValidation.valid) return { success: false, message: structureValidation.message };
 
-      // Validate required fields with strict type checking
-      if (!Number.isInteger(parsed.score) || parsed.score < 0 || parsed.score > 1000000) {
-        return { success: false, message: 'Invalid score: Must be integer between 0-1,000,000' };
-      }
+      // Step 4: Task IDs validation
+      const taskValidation = validateTaskIds(parsed.completedTasks);
+      if (!taskValidation.valid) return { success: false, message: taskValidation.message };
 
-      if (!Array.isArray(parsed.completedTasks)) {
-        return { success: false, message: 'Invalid completedTasks: Must be an array' };
-      }
+      // Step 5: Badges validation
+      const badgeValidation = validateBadges(parsed.badges);
+      if (!badgeValidation.valid) return { success: false, message: badgeValidation.message };
 
-      if (!Array.isArray(parsed.badges)) {
-        return { success: false, message: 'Invalid badges: Must be an array' };
-      }
+      // Step 6: Properties validation
+      const propertiesValidation = validateAllowedProperties(parsed);
+      if (!propertiesValidation.valid) return { success: false, message: propertiesValidation.message };
 
-      // Validate array lengths to prevent memory exhaustion
-      if (parsed.completedTasks.length > 1000) {
-        return { success: false, message: 'Invalid data: Too many completed tasks (max 1000)' };
-      }
-
-      if (parsed.badges.length > 500) {
-        return { success: false, message: 'Invalid data: Too many badges (max 500)' };
-      }
-
-      // Validate completedTasks array contents
-      for (const taskId of parsed.completedTasks) {
-        if (typeof taskId !== 'string' || taskId.length === 0 || taskId.length > 100) {
-          return { success: false, message: 'Invalid task ID: Must be non-empty string under 100 chars' };
-        }
-        
-        // Only allow alphanumeric, hyphens, and underscores (typical task ID format)
-        if (!/^[a-zA-Z0-9_-]+$/.test(taskId)) {
-          return { success: false, message: 'Invalid task ID format: Only letters, numbers, hyphens, underscores allowed' };
-        }
-      }
-
-      // Validate badges array contents
-      for (const badge of parsed.badges) {
-        if (!badge || typeof badge !== 'object' || Array.isArray(badge)) {
-          return { success: false, message: 'Invalid badge: Must be an object' };
-        }
-
-        if (typeof badge.id !== 'string' || badge.id.length === 0 || badge.id.length > 100) {
-          return { success: false, message: 'Invalid badge ID: Must be non-empty string under 100 chars' };
-        }
-
-        if (typeof badge.name !== 'string' || badge.name.length === 0 || badge.name.length > 200) {
-          return { success: false, message: 'Invalid badge name: Must be non-empty string under 200 chars' };
-        }
-
-        // Sanitize badge ID and name
-        if (!/^[a-zA-Z0-9_-]+$/.test(badge.id)) {
-          return { success: false, message: 'Invalid badge ID format: Only letters, numbers, hyphens, underscores allowed' };
-        }
-
-        // Badge name can have more characters but still needs basic sanitization
-        if (!/^[a-zA-Z0-9\s_-]+$/.test(badge.name)) {
-          return { success: false, message: 'Invalid badge name format: Only letters, numbers, spaces, hyphens, underscores allowed' };
-        }
-      }
-
-      // Check for duplicate task IDs
-      const uniqueTaskIds = new Set(parsed.completedTasks);
-      if (uniqueTaskIds.size !== parsed.completedTasks.length) {
-        return { success: false, message: 'Invalid data: Duplicate task IDs found' };
-      }
-
-      // Check for duplicate badge IDs
-      const uniqueBadgeIds = new Set(parsed.badges.map(b => b.id));
-      if (uniqueBadgeIds.size !== parsed.badges.length) {
-        return { success: false, message: 'Invalid data: Duplicate badge IDs found' };
-      }
-
-      // Reject any unexpected properties (security measure)
-      const allowedProperties = ['score', 'completedTasks', 'badges'];
-      const actualProperties = Object.keys(parsed);
-      const unexpectedProperties = actualProperties.filter(prop => !allowedProperties.includes(prop));
-      
-      if (unexpectedProperties.length > 0) {
-        return { success: false, message: `Invalid data: Unexpected properties: ${unexpectedProperties.join(', ')}` };
-      }
-
-      // Create sanitized object with only allowed properties
+      // Step 7: Create sanitized object and dispatch
       const sanitizedProgress = {
         score: parsed.score,
         completedTasks: parsed.completedTasks,
@@ -271,7 +286,6 @@ export const ProgressProvider = ({ children }) => {
       return { success: true, message: 'Progress imported successfully!' };
 
     } catch (error) {
-      // Log error for debugging but don't expose internals to user
       console.error('Import progress error:', error);
       return { success: false, message: 'Failed to import progress data' };
     }
