@@ -2,7 +2,7 @@
 title: 'Use a Password Manager'
 description: 'Stop reusing passwords and let a password manager create and remember unique passwords for every account.'
 category: 'Essential'
-time: '30 minutes setup'
+time: '30 minutes'
 points: 75
 badgeId: 'password-master'
 badgeName: 'Password Master'
@@ -63,51 +63,20 @@ Don't start from scratch - bring your current passwords into the password manage
 
 ### Step 4: Start Using It (The Most Important Part)
 
-#### Week 1: Just Save Passwords
+**Week 1: Just Save Passwords**
 * Don't change any passwords yet
 * When you log into accounts, let the password manager save them
 * Get comfortable with the auto-fill feature
 
-#### Week 2: Start Changing Important Passwords
+**Week 2: Start Changing Important Passwords**
 * Begin with your most critical accounts (email, banking)
 * Use the password manager to generate new, strong passwords
 * Let it save and auto-fill the new passwords
 
-#### Week 3+: Clean Up Everything Else
+**Week 3+: Clean Up Everything Else**
 * Work through your other accounts gradually
 * Use the password manager's "Security Checkup" feature to find weak or reused passwords
 * Replace them one by one
-
----
-
-### How to Use It Daily
-
-#### On Your Computer
-1. The browser extension will automatically detect login forms
-2. Click the extension icon or let it auto-fill
-3. For new accounts, let it generate a strong password
-
-#### On Your Phone
-1. When you encounter a login screen, tap in the password field
-2. Select your password manager from the keyboard suggestions
-3. Use Touch ID/Face ID or enter your master password
-4. Select the correct account
-
-#### For New Accounts
-1. When creating a new account, let the password manager generate the password
-2. Don't try to make it "memorable" - that's the password manager's job
-3. Save the login immediately
-
----
-
-### Pro Tips for Success
-
-**🎯 Start Small**
-* Don't try to change every password on day one
-* Focus on your most important accounts first
-* Build the habit of using it before trying to perfect your setup
-
-
 
 ---
 

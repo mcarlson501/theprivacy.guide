@@ -18,19 +18,15 @@ The Privacy Guide transforms complex privacy concepts into practical, step-by-st
 ## Features
 
 **Interactive Privacy Tasks**
-- 21 practical tasks from 5-minute quick wins to advanced guides
-- Complete social media privacy series
+- 28 practical tasks from 5-minute quick wins to advanced guides
+- Complete social media privacy series (Facebook, Instagram, TikTok, Twitter/X, LinkedIn)
+- Categories: Quick Win, Essential, Social Media, and Advanced
 - Step-by-step instructions tested across platforms
 
 **Gamified Progress**
-- Points, badges, and level progression
+- Points, badges, and level progression (25/50/75/100 point tiers)
 - Progress tracking dashboard
 - Personal achievement system
-
-**Privacy Pulse News**
-- Curated privacy news with actionable takeaways
-- Links to relevant tasks
-- Regular updates on privacy developments
 
 **Privacy-First Design**
 - No user accounts or personal data collection
@@ -41,7 +37,7 @@ The Privacy Guide transforms complex privacy concepts into practical, step-by-st
 ## Architecture
 
 **Content-Driven**
-- Tasks and news stored as Markdown files
+- Tasks stored as Markdown files with YAML frontmatter
 - Easy contribution without coding knowledge
 - Static site generation for performance and security
 
@@ -68,15 +64,14 @@ The Privacy Guide transforms complex privacy concepts into practical, step-by-st
 
 ```
 content/
-├── tasks/          # Privacy task guides
-└── news/           # Privacy news articles
+└── tasks/          # 28 privacy task guides (Markdown + YAML frontmatter)
 ```
 
-**Task Categories**
-- Quick Win (5-10 minutes)
-- Essential (15-30 minutes)  
-- Social Media (10-20 minutes)
-- Advanced (30+ minutes)
+**Task Categories (28 tasks)**
+- Quick Win — 10 tasks (5-10 minutes, 25 points)
+- Essential — 10 tasks (15-30 minutes, 75 points)
+- Social Media — 5 tasks (10-20 minutes, 50 points)
+- Advanced — 3 tasks (30+ minutes, 100 points)
 
 ## Privacy Architecture
 
@@ -114,7 +109,6 @@ We welcome contributions that make privacy more accessible. Ways to help:
 
 **Content Contributions**
 - Create new privacy tasks using our templates
-- Write Privacy Pulse news articles
 - Improve existing task instructions
 - Translate content for broader accessibility
 
@@ -140,20 +134,23 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 ## Project Status
 
 **Current Stats**
-- 21 privacy tasks across four difficulty levels
-- Complete social media privacy series
-- Privacy Pulse news integration
+- 28 privacy tasks across four categories
+- 8 test suites, 56 automated tests
+- Complete social media privacy series (5 platforms)
 - WCAG 2.1 AA accessibility considerations
 - Enterprise-grade security implementation
 
 **Recent Enhancements**
-- Comprehensive test suite with Jest and React Testing Library
+- Expanded task library from 21 to 28 tasks (credit freeze, data brokers, phone/browser/computer privacy, Google privacy checkup, safe online shopping)
+- Standardized points system: 25/50/75/100 across Quick Win/Social Media/Essential/Advanced
+- Header scroll performance optimization (refs over state)
+- Mobile menu accessibility: focus trap, ARIA dialog role
+- Shared utility modules for categories and levels (DRY refactor)
+- Dynamic task count in navigation header
+- Comprehensive task formatting standardization across all content
 - SonarCloud integration for continuous code quality monitoring
 - GitHub Actions CI/CD pipeline with automated testing and security scanning
 - JSON import security hardening with automated test coverage
-- Comprehensive task formatting standardization
-- Enhanced mobile experience
-- Privacy Pulse call-to-action integration
 
 ## Resources
 

@@ -95,11 +95,11 @@ Before using any AI tool, ask yourself:
 **What You Just Accomplished**
 You now know how to use AI tools safely by avoiding personal information, using anonymous examples, and applying a simple safety checklist. You can get all the benefits of AI assistance while protecting your privacy and security.
 
-**Smart AI Strategy**
+**What to Expect**
 Think of AI tools like powerful strangers who remember everything. You can have great conversations and get excellent help, but you wouldn't share your Social Security number or company secrets with a stranger at a coffee shop.
 
-**If You've Already Shared Too Much**
-- Delete your conversation history in the AI tool
+**Pro Tips**
+- Delete your conversation history in the AI tool if you've shared too much
 - Change any passwords you may have mentioned
 - Contact the AI service about data deletion policies
 - Inform your IT team if you shared work information

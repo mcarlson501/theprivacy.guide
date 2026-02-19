@@ -8,7 +8,7 @@ badgeId: 'linkedin-pro'
 badgeName: 'LinkedIn Pro'
 ---
 
-### Why This Matters
+#### Why This Matters
 LinkedIn is essential for professional networking, but it's also a data goldmine for scammers, unwanted recruiters, and companies building detailed profiles about your career. By default, LinkedIn shares your activity, job search signals, and professional connections with far more people than necessary.
 
 **Professional Privacy Risks:**
@@ -94,10 +94,10 @@ Prevent your current employer from knowing you're looking for new opportunities.
 **What You Just Accomplished**
 You've made your LinkedIn profile much more private while keeping the professional networking benefits. Your activity is now hidden, unwanted messages are blocked, and your job search won't accidentally alert your current employer.
 
-**Professional Impact**
+**What to Expect**
 Your LinkedIn will work exactly the same for legitimate networking and career opportunities. The difference is that data brokers, scammers, and unwanted recruiters will have much less access to your information.
 
-**Smart Strategy**
+**Pro Tips**
 LinkedIn is essential for most careers, but it doesn't need to broadcast every detail of your professional life. You've found the balance between career networking and privacy protection.
 
 **Remember:** Your LinkedIn presence is part of your professional reputation. Quality connections and strategic privacy are better than sharing everything with everyone.

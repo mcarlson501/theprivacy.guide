@@ -79,13 +79,13 @@ Make smart decisions about which programs to join.
 
 ### The Bottom Line
 
-**What You Just Learned**
+**What You Just Accomplished**
 You now know how to quickly evaluate whether a retail rewards program is worth your privacy trade-off. You have practical alternatives like dedicated shopping emails and second phone numbers that let you get discounts without sharing your main contact information.
 
-**Smart Shopping Strategy**
+**What to Expect**
 The goal isn't to avoid all deals - it's to make conscious choices about what information you share and with whom. Most retail rewards requests are optional, even when they don't sound like it.
 
-**Your Power**
+**Pro Tips**
 Every time someone asks for your information, you can decide if the trade-off is worth it. A simple "no thanks" always works, and the transaction continues normally.
 
 **Remember:** If something seems "free" or too good to be true, your data is probably part of the payment. That's not necessarily bad, but it's good to know what you're trading.

@@ -87,10 +87,10 @@ Clean up information that could be used against you.
 **What You Just Accomplished**
 You've made your social media accounts much more private. Strangers can no longer see your posts, find you easily, or contact you directly. Your personal information is no longer broadcasting to the world.
 
-**Ongoing Protection**
+**What to Expect**
 Social media companies frequently update their settings and often reset them to be more public (because they make money from your data). Check your privacy settings every few months to make sure they haven't changed.
 
-**Smart Strategy**
+**Pro Tips**
 The goal isn't to avoid social media - it's to share intentionally with people you actually want to share with. You've just put up a digital privacy fence around your social media life.
 
 **Remember:** Privacy settings are deliberately buried and confusing because social media companies profit from your data being public. You just outsmarted their system by taking control of your digital privacy.

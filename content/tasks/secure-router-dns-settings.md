@@ -111,10 +111,10 @@ Verify your new DNS settings are active.
 **What You Just Accomplished**
 You've switched your entire home network to privacy-focused DNS servers. Your internet provider can no longer see which websites anyone in your house visits, and malicious websites are now blocked automatically for every device.
 
-**Network-Wide Protection**
+**What to Expect**
 This single change protects every device connected to your WiFi - phones, tablets, smart TVs, game consoles, and even visitors' devices. Everyone gets privacy protection and malware blocking without installing anything.
 
-**If Something Goes Wrong**
+**Pro Tips**
 - Double-check you typed the DNS addresses correctly (no extra spaces)
 - Make sure you clicked "Save" before leaving the settings page
 - If internet stops working, you can always reset to default DNS or call your ISP

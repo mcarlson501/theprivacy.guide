@@ -4,6 +4,7 @@ import '../styles/fonts.css'
 import { ProgressProvider } from '../context/ProgressContext'
 import { ThemeProvider } from '../context/ThemeContext'
 import Header from '../components/Header'
+import { getTaskCount } from '../lib/tasks'
 import ThemeToggle from '../components/ThemeToggle'
 import LoadingWrapper from '../components/LoadingWrapper'
 
@@ -34,6 +35,7 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const totalTasks = getTaskCount();
   // Only apply strict security headers in production
   const isProduction = process.env.NODE_ENV === 'production';
   
@@ -59,7 +61,7 @@ export default function RootLayout({ children }) {
           <ProgressProvider>
             <LoadingWrapper>
               <div className="min-h-screen flex flex-col">
-                <Header />
+                <Header totalTasks={totalTasks} />
                 <main className="flex-1 pt-0">
                   {children}
                 </main>

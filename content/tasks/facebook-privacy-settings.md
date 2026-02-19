@@ -2,7 +2,7 @@
 title: 'Facebook Privacy Settings Checkup'
 description: 'Secure your Facebook account with privacy settings that actually matter, without losing the social connection you value.'
 category: 'Social Media'
-time: '15-20 minutes'
+time: '20 minutes'
 points: 50
 badgeId: 'facebook-guardian'
 badgeName: 'Facebook Guardian'
@@ -54,7 +54,7 @@ Reduce how Facebook uses your data for targeted ads.
 4. Turn off "Ads based on your activity on Facebook Company Products"
 5. Review and remove interests that feel too personal or inaccurate
 
-#### Apps and Websites
+**Apps and Websites:**
 1. **Go to Settings** → **Apps and Websites**
 2. **Review connected apps** and remove any you don't actively use
 3. **Turn off "Apps, websites and games"** if you don't use Facebook to log into other services
@@ -66,12 +66,12 @@ Reduce how Facebook uses your data for targeted ads.
 
 ### Step 4: Smart Posting Habits
 
-#### Before You Post, Ask:
+**Before You Post, Ask:**
 * **Would I be comfortable if this was on a billboard?** (Because it might be seen by more people than you think)
 * **Could this be taken out of context?** (Facebook posts can be screenshotted and shared)
 * **Am I posting when emotional?** (Wait a few hours before posting about controversial topics)
 
-#### Facebook-Specific Tips:
+**Facebook-Specific Tips:**
 * **Avoid "checking in" at your home** or posting when you're away on vacation
 * **Be careful with "People You May Know"** suggestions—they often reveal who you've been near physically
 * **Review photos you're tagged in** before they appear on your timeline

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { useProgress } from '../context/ProgressContext';
 import ThemeToggle from './ThemeToggle';
@@ -8,19 +8,67 @@ import ThemeToggle from './ThemeToggle';
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const { badges, score } = useProgress();
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const menuRef = useRef(null);
+  const triggerRef = useRef(null);
 
   const closeMenu = () => {
     setIsOpen(false);
+    triggerRef.current?.focus();
   };
+
+  const toggleMenu = () => {
+    if (isOpen) {
+      closeMenu();
+    } else {
+      setIsOpen(true);
+    }
+  };
+
+  // Focus trap: trap Tab/Shift+Tab inside the menu, close on Escape
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const menuElement = menuRef.current;
+    if (!menuElement) return;
+
+    const focusableSelector = 'a[href], button, textarea, input, select, [tabindex]:not([tabindex="-1"])';
+    const focusableElements = menuElement.querySelectorAll(focusableSelector);
+    const firstFocusable = focusableElements[0];
+    const lastFocusable = focusableElements[focusableElements.length - 1];
+
+    firstFocusable?.focus();
+
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setIsOpen(false);
+        triggerRef.current?.focus();
+        return;
+      }
+
+      if (e.key !== 'Tab') return;
+
+      if (e.shiftKey) {
+        if (document.activeElement === firstFocusable) {
+          e.preventDefault();
+          lastFocusable?.focus();
+        }
+      } else {
+        if (document.activeElement === lastFocusable) {
+          e.preventDefault();
+          firstFocusable?.focus();
+        }
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen]);
 
   return (
     <>
       {/* Mobile Menu Button */}
       <button 
+        ref={triggerRef}
         onClick={toggleMenu}
         className="md:hidden p-2 rounded-md text-charcoal-gray dark:text-dark-text hover:text-friendly-blue dark:hover:text-friendly-blue hover:bg-gray-50 dark:hover:bg-dark-surface transition-colors focus:outline-none focus:ring-2 focus:ring-friendly-blue/50"
         aria-label={isOpen ? "Close menu" : "Open menu"}
@@ -46,7 +94,7 @@ export default function MobileMenu() {
           />
           
           {/* Full Height Menu */}
-          <div className="fixed top-0 right-0 h-full w-72 max-w-[85vw] bg-white dark:bg-dark-bg shadow-2xl z-50 md:hidden">
+          <div ref={menuRef} role="dialog" aria-modal="true" aria-label="Navigation menu" className="fixed top-0 right-0 h-full w-72 max-w-[85vw] bg-white dark:bg-dark-bg shadow-2xl z-50 md:hidden">
             <div className="flex flex-col h-full bg-white dark:bg-dark-bg">
               {/* Header */}
               <div className="flex justify-between items-center p-4 border-b border-gray-200 dark:border-dark-border bg-white dark:bg-dark-bg">
@@ -80,13 +128,6 @@ export default function MobileMenu() {
                       className="flex items-center px-3 py-2.5 rounded-lg text-charcoal-gray dark:text-dark-text hover:bg-gray-50 dark:hover:bg-dark-surface hover:text-friendly-blue transition-colors text-base font-medium"
                     >
                       Privacy Tasks
-                    </Link>
-                    <Link 
-                      href="/privacy-pulse" 
-                      onClick={closeMenu}
-                      className="flex items-center px-3 py-2.5 rounded-lg text-charcoal-gray dark:text-dark-text hover:bg-gray-50 dark:hover:bg-dark-surface hover:text-friendly-blue transition-colors text-base font-medium"
-                    >
-                      Privacy Pulse
                     </Link>
                     <Link 
                       href="/about" 

@@ -1,14 +1,11 @@
 import Link from 'next/link'
 import ProgressCard from '../components/ProgressCard'
-import PrivacyPulseWidget from '../components/PrivacyPulseWidget'
 import { getAllTasksData, getTotalPossiblePoints } from '../lib/tasks'
-import { getRecentNews } from '../lib/news'
 
 export default async function Home() {
-  const [totalPoints, allTasks, recentNews] = await Promise.all([
+  const [totalPoints, allTasks] = await Promise.all([
     getTotalPossiblePoints(),
-    getAllTasksData(),
-    getRecentNews(3).catch(() => []) // Fallback to empty array if news loading fails
+    getAllTasksData()
   ]);
   const totalTasks = allTasks.length;
 
@@ -167,24 +164,6 @@ export default async function Home() {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Privacy News Section */}
-      <section className="py-16 lg:py-20 bg-calm-off-white dark:bg-dark-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-charcoal-gray dark:text-dark-text mb-4">
-              Stay Informed
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Keep up with the latest privacy news, data breaches, and security updates that matter to you.
-            </p>
-          </div>
-
-          <div className="max-w-2xl mx-auto">
-            <PrivacyPulseWidget recentNews={recentNews} />
           </div>
         </div>
       </section>

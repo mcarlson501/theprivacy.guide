@@ -2,54 +2,46 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { useProgress } from '../context/ProgressContext';
 import { getPrivacyLevel } from '../lib/levels';
 import MobileMenu from './MobileMenu';
 
-export default function Header() {
-  const [scrollY, setScrollY] = useState(0);
-  const [headerOffset, setHeaderOffset] = useState(0);
-  const [lastScrollY, setLastScrollY] = useState(0);
+export default function Header({ totalTasks = 21 }) {
+  const headerRef = useRef(null);
+  const scrollState = useRef({ scrollY: 0, headerOffset: 0, lastScrollY: 0 });
   
   const { score, badges, completedTasks } = useProgress();
-
-  // Use the current actual task count 
-  // Updated to match current number of tasks in content/tasks/ directory
-  const totalTasks = 21; // All privacy tasks in content/tasks/ directory
   const progressPercentage = totalTasks > 0 ? Math.round((completedTasks.length / totalTasks) * 100) : 0;
   const currentLevel = getPrivacyLevel(progressPercentage);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
+      const s = scrollState.current;
       const currentScrollY = window.scrollY;
-      const scrollDifference = currentScrollY - lastScrollY;
-      const headerHeight = 80; // Approximate header height
-      
+      const scrollDifference = currentScrollY - s.lastScrollY;
+      const headerHeight = 80;
+
       if (currentScrollY <= 0) {
-        // At top of page, header fully visible
-        setHeaderOffset(0);
+        s.headerOffset = 0;
       } else {
-        // Calculate new header offset based on scroll direction and momentum
-        let newOffset = headerOffset;
-        
         if (scrollDifference > 0) {
-          // Scrolling down - move header up (hide it)
-          newOffset = Math.min(headerHeight, headerOffset + scrollDifference * 0.8);
+          s.headerOffset = Math.min(headerHeight, s.headerOffset + scrollDifference * 0.8);
         } else {
-          // Scrolling up - move header down (show it)
-          newOffset = Math.max(0, headerOffset + scrollDifference * 1.2);
+          s.headerOffset = Math.max(0, s.headerOffset + scrollDifference * 1.2);
         }
-        
-        setHeaderOffset(newOffset);
       }
-      
-      setScrollY(currentScrollY);
-      setLastScrollY(currentScrollY);
+
+      s.scrollY = currentScrollY;
+      s.lastScrollY = currentScrollY;
+
+      if (headerRef.current) {
+        headerRef.current.style.transform = `translateY(-${s.headerOffset}px)`;
+      }
     };
 
-    // Throttle the scroll event for smoother performance
-    let ticking = false;
     const throttledScroll = () => {
       if (!ticking) {
         requestAnimationFrame(() => {
@@ -62,12 +54,12 @@ export default function Header() {
 
     window.addEventListener('scroll', throttledScroll, { passive: true });
     return () => window.removeEventListener('scroll', throttledScroll);
-  }, [headerOffset, lastScrollY]);
+  }, []);
 
   return (
     <header 
+      ref={headerRef}
       className="sticky top-0 z-50 bg-white dark:bg-dark-bg shadow-sm border-b border-gray-200 dark:border-dark-border backdrop-blur-sm bg-white/95 dark:bg-dark-bg/95 transition-transform duration-200 ease-out"
-      style={{ transform: `translateY(-${headerOffset}px)` }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-18">
@@ -105,12 +97,6 @@ export default function Header() {
                 className="text-charcoal-gray dark:text-dark-text hover:text-friendly-blue dark:hover:text-friendly-blue font-medium transition-colors"
               >
                 Tasks
-              </Link>
-              <Link 
-                href="/privacy-pulse" 
-                className="text-charcoal-gray dark:text-dark-text hover:text-friendly-blue dark:hover:text-friendly-blue font-medium transition-colors"
-              >
-                Privacy Pulse
               </Link>
               <Link 
                 href="/about" 
